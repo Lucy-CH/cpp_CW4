@@ -40,6 +40,12 @@ src/ImageMappingDemo.cpp
 src/SimpleImage.cpp
 src/StarfieldDemo.cpp
 src/JigsawDemo.cpp
+
+src/Psylc7Engine.cpp
+src/Psylc7Engine.hpp
+src/State.cpp
+src/State.hpp
+
 )
 
 add_executable(SDL2_App ${SOURCE_FILES})

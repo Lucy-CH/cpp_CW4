@@ -6,3 +6,14 @@
 //
 
 #include "State.hpp"
+
+State::State(Psylc7Engine *pEngine)
+:engine(pEngine)
+{
+    
+}
+State::~State()
+{
+    
+}
+
