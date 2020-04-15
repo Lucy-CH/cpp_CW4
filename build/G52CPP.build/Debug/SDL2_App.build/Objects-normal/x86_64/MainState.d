@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Psylc7Engine.cpp \
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/MainState.cpp \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/header.h \
   /usr/local/include/SDL2/SDL.h /usr/local/include/SDL2/SDL_main.h \
   /usr/local/include/SDL2/SDL_stdinc.h \
@@ -46,6 +46,8 @@ dependencies: \
   /usr/local/include/SDL2/SDL_timer.h \
   /usr/local/include/SDL2/SDL_version.h \
   /usr/local/include/SDL2/SDL_ttf.h /usr/local/include/SDL2/SDL_image.h \
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/MainState.hpp \
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/State.hpp \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Psylc7Engine.hpp \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/BaseEngine.h \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/DisplayableObject.h \
@@ -55,6 +57,4 @@ dependencies: \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/DisplayableObjectContainer.h \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/SimpleImage.h \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/RawImage.h \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/ImageManager.h \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/MainState.hpp \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/State.hpp
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/ImageManager.h

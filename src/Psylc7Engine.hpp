@@ -7,6 +7,8 @@
 #pragma once
 #include "header.h"
 #include "BaseEngine.h"
+
+
 #ifndef Psylc7Engine_hpp
 #define Psylc7Engine_hpp
 
@@ -14,10 +16,23 @@
 
 #endif /* Psylc7Engine_hpp */
 
+class State;// forward declaring classes instead of using headers
+class MainState;
+
 class Psylc7Engine:
-public BaseEngine
+        public BaseEngine
 {
 public:
     Psylc7Engine();
     ~Psylc7Engine();
+    void virtSetupBackgroundBuffer();
+    void virtinitialiseObjects();
+    void virtKeyDown(int iKeyCode);
+    void setState(State* state);
+    
+    
+protected:
+    State* currentState;
+    MainState* menu;
+   
 };
