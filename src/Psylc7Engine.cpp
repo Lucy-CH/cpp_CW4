@@ -6,3 +6,13 @@
 //
 
 #include "Psylc7Engine.hpp"
+
+Psylc7Engine::Psylc7Engine()
+{
+    
+}
+
+Psylc7Engine::~Psylc7Engine()
+{
+    
+}

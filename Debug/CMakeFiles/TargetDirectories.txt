@@ -1,0 +1,3 @@
+/Users/lecheng/desktop/CPPCoursework2020-v101/Debug/CMakeFiles/SDL2_App.dir
+/Users/lecheng/desktop/CPPCoursework2020-v101/Debug/CMakeFiles/ALL_BUILD.dir
+/Users/lecheng/desktop/CPPCoursework2020-v101/Debug/CMakeFiles/ZERO_CHECK.dir

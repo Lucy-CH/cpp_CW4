@@ -74,4 +74,5 @@ dependencies: \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/JigsawDemo.h \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/PlayingCardsDemo.h \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/JasonsDemoA.h \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/JasonsTileManager.h
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/JasonsTileManager.h \
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Psylc7Engine.hpp

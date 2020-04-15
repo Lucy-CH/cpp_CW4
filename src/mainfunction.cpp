@@ -17,10 +17,10 @@
 #include "JigsawDemo.h"
 #include "PlayingCardsDemo.h"
 #include "JasonsDemoA.h"
-
+#include "Psylc7Engine.hpp"
 // These are passed to initialise to determine the window size
-const int BaseScreenWidth = 1300;
-const int BaseScreenHeight = 800;
+const int BaseScreenWidth = 800;
+const int BaseScreenHeight = 600;
 
 
 // This was only moved outside of main so that I can do some memory checking once it ends.
@@ -30,7 +30,8 @@ int doProgram(int argc, char *argv[])
 	int iResult = 0;
 	// Needs just one of the following lines - choose which object to create - ENSURE ONLY ONE IS CREATED.
 	// Note these are from simplest to most complex demo.
-	JasonsDemoA oMain; // Jason's version of MyDemoA, MyObjectA and MyTileManagerA
+    Psylc7Engine oMain;
+	//JasonsDemoA oMain; // Jason's version of MyDemoA, MyObjectA and MyTileManagerA
 	//SimpleDemo oMain;
 	//ImageObjectDemo oMain; // Shows drawing images to the foreground and background
 	//BouncingBallMain oMain; // A ball bouncing around with images and shapes drawn
