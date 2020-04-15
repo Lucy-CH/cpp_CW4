@@ -367,7 +367,7 @@ SDL2_App_GUID_CMAKE:INTERNAL=5572199A52874D6FA4212123
 SDL2_IMAGE_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SDL2_IMAGE_LIBRARY
 SDL2_IMAGE_LIBRARY-ADVANCED:INTERNAL=1
-SDL2_LIBRARY_TEMP:INTERNAL=/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2.dylib;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa
+SDL2_LIBRARY_TEMP:INTERNAL=/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2main.a;/usr/local/lib/libSDL2.dylib;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa
 //Stored Xcode object GUID
 ZERO_CHECK_GUID_CMAKE:INTERNAL=88E14BBFBAE34A8886B7B5E1
 
