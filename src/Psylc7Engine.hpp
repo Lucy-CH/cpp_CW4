@@ -26,7 +26,7 @@ public:
     Psylc7Engine();
     ~Psylc7Engine();
     void virtSetupBackgroundBuffer();
-    void virtinitialiseObjects();
+    int virtInitialiseObjects();
     void virtKeyDown(int iKeyCode);
     void setState(State* state);
     

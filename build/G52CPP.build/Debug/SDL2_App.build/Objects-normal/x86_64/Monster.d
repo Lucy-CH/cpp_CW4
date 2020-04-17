@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/MainState.cpp \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/header.h \
+  /Users/lecheng/Downloads/CPPCoursework2020-v101\ 2/src/Monster.cpp \
+  /Users/lecheng/Downloads/CPPCoursework2020-v101\ 2/src/header.h \
   /usr/local/include/SDL2/SDL.h /usr/local/include/SDL2/SDL_main.h \
   /usr/local/include/SDL2/SDL_stdinc.h \
   /usr/local/include/SDL2/SDL_config.h \
@@ -46,16 +46,19 @@ dependencies: \
   /usr/local/include/SDL2/SDL_timer.h \
   /usr/local/include/SDL2/SDL_version.h \
   /usr/local/include/SDL2/SDL_ttf.h /usr/local/include/SDL2/SDL_image.h \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/MainState.hpp \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/State.hpp \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Psylc7Engine.hpp \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/BaseEngine.h \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/DisplayableObject.h \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/DrawingSurface.h \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/FilterPoints.h \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/FontManager.h \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/DisplayableObjectContainer.h \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/SimpleImage.h \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/RawImage.h \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/ImageManager.h \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Button.hpp
+  /Users/lecheng/Downloads/CPPCoursework2020-v101\ 2/src/BaseEngine.h \
+  /Users/lecheng/Downloads/CPPCoursework2020-v101\ 2/src/DisplayableObject.h \
+  /Users/lecheng/Downloads/CPPCoursework2020-v101\ 2/src/DrawingSurface.h \
+  /Users/lecheng/Downloads/CPPCoursework2020-v101\ 2/src/FilterPoints.h \
+  /Users/lecheng/Downloads/CPPCoursework2020-v101\ 2/src/FontManager.h \
+  /Users/lecheng/Downloads/CPPCoursework2020-v101\ 2/src/DisplayableObjectContainer.h \
+  /Users/lecheng/Downloads/CPPCoursework2020-v101\ 2/src/SimpleImage.h \
+  /Users/lecheng/Downloads/CPPCoursework2020-v101\ 2/src/RawImage.h \
+  /Users/lecheng/Downloads/CPPCoursework2020-v101\ 2/src/ImageManager.h \
+  /Users/lecheng/Downloads/CPPCoursework2020-v101\ 2/src/Monster.h \
+  /Users/lecheng/Downloads/CPPCoursework2020-v101\ 2/src/Psylc7Engine.h \
+  /Users/lecheng/Downloads/CPPCoursework2020-v101\ 2/src/Psylc7TileManager.h \
+  /Users/lecheng/Downloads/CPPCoursework2020-v101\ 2/src/TileManager.h \
+  /Users/lecheng/Downloads/CPPCoursework2020-v101\ 2/src/Psylc7Actor.h \
+  /Users/lecheng/Downloads/CPPCoursework2020-v101\ 2/src/MovementPosition.h \
+  /Users/lecheng/Downloads/CPPCoursework2020-v101\ 2/src/templates.h

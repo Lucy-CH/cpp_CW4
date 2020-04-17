@@ -7,6 +7,8 @@
 #include "header.h"
 #include "Psylc7Engine.hpp"
 #include "MainState.hpp"
+#include "Button.hpp"
+#include "JasonsObjectA.h"
 
 Psylc7Engine::Psylc7Engine()
 {
@@ -23,9 +25,12 @@ void Psylc7Engine::virtSetupBackgroundBuffer()
 {
     currentState->SetUpBackgroundBuffer();//white background
 }
-void Psylc7Engine::virtinitialiseObjects()
+                 
+int Psylc7Engine::virtInitialiseObjects()
 {
+    currentState->InitialiseObjects();
     
+    return 0;
 }
 
 void Psylc7Engine::virtKeyDown(int iKeyCode)

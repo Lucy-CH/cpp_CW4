@@ -47,9 +47,9 @@ dependencies: \
   /usr/local/include/SDL2/SDL_version.h \
   /usr/local/include/SDL2/SDL_ttf.h /usr/local/include/SDL2/SDL_image.h \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Character.hpp \
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/DisplayableObject.h \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Psylc7Engine.hpp \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/BaseEngine.h \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/DisplayableObject.h \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/DrawingSurface.h \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/FilterPoints.h \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/FontManager.h \
