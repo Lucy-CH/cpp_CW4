@@ -7,7 +7,7 @@
 
 #include "Button.hpp"
 
-Button::Button(Psylc7Engine* pEngine, std::string text, int xPos,int yPos,int width,int height)
+Button::Button(Psylc7Engine* pEngine, char* text, int xPos,int yPos,int width,int height)
 :DisplayableObject(pEngine)
 {
     this->m_text = text;
@@ -32,5 +32,7 @@ void Button::virtDraw()
         m_iCurrentScreenX, m_iCurrentScreenY,
         m_iCurrentScreenX + m_iDrawWidth - 1,
         m_iCurrentScreenY + m_iDrawHeight - 1,
-        0x00ff00);
+        0x000000);
+    
+    getEngine()->drawForegroundString( m_iCurrentScreenX+8,m_iCurrentScreenY+8,this->m_text,0xffffff,NULL );
 }

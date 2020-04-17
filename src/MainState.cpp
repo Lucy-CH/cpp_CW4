@@ -30,7 +30,6 @@ void MainState::SetUpBackgroundBuffer()
  
     engine->lockBackgroundForDrawing();
     engine->drawBackgroundOval(1151 - 30, 61 + 30, 1151 + 30, 61 - 30, 0xffff00);
-    std::cout << "IT IS HEREEEEEEE" <<std::endl;
     engine->unlockBackgroundForDrawing();
     engine->redrawDisplay();
     

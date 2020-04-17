@@ -18,12 +18,12 @@ class Button:
     public DisplayableObject
 {
 public:
-    Button(Psylc7Engine* pEngine,std::string text,int xPos,int yPos, int width,int height);
+    Button(Psylc7Engine* pEngine,char* text,int xPos,int yPos, int width,int height);
     ~Button();
     
     void virtDraw();
 private:
-    std::string m_text;
-    Psylc7Engine* engine;
+    char * m_text;
+
     
 };
