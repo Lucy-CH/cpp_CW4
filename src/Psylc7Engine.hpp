@@ -35,5 +35,6 @@ public:
 protected:
     State* currentState;
     MainState* menu;
+ 
    
 };

@@ -7,11 +7,12 @@
 #include "header.h"
 #include "Psylc7Engine.hpp"
 #include "MainState.hpp"
-
+#include "PlayState.hpp"
 
 Psylc7Engine::Psylc7Engine()
 {
     menu = new MainState(this);
+
     setState(menu);
 }
 

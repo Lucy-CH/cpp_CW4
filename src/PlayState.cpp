@@ -25,7 +25,7 @@ void PlayState:: update()
 
 void PlayState::SetUpBackgroundBuffer()
 {
-    
+   
 }
 void PlayState::InitialiseObjects()
 {

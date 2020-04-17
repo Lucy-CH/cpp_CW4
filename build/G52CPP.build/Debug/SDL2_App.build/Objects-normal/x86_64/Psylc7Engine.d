@@ -58,4 +58,5 @@ dependencies: \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/ImageManager.h \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/MainState.hpp \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/State.hpp \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Button.hpp
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Button.hpp \
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/PlayState.hpp
