@@ -48,5 +48,6 @@ void MainState::InitialiseObjects()
 }
  void MainState::MouseDown(int iButton, int iX, int iY)
 {
-
+    printf("Mouse clicked at %d %d\n", iX, iY);
+    
 }

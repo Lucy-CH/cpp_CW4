@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Psylc7Engine.cpp \
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/PlayState.cpp \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/header.h \
   /usr/local/include/SDL2/SDL.h /usr/local/include/SDL2/SDL_main.h \
   /usr/local/include/SDL2/SDL_stdinc.h \
@@ -56,5 +56,5 @@ dependencies: \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/SimpleImage.h \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/RawImage.h \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/ImageManager.h \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/MainState.hpp \
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/PlayState.hpp \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/State.hpp

@@ -27,6 +27,7 @@ public:
     ~Psylc7Engine();
     void virtSetupBackgroundBuffer();
     int virtInitialiseObjects();
+    void virtMouseDown(int iButton,int iX, int iY);
     void virtKeyDown(int iKeyCode);
     void setState(State* state);
     

@@ -7,13 +7,12 @@
 #include "header.h"
 #include "Psylc7Engine.hpp"
 #include "MainState.hpp"
-#include "Button.hpp"
-#include "JasonsObjectA.h"
+
 
 Psylc7Engine::Psylc7Engine()
 {
     menu = new MainState(this);
-    currentState = menu;
+    setState(menu);
 }
 
 Psylc7Engine::~Psylc7Engine()
@@ -24,6 +23,11 @@ Psylc7Engine::~Psylc7Engine()
 void Psylc7Engine::virtSetupBackgroundBuffer()
 {
     currentState->SetUpBackgroundBuffer();//white background
+}
+
+void Psylc7Engine::virtMouseDown(int iButton,int iX, int iY)
+{
+    currentState->MouseDown(iButton, iX, iY);
 }
                  
 int Psylc7Engine::virtInitialiseObjects()
@@ -39,5 +43,5 @@ void Psylc7Engine::virtKeyDown(int iKeyCode)
 }
 void Psylc7Engine::setState(State *state)
 {
-    
+    this->currentState = state;
 }
