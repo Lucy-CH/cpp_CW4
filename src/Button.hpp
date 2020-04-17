@@ -22,6 +22,7 @@ public:
     ~Button();
     
     void virtDraw();
+    bool checkMouthClick(int iX, int iY);
 private:
     char * m_text;
 

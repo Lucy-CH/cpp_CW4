@@ -36,3 +36,20 @@ void Button::virtDraw()
     
     getEngine()->drawForegroundString( m_iCurrentScreenX+8,m_iCurrentScreenY+8,this->m_text,0xffffff,NULL );
 }
+
+bool Button::checkMouthClick(int iX, int iY)
+{
+    bool isClicked = false;
+    
+    if(iX < (m_iCurrentScreenX + m_iDrawWidth - 1) && iX > m_iCurrentScreenX)
+    {
+        if(iY < ( m_iCurrentScreenY + m_iDrawHeight - 1) && iY > m_iCurrentScreenY){
+            isClicked = true;
+        }
+        else isClicked = false;
+        
+    }
+    
+        
+    return isClicked;
+}

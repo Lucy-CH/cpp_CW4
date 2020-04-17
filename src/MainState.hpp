@@ -7,7 +7,7 @@
 #pragma once
 
 #include "State.hpp"
-
+#include "Button.hpp"
 #ifndef MainState_hpp
 #define MainState_hpp
 
@@ -25,6 +25,7 @@ public:
     void SetUpBackgroundBuffer();
     void InitialiseObjects();
     void MouseDown(int iButton, int iX, int iY) ;
-
+protected:
+    Button* button1;
     
 };

@@ -42,12 +42,16 @@ void MainState::InitialiseObjects()
     engine->destroyOldObjects(true);
     /* Create an object array*/
     engine->createObjectArray(1);
+    button1 = new Button (engine,"START GAME",400,200,200,50);
+    engine->storeObjectInArray(0,button1);
     
-    engine->storeObjectInArray(0,new Button(engine,"START GAME",400,200,200,50));
     engine->setAllObjectsVisible(true);
 }
  void MainState::MouseDown(int iButton, int iX, int iY)
 {
     printf("Mouse clicked at %d %d\n", iX, iY);
+    if(button1->checkMouthClick(iX, iY)){
+        printf("Hello\n");
+    }
     
 }
