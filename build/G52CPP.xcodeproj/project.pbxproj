@@ -9,22 +9,22 @@
 /* Begin PBXAggregateTarget section */
 		2A4C61FBF29042CA85BB9090 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 1D469BB60BAA4846A7CC1432 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = C0165BDC59184FD3BA12954C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
-				68C3F4A9FAEE4940B3526874 /* CMake Rules */,
+				3935BAC62F5248D596F1FCD2 /* CMake Rules */,
 			);
 			dependencies = (
-				647F253061C74638A01C4FDB /* PBXTargetDependency */,
-				7DD7E18E20D045FABE399B53 /* PBXTargetDependency */,
+				E4346A6367864B85BA949C3E /* PBXTargetDependency */,
+				8E435E907F4C48FC84565E3F /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
 		};
 		88E14BBFBAE34A8886B7B5E1 /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = FC316D909895462A914C6E3B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 45E84E51505B41979B3BFD1A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
-				BEA38A7FF35144B3A6245B0C /* CMake Rules */,
+				6EE670C684654C87BFFD0DA1 /* CMake Rules */,
 			);
 			dependencies = (
 			);
@@ -34,91 +34,91 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		073909B7892D4A61AB0317A5 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BouncingBallMain.cpp */ = {isa = PBXBuildFile; fileRef = D825F91C349F43169963FE72 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BouncingBallMain.cpp */; };
-		0FBA24C28194429AA8931D43 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ImageMappingDemo.cpp */ = {isa = PBXBuildFile; fileRef = B0330A6168D448EDA5E35C81 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ImageMappingDemo.cpp */; };
-		1311BC1DA33D4178952FE2AE /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BaseEngine.cpp */ = {isa = PBXBuildFile; fileRef = A2D1C507B2514AA29DB79532 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BaseEngine.cpp */; };
-		1A7FF1C5CBF94BAC8D2FAD93 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoObject.cpp */ = {isa = PBXBuildFile; fileRef = 3082CADDBC954010A6C394B6 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoObject.cpp */; };
-		1ACF92B86978497180226ECA /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/mainfunction.cpp */ = {isa = PBXBuildFile; fileRef = 1D490D6E7C8C4FE781111133 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/mainfunction.cpp */; };
-		2096D8725A89469FB503BFAC /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoMain.cpp */ = {isa = PBXBuildFile; fileRef = 70FB47C520AD40E1818F9CE1 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoMain.cpp */; };
-		26D41D19AF4A4BB9A30A345F /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsTileManager.cpp */ = {isa = PBXBuildFile; fileRef = 4E1E81292B424C809D8A7399 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsTileManager.cpp */; };
-		27536B499AB344609D7A6925 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/State.cpp */ = {isa = PBXBuildFile; fileRef = FF5892B7E4F84800908F801C /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/State.cpp */; };
-		2980227D14874EC2B9CC53D4 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayingCardsDemo.cpp */ = {isa = PBXBuildFile; fileRef = 4A0A4A70A4304553B136FC41 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayingCardsDemo.cpp */; };
-		40FFAA25443640EE960421A6 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/FlashingDemo.cpp */ = {isa = PBXBuildFile; fileRef = 65790C3F3DA045C4BEA89DBD /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/FlashingDemo.cpp */; };
-		414799263A3B4D4E94181ABC /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ImageObjectDemo.cpp */ = {isa = PBXBuildFile; fileRef = 894A9D3601294B298E4E484C /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ImageObjectDemo.cpp */; };
-		44C1FB839CEA47539CA2F1B2 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MainState.hpp */ = {isa = PBXBuildFile; fileRef = DEC78EBE188E45CCB5C0EF58 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MainState.hpp */; };
-		45B1C366934A4820B4560BDB /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayState.hpp */ = {isa = PBXBuildFile; fileRef = 74503C7104C14FBE98121E73 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayState.hpp */; };
-		4B6A7DA1A5284104A84AD7BD /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsObjectA.cpp */ = {isa = PBXBuildFile; fileRef = B469FBDC55344E2FA39BB350 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsObjectA.cpp */; };
-		507F0EC366C848EFB3CD954C /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DisplayableObject.cpp */ = {isa = PBXBuildFile; fileRef = 7AF52C3B19404C2A95D25B51 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DisplayableObject.cpp */; };
-		53258EB212274BD4B3642398 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DrawingSurface.cpp */ = {isa = PBXBuildFile; fileRef = 8B53569EE93E47A992B6B22F /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DrawingSurface.cpp */; };
-		59DF0A851BB64C468582D047 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsDemoA.cpp */ = {isa = PBXBuildFile; fileRef = 2B936F81EA764CF69654BD61 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsDemoA.cpp */; };
-		668641EEFB1D41A68237A29C /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/SimpleImage.cpp */ = {isa = PBXBuildFile; fileRef = C8554A6A11CE469A9C320017 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/SimpleImage.cpp */; };
-		6FCBA7570E264B09B9C5BD20 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BouncingBall.cpp */ = {isa = PBXBuildFile; fileRef = F091B970B94241AE98A3C75A /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BouncingBall.cpp */; };
-		793F0F3C35744AD19B3A5083 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/SimpleDemo.cpp */ = {isa = PBXBuildFile; fileRef = 1FB6BE7F024B405FAC91EF58 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/SimpleDemo.cpp */; };
-		7DD21DF22AD848D3BB064656 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoTileManager.cpp */ = {isa = PBXBuildFile; fileRef = 125B4E533F2D4031B6746AC8 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoTileManager.cpp */; };
-		7F219FD9889E4730BD78F26C /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MainState.cpp */ = {isa = PBXBuildFile; fileRef = 7BA1621E8E3F4FAA89D31494 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MainState.cpp */; };
-		88979B6F12EC448A837EE0CB /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/StarfieldDemo.cpp */ = {isa = PBXBuildFile; fileRef = 4A0B94A9D6664648A887436D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/StarfieldDemo.cpp */; };
-		890810D25A1D426BABC30843 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JigsawDemo.cpp */ = {isa = PBXBuildFile; fileRef = E10703188A494F019EBAAB0D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JigsawDemo.cpp */; };
-		9491410E9F644CE8BD7B109B /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Button.cpp */ = {isa = PBXBuildFile; fileRef = BCFEE77E770F4C25B836C5A3 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Button.cpp */; };
-		9C0278CB85C64C7E92850D0D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/FontManager.cpp */ = {isa = PBXBuildFile; fileRef = DD882B75258043F09BD67D3B /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/FontManager.cpp */; };
-		A456FD29CED54CEDACEF1A0C /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/State.hpp */ = {isa = PBXBuildFile; fileRef = 18473550F7C94A7CA0ADB5CF /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/State.hpp */; };
-		B1818F64FF1F4228AE747DCC /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/RawImage.cpp */ = {isa = PBXBuildFile; fileRef = 21F1AA46175D4BA684D4D381 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/RawImage.cpp */; };
-		B79854062DBD439692AA23A3 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayState.cpp */ = {isa = PBXBuildFile; fileRef = C2C16AFDE1664E579E44D56D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayState.cpp */; };
-		C031CDA7047D4617AF7DDCB6 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Psylc7Engine.cpp */ = {isa = PBXBuildFile; fileRef = 9662DC0485034B5B986BE208 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Psylc7Engine.cpp */; };
-		D2FA7C56648042BF988AE7C4 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/TileManager.cpp */ = {isa = PBXBuildFile; fileRef = 6F00FA35F0DA46FA9D5D4D3D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/TileManager.cpp */; };
-		DC774DEC5BF5444B8D7F5248 /* /Users/lecheng/desktop/CPPCoursework2020-v101/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 59F6421CAB9A468C83EE3DAA /* /Users/lecheng/desktop/CPPCoursework2020-v101/CMakeLists.txt */; };
-		DD33BC9C332942E2A29C4793 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Button.hpp */ = {isa = PBXBuildFile; fileRef = E432594F634D4008B0579600 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Button.hpp */; };
-		EAD4A2B68A3B4926831A1DEA /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DraggingDemo.cpp */ = {isa = PBXBuildFile; fileRef = D8C9D3C67F1A483F88D1F5A1 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DraggingDemo.cpp */; };
-		EEF598473D694A6980B2647E /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Psylc7Engine.hpp */ = {isa = PBXBuildFile; fileRef = 158EDBE24B4F40EBB83A41A2 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Psylc7Engine.hpp */; };
-		F3A0014D47604648BB210196 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ZoomingDemo.cpp */ = {isa = PBXBuildFile; fileRef = 53CD4D202B4744B0A0C7D791 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ZoomingDemo.cpp */; };
+		06A4BAFE0CF84E9DBB0407B1 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BaseEngine.cpp */ = {isa = PBXBuildFile; fileRef = 275D053A9F0A40A19C542565 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BaseEngine.cpp */; };
+		175A634009774DD1BBFA2AEE /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/SimpleImage.cpp */ = {isa = PBXBuildFile; fileRef = C7311A4F4026495FA92CD82E /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/SimpleImage.cpp */; };
+		1CCD3469FC2142C8B06F325E /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MainState.hpp */ = {isa = PBXBuildFile; fileRef = 17A616F68D1E43D086B7D8F8 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MainState.hpp */; };
+		32C1D6E97AC54A1B94E54335 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BouncingBallMain.cpp */ = {isa = PBXBuildFile; fileRef = 5E55EC0E8CB04385A1B7ECAE /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BouncingBallMain.cpp */; };
+		35C236CEB6D641289A936CCD /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BouncingBall.cpp */ = {isa = PBXBuildFile; fileRef = 6031ADD74E9845C4BCDC414D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BouncingBall.cpp */; };
+		3D7F8B61286E4E18906BF403 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/State.hpp */ = {isa = PBXBuildFile; fileRef = DD445847A4EC4AC5B8297C57 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/State.hpp */; };
+		4CCA617F3884472FAF7DF49D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Button.cpp */ = {isa = PBXBuildFile; fileRef = 01C71618CFDC43B5864C6FD0 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Button.cpp */; };
+		4DEA2FDE4F584577A8B11597 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Psylc7Engine.cpp */ = {isa = PBXBuildFile; fileRef = BA08604D6195498F822F8BFC /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Psylc7Engine.cpp */; };
+		5BEA8882015542FB98772E6D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ImageObjectDemo.cpp */ = {isa = PBXBuildFile; fileRef = 4E0BC24998114FB0971914AD /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ImageObjectDemo.cpp */; };
+		5F8D3C3054334A4F9F4BC5B3 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsObjectA.cpp */ = {isa = PBXBuildFile; fileRef = 733969765283433390E8F6E1 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsObjectA.cpp */; };
+		606BD4BAF52240828CD9AEA3 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsTileManager.cpp */ = {isa = PBXBuildFile; fileRef = 6C74C466EA3A446FAC7FDF45 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsTileManager.cpp */; };
+		728CB9546F504B6FB06B1513 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayState.cpp */ = {isa = PBXBuildFile; fileRef = 704A2ABD98BD41EBBD4EF6F5 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayState.cpp */; };
+		761873501A5640F99CDC7E57 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MainState.cpp */ = {isa = PBXBuildFile; fileRef = 029900C4FBEA43519CA0445F /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MainState.cpp */; };
+		78FCACC5A4DA46DC844C8859 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JigsawDemo.cpp */ = {isa = PBXBuildFile; fileRef = 8FF657247639411F9638E726 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JigsawDemo.cpp */; };
+		7CC968397F1A4638AE2CAB06 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/State.cpp */ = {isa = PBXBuildFile; fileRef = C2A1D10BA513469B82A7557D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/State.cpp */; };
+		8F312AB1A62E4C2193566708 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoTileManager.cpp */ = {isa = PBXBuildFile; fileRef = EFA49CB7B3C94229B59EB696 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoTileManager.cpp */; };
+		90193867EC72472CB3220534 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/StarfieldDemo.cpp */ = {isa = PBXBuildFile; fileRef = 38ECFB6CD18943BD9EC61324 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/StarfieldDemo.cpp */; };
+		962C19F1C1654FA8928DBD34 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsDemoA.cpp */ = {isa = PBXBuildFile; fileRef = BA9D4DD580534EFAAB67F8C8 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsDemoA.cpp */; };
+		9B8AC6770FD3488D81A763A1 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/mainfunction.cpp */ = {isa = PBXBuildFile; fileRef = 0E7D69858D2241988892B9EB /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/mainfunction.cpp */; };
+		9D882CCD6E3D4808BB1F2887 /* /Users/lecheng/desktop/CPPCoursework2020-v101/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 7C3603AF8325462BA7D82ECA /* /Users/lecheng/desktop/CPPCoursework2020-v101/CMakeLists.txt */; };
+		ABFC4E0EA128473FB718BE63 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayState.hpp */ = {isa = PBXBuildFile; fileRef = 829DAD27AC1D4A26AA01E3A8 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayState.hpp */; };
+		AC74F3653DC347FFB445A2CD /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/TileManager.cpp */ = {isa = PBXBuildFile; fileRef = 61E4001967194AB7AC23C265 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/TileManager.cpp */; };
+		AD4980AF4345401BB5BAAED9 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/RawImage.cpp */ = {isa = PBXBuildFile; fileRef = 91A6F82A68E54C4B8700A5E3 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/RawImage.cpp */; };
+		AE24716C3B34467FACD8C12F /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/FlashingDemo.cpp */ = {isa = PBXBuildFile; fileRef = 5D926914E4FE47BA8F01CF09 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/FlashingDemo.cpp */; };
+		AF546286F2FD4D71A334A000 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/SimpleDemo.cpp */ = {isa = PBXBuildFile; fileRef = 494B07B8444D4F1AB11DB428 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/SimpleDemo.cpp */; };
+		AFA0D7840553431A93DEE9DA /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Button.hpp */ = {isa = PBXBuildFile; fileRef = 7F90EFC0747A451A902C9820 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Button.hpp */; };
+		B48820E4FC94415CAF5EC71F /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayingCardsDemo.cpp */ = {isa = PBXBuildFile; fileRef = 6F98D3E3EC27457EA5E238DC /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayingCardsDemo.cpp */; };
+		BE195C35C88E49918C482B58 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Psylc7Engine.hpp */ = {isa = PBXBuildFile; fileRef = 13ED4EDE9D0C43F9AE93DA64 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Psylc7Engine.hpp */; };
+		BF11EB2B218F4BDD9115782E /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ImageMappingDemo.cpp */ = {isa = PBXBuildFile; fileRef = 993BA0BB6D494465ADF52CEC /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ImageMappingDemo.cpp */; };
+		D01A3C25AC214FB6A5E7D0DC /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DrawingSurface.cpp */ = {isa = PBXBuildFile; fileRef = 123B839EE9004D69BBB75256 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DrawingSurface.cpp */; };
+		DF0F4D9C8A2744E7B904A139 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DisplayableObject.cpp */ = {isa = PBXBuildFile; fileRef = D659C3EA4F184381AF0162C9 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DisplayableObject.cpp */; };
+		E6F8BA6595C44F6F9FE01E4E /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DraggingDemo.cpp */ = {isa = PBXBuildFile; fileRef = E5823C6451204CAB80481C2E /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DraggingDemo.cpp */; };
+		E86882D0B2C540A2AED4F406 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/FontManager.cpp */ = {isa = PBXBuildFile; fileRef = F3BFCA5B65FA48B19F97DB78 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/FontManager.cpp */; };
+		EE5488A7417C4576886BFF54 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ZoomingDemo.cpp */ = {isa = PBXBuildFile; fileRef = 3EF8A30F851B4647A5B1A841 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ZoomingDemo.cpp */; };
+		F53573A6E7FD4270ADA24FF2 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoObject.cpp */ = {isa = PBXBuildFile; fileRef = 58D0CB4AE6AC46F6B03D3FD7 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoObject.cpp */; };
+		F7A9E59E28574E94A7903E57 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoMain.cpp */ = {isa = PBXBuildFile; fileRef = 4B7777EA9D7A4CF3A092379C /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoMain.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		35FC687687104821990EECBE /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Debug;
-		};
-		65C9CFA89A3643D7BA91170F /* MinSizeRel */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = MinSizeRel;
-		};
-		66D51C39B000499EB2D103C5 /* Release */ = {
+		00925E06224E4D7F8F167E2B /* Release */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Release;
 		};
-		71E54EAEE3D34946A9305E14 /* RelWithDebInfo */ = {
+		40CB9BBB43E648D5BF58085B /* RelWithDebInfo */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = RelWithDebInfo;
 		};
+		BB0E9805FF814110ABDDA24D /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		E82ACA4043384A80A5B4651D /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		133DCC70EB534C4FB2B57C90 /* PBXContainerItemProxy */ = {
+		3158CE32B0714781A6CFA489 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E212AF3DDA8542F4A1602AC2 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 88E14BBFBAE34A8886B7B5E1;
 			remoteInfo = ZERO_CHECK;
 		};
-		A253894B1FE641E0BDC28A57 /* PBXContainerItemProxy */ = {
+		4D833FD98A534671BBA1D0DA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E212AF3DDA8542F4A1602AC2 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5572199A52874D6FA4212123;
 			remoteInfo = SDL2_App;
 		};
-		C683D066343D4FCEB43950E2 /* PBXContainerItemProxy */ = {
+		E69A33E44A604DC1ABC51D49 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E212AF3DDA8542F4A1602AC2 /* Project object */;
 			proxyType = 1;
@@ -128,137 +128,137 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		125B4E533F2D4031B6746AC8 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoTileManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MazeDemoTileManager.cpp; path = src/MazeDemoTileManager.cpp; sourceTree = SOURCE_ROOT; };
-		158EDBE24B4F40EBB83A41A2 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Psylc7Engine.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Psylc7Engine.hpp; path = src/Psylc7Engine.hpp; sourceTree = SOURCE_ROOT; };
-		18473550F7C94A7CA0ADB5CF /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/State.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = State.hpp; path = src/State.hpp; sourceTree = SOURCE_ROOT; };
-		1D490D6E7C8C4FE781111133 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/mainfunction.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mainfunction.cpp; path = src/mainfunction.cpp; sourceTree = SOURCE_ROOT; };
-		1FB6BE7F024B405FAC91EF58 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/SimpleDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SimpleDemo.cpp; path = src/SimpleDemo.cpp; sourceTree = SOURCE_ROOT; };
-		21F1AA46175D4BA684D4D381 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/RawImage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RawImage.cpp; path = src/RawImage.cpp; sourceTree = SOURCE_ROOT; };
-		2B936F81EA764CF69654BD61 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsDemoA.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = JasonsDemoA.cpp; path = src/JasonsDemoA.cpp; sourceTree = SOURCE_ROOT; };
-		3082CADDBC954010A6C394B6 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoObject.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MazeDemoObject.cpp; path = src/MazeDemoObject.cpp; sourceTree = SOURCE_ROOT; };
-		3BEDD0E123964034A47B591E /* /Users/lecheng/desktop/CPPCoursework2020-v101/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		4A0A4A70A4304553B136FC41 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayingCardsDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PlayingCardsDemo.cpp; path = src/PlayingCardsDemo.cpp; sourceTree = SOURCE_ROOT; };
-		4A0B94A9D6664648A887436D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/StarfieldDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = StarfieldDemo.cpp; path = src/StarfieldDemo.cpp; sourceTree = SOURCE_ROOT; };
-		4E1E81292B424C809D8A7399 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsTileManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = JasonsTileManager.cpp; path = src/JasonsTileManager.cpp; sourceTree = SOURCE_ROOT; };
-		53CD4D202B4744B0A0C7D791 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ZoomingDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ZoomingDemo.cpp; path = src/ZoomingDemo.cpp; sourceTree = SOURCE_ROOT; };
-		59F6421CAB9A468C83EE3DAA /* /Users/lecheng/desktop/CPPCoursework2020-v101/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		65790C3F3DA045C4BEA89DBD /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/FlashingDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FlashingDemo.cpp; path = src/FlashingDemo.cpp; sourceTree = SOURCE_ROOT; };
-		6F00FA35F0DA46FA9D5D4D3D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/TileManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TileManager.cpp; path = src/TileManager.cpp; sourceTree = SOURCE_ROOT; };
-		70FB47C520AD40E1818F9CE1 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoMain.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MazeDemoMain.cpp; path = src/MazeDemoMain.cpp; sourceTree = SOURCE_ROOT; };
-		74503C7104C14FBE98121E73 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayState.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = PlayState.hpp; path = src/PlayState.hpp; sourceTree = SOURCE_ROOT; };
-		7AF52C3B19404C2A95D25B51 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DisplayableObject.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DisplayableObject.cpp; path = src/DisplayableObject.cpp; sourceTree = SOURCE_ROOT; };
-		7BA1621E8E3F4FAA89D31494 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MainState.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MainState.cpp; path = src/MainState.cpp; sourceTree = SOURCE_ROOT; };
-		894A9D3601294B298E4E484C /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ImageObjectDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ImageObjectDemo.cpp; path = src/ImageObjectDemo.cpp; sourceTree = SOURCE_ROOT; };
-		8B53569EE93E47A992B6B22F /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DrawingSurface.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DrawingSurface.cpp; path = src/DrawingSurface.cpp; sourceTree = SOURCE_ROOT; };
-		9662DC0485034B5B986BE208 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Psylc7Engine.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Psylc7Engine.cpp; path = src/Psylc7Engine.cpp; sourceTree = SOURCE_ROOT; };
-		A2D1C507B2514AA29DB79532 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BaseEngine.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BaseEngine.cpp; path = src/BaseEngine.cpp; sourceTree = SOURCE_ROOT; };
-		B0330A6168D448EDA5E35C81 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ImageMappingDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ImageMappingDemo.cpp; path = src/ImageMappingDemo.cpp; sourceTree = SOURCE_ROOT; };
-		B469FBDC55344E2FA39BB350 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsObjectA.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = JasonsObjectA.cpp; path = src/JasonsObjectA.cpp; sourceTree = SOURCE_ROOT; };
-		BCFEE77E770F4C25B836C5A3 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Button.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Button.cpp; path = src/Button.cpp; sourceTree = SOURCE_ROOT; };
-		C2C16AFDE1664E579E44D56D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayState.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PlayState.cpp; path = src/PlayState.cpp; sourceTree = SOURCE_ROOT; };
-		C8554A6A11CE469A9C320017 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/SimpleImage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SimpleImage.cpp; path = src/SimpleImage.cpp; sourceTree = SOURCE_ROOT; };
-		D825F91C349F43169963FE72 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BouncingBallMain.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BouncingBallMain.cpp; path = src/BouncingBallMain.cpp; sourceTree = SOURCE_ROOT; };
-		D8C9D3C67F1A483F88D1F5A1 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DraggingDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DraggingDemo.cpp; path = src/DraggingDemo.cpp; sourceTree = SOURCE_ROOT; };
-		DD882B75258043F09BD67D3B /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/FontManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FontManager.cpp; path = src/FontManager.cpp; sourceTree = SOURCE_ROOT; };
-		DEC78EBE188E45CCB5C0EF58 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MainState.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = MainState.hpp; path = src/MainState.hpp; sourceTree = SOURCE_ROOT; };
-		E10703188A494F019EBAAB0D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JigsawDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = JigsawDemo.cpp; path = src/JigsawDemo.cpp; sourceTree = SOURCE_ROOT; };
-		E432594F634D4008B0579600 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Button.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Button.hpp; path = src/Button.hpp; sourceTree = SOURCE_ROOT; };
-		EFCDDA1A3AE24E3B84BA681F /* SDL2_App */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = SDL2_App; sourceTree = BUILT_PRODUCTS_DIR; };
-		F091B970B94241AE98A3C75A /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BouncingBall.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BouncingBall.cpp; path = src/BouncingBall.cpp; sourceTree = SOURCE_ROOT; };
-		FF5892B7E4F84800908F801C /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/State.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = State.cpp; path = src/State.cpp; sourceTree = SOURCE_ROOT; };
+		01C71618CFDC43B5864C6FD0 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Button.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Button.cpp; path = src/Button.cpp; sourceTree = SOURCE_ROOT; };
+		029900C4FBEA43519CA0445F /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MainState.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MainState.cpp; path = src/MainState.cpp; sourceTree = SOURCE_ROOT; };
+		0E7D69858D2241988892B9EB /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/mainfunction.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mainfunction.cpp; path = src/mainfunction.cpp; sourceTree = SOURCE_ROOT; };
+		123B839EE9004D69BBB75256 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DrawingSurface.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DrawingSurface.cpp; path = src/DrawingSurface.cpp; sourceTree = SOURCE_ROOT; };
+		13ED4EDE9D0C43F9AE93DA64 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Psylc7Engine.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Psylc7Engine.hpp; path = src/Psylc7Engine.hpp; sourceTree = SOURCE_ROOT; };
+		17A616F68D1E43D086B7D8F8 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MainState.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = MainState.hpp; path = src/MainState.hpp; sourceTree = SOURCE_ROOT; };
+		275D053A9F0A40A19C542565 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BaseEngine.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BaseEngine.cpp; path = src/BaseEngine.cpp; sourceTree = SOURCE_ROOT; };
+		38ECFB6CD18943BD9EC61324 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/StarfieldDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = StarfieldDemo.cpp; path = src/StarfieldDemo.cpp; sourceTree = SOURCE_ROOT; };
+		3EF8A30F851B4647A5B1A841 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ZoomingDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ZoomingDemo.cpp; path = src/ZoomingDemo.cpp; sourceTree = SOURCE_ROOT; };
+		494B07B8444D4F1AB11DB428 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/SimpleDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SimpleDemo.cpp; path = src/SimpleDemo.cpp; sourceTree = SOURCE_ROOT; };
+		4B7777EA9D7A4CF3A092379C /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoMain.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MazeDemoMain.cpp; path = src/MazeDemoMain.cpp; sourceTree = SOURCE_ROOT; };
+		4E0BC24998114FB0971914AD /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ImageObjectDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ImageObjectDemo.cpp; path = src/ImageObjectDemo.cpp; sourceTree = SOURCE_ROOT; };
+		58D0CB4AE6AC46F6B03D3FD7 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoObject.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MazeDemoObject.cpp; path = src/MazeDemoObject.cpp; sourceTree = SOURCE_ROOT; };
+		5D926914E4FE47BA8F01CF09 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/FlashingDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FlashingDemo.cpp; path = src/FlashingDemo.cpp; sourceTree = SOURCE_ROOT; };
+		5E55EC0E8CB04385A1B7ECAE /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BouncingBallMain.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BouncingBallMain.cpp; path = src/BouncingBallMain.cpp; sourceTree = SOURCE_ROOT; };
+		6031ADD74E9845C4BCDC414D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BouncingBall.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BouncingBall.cpp; path = src/BouncingBall.cpp; sourceTree = SOURCE_ROOT; };
+		61E4001967194AB7AC23C265 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/TileManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TileManager.cpp; path = src/TileManager.cpp; sourceTree = SOURCE_ROOT; };
+		6C74C466EA3A446FAC7FDF45 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsTileManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = JasonsTileManager.cpp; path = src/JasonsTileManager.cpp; sourceTree = SOURCE_ROOT; };
+		6F98D3E3EC27457EA5E238DC /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayingCardsDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PlayingCardsDemo.cpp; path = src/PlayingCardsDemo.cpp; sourceTree = SOURCE_ROOT; };
+		704A2ABD98BD41EBBD4EF6F5 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayState.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PlayState.cpp; path = src/PlayState.cpp; sourceTree = SOURCE_ROOT; };
+		733969765283433390E8F6E1 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsObjectA.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = JasonsObjectA.cpp; path = src/JasonsObjectA.cpp; sourceTree = SOURCE_ROOT; };
+		7C3603AF8325462BA7D82ECA /* /Users/lecheng/desktop/CPPCoursework2020-v101/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7F90EFC0747A451A902C9820 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Button.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Button.hpp; path = src/Button.hpp; sourceTree = SOURCE_ROOT; };
+		829DAD27AC1D4A26AA01E3A8 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayState.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = PlayState.hpp; path = src/PlayState.hpp; sourceTree = SOURCE_ROOT; };
+		8FF657247639411F9638E726 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JigsawDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = JigsawDemo.cpp; path = src/JigsawDemo.cpp; sourceTree = SOURCE_ROOT; };
+		91A6F82A68E54C4B8700A5E3 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/RawImage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RawImage.cpp; path = src/RawImage.cpp; sourceTree = SOURCE_ROOT; };
+		993BA0BB6D494465ADF52CEC /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ImageMappingDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ImageMappingDemo.cpp; path = src/ImageMappingDemo.cpp; sourceTree = SOURCE_ROOT; };
+		B222694D2694445A917A6AB9 /* /Users/lecheng/desktop/CPPCoursework2020-v101/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		BA08604D6195498F822F8BFC /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Psylc7Engine.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Psylc7Engine.cpp; path = src/Psylc7Engine.cpp; sourceTree = SOURCE_ROOT; };
+		BA9D4DD580534EFAAB67F8C8 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsDemoA.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = JasonsDemoA.cpp; path = src/JasonsDemoA.cpp; sourceTree = SOURCE_ROOT; };
+		C2A1D10BA513469B82A7557D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/State.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = State.cpp; path = src/State.cpp; sourceTree = SOURCE_ROOT; };
+		C7311A4F4026495FA92CD82E /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/SimpleImage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SimpleImage.cpp; path = src/SimpleImage.cpp; sourceTree = SOURCE_ROOT; };
+		D3C94F0EDB6548E387453025 /* SDL2_App */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = SDL2_App; sourceTree = BUILT_PRODUCTS_DIR; };
+		D659C3EA4F184381AF0162C9 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DisplayableObject.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DisplayableObject.cpp; path = src/DisplayableObject.cpp; sourceTree = SOURCE_ROOT; };
+		DD445847A4EC4AC5B8297C57 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/State.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = State.hpp; path = src/State.hpp; sourceTree = SOURCE_ROOT; };
+		E5823C6451204CAB80481C2E /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DraggingDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DraggingDemo.cpp; path = src/DraggingDemo.cpp; sourceTree = SOURCE_ROOT; };
+		EFA49CB7B3C94229B59EB696 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoTileManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MazeDemoTileManager.cpp; path = src/MazeDemoTileManager.cpp; sourceTree = SOURCE_ROOT; };
+		F3BFCA5B65FA48B19F97DB78 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/FontManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FontManager.cpp; path = src/FontManager.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		1794E30C07E24764A20BF3BD /* SDL2_App */ = {
+		50BFBF13BF1C4649B2F44F41 /* ALL_BUILD */ = {
 			isa = PBXGroup;
 			children = (
-				CBE7F48B66C243DE84DE44ED /* Source Files */,
-				7EDF2322EADD44DEBA5E76E4 /* Header Files */,
-				59F6421CAB9A468C83EE3DAA /* /Users/lecheng/desktop/CPPCoursework2020-v101/CMakeLists.txt */,
+				BBF5F12BF0DF4D35BA8BC70F /* CMake Rules */,
+				B222694D2694445A917A6AB9 /* /Users/lecheng/desktop/CPPCoursework2020-v101/CMakeLists.txt */,
 			);
-			name = SDL2_App;
+			name = ALL_BUILD;
 			sourceTree = "<group>";
 		};
-		60A46840B0E140A096F2ABFD = {
+		63D9902F9E824F5B91A2DAF7 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				1794E30C07E24764A20BF3BD /* SDL2_App */,
-				E9E6F397E5484853A431564D /* ALL_BUILD */,
-				6D4B63CE37554DD297EC0F83 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		6D4B63CE37554DD297EC0F83 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EFCDDA1A3AE24E3B84BA681F /* SDL2_App */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7EDF2322EADD44DEBA5E76E4 /* Header Files */ = {
-			isa = PBXGroup;
-			children = (
-				E432594F634D4008B0579600 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Button.hpp */,
-				DEC78EBE188E45CCB5C0EF58 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MainState.hpp */,
-				74503C7104C14FBE98121E73 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayState.hpp */,
-				158EDBE24B4F40EBB83A41A2 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Psylc7Engine.hpp */,
-				18473550F7C94A7CA0ADB5CF /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/State.hpp */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		CBE7F48B66C243DE84DE44ED /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				A2D1C507B2514AA29DB79532 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BaseEngine.cpp */,
-				F091B970B94241AE98A3C75A /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BouncingBall.cpp */,
-				D825F91C349F43169963FE72 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BouncingBallMain.cpp */,
-				BCFEE77E770F4C25B836C5A3 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Button.cpp */,
-				7AF52C3B19404C2A95D25B51 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DisplayableObject.cpp */,
-				D8C9D3C67F1A483F88D1F5A1 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DraggingDemo.cpp */,
-				8B53569EE93E47A992B6B22F /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DrawingSurface.cpp */,
-				65790C3F3DA045C4BEA89DBD /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/FlashingDemo.cpp */,
-				DD882B75258043F09BD67D3B /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/FontManager.cpp */,
-				B0330A6168D448EDA5E35C81 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ImageMappingDemo.cpp */,
-				894A9D3601294B298E4E484C /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ImageObjectDemo.cpp */,
-				2B936F81EA764CF69654BD61 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsDemoA.cpp */,
-				B469FBDC55344E2FA39BB350 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsObjectA.cpp */,
-				4E1E81292B424C809D8A7399 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsTileManager.cpp */,
-				E10703188A494F019EBAAB0D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JigsawDemo.cpp */,
-				7BA1621E8E3F4FAA89D31494 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MainState.cpp */,
-				70FB47C520AD40E1818F9CE1 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoMain.cpp */,
-				3082CADDBC954010A6C394B6 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoObject.cpp */,
-				125B4E533F2D4031B6746AC8 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoTileManager.cpp */,
-				C2C16AFDE1664E579E44D56D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayState.cpp */,
-				4A0A4A70A4304553B136FC41 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayingCardsDemo.cpp */,
-				9662DC0485034B5B986BE208 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Psylc7Engine.cpp */,
-				21F1AA46175D4BA684D4D381 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/RawImage.cpp */,
-				1FB6BE7F024B405FAC91EF58 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/SimpleDemo.cpp */,
-				C8554A6A11CE469A9C320017 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/SimpleImage.cpp */,
-				4A0B94A9D6664648A887436D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/StarfieldDemo.cpp */,
-				FF5892B7E4F84800908F801C /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/State.cpp */,
-				6F00FA35F0DA46FA9D5D4D3D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/TileManager.cpp */,
-				53CD4D202B4744B0A0C7D791 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ZoomingDemo.cpp */,
-				1D490D6E7C8C4FE781111133 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/mainfunction.cpp */,
+				275D053A9F0A40A19C542565 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BaseEngine.cpp */,
+				6031ADD74E9845C4BCDC414D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BouncingBall.cpp */,
+				5E55EC0E8CB04385A1B7ECAE /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BouncingBallMain.cpp */,
+				01C71618CFDC43B5864C6FD0 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Button.cpp */,
+				D659C3EA4F184381AF0162C9 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DisplayableObject.cpp */,
+				E5823C6451204CAB80481C2E /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DraggingDemo.cpp */,
+				123B839EE9004D69BBB75256 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DrawingSurface.cpp */,
+				5D926914E4FE47BA8F01CF09 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/FlashingDemo.cpp */,
+				F3BFCA5B65FA48B19F97DB78 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/FontManager.cpp */,
+				993BA0BB6D494465ADF52CEC /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ImageMappingDemo.cpp */,
+				4E0BC24998114FB0971914AD /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ImageObjectDemo.cpp */,
+				BA9D4DD580534EFAAB67F8C8 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsDemoA.cpp */,
+				733969765283433390E8F6E1 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsObjectA.cpp */,
+				6C74C466EA3A446FAC7FDF45 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsTileManager.cpp */,
+				8FF657247639411F9638E726 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JigsawDemo.cpp */,
+				029900C4FBEA43519CA0445F /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MainState.cpp */,
+				4B7777EA9D7A4CF3A092379C /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoMain.cpp */,
+				58D0CB4AE6AC46F6B03D3FD7 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoObject.cpp */,
+				EFA49CB7B3C94229B59EB696 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoTileManager.cpp */,
+				704A2ABD98BD41EBBD4EF6F5 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayState.cpp */,
+				6F98D3E3EC27457EA5E238DC /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayingCardsDemo.cpp */,
+				BA08604D6195498F822F8BFC /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Psylc7Engine.cpp */,
+				91A6F82A68E54C4B8700A5E3 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/RawImage.cpp */,
+				494B07B8444D4F1AB11DB428 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/SimpleDemo.cpp */,
+				C7311A4F4026495FA92CD82E /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/SimpleImage.cpp */,
+				38ECFB6CD18943BD9EC61324 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/StarfieldDemo.cpp */,
+				C2A1D10BA513469B82A7557D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/State.cpp */,
+				61E4001967194AB7AC23C265 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/TileManager.cpp */,
+				3EF8A30F851B4647A5B1A841 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ZoomingDemo.cpp */,
+				0E7D69858D2241988892B9EB /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/mainfunction.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		DA64F93EE72A4B7A9FBDFDBF /* CMake Rules */ = {
+		6DF4AC7272B9494D801E16F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3C94F0EDB6548E387453025 /* SDL2_App */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBF5F12BF0DF4D35BA8BC70F /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		E9E6F397E5484853A431564D /* ALL_BUILD */ = {
+		E40ADF05B0F240A9B5B1C258 = {
 			isa = PBXGroup;
 			children = (
-				DA64F93EE72A4B7A9FBDFDBF /* CMake Rules */,
-				3BEDD0E123964034A47B591E /* /Users/lecheng/desktop/CPPCoursework2020-v101/CMakeLists.txt */,
+				FCF3E8437FA64D0BB7176B25 /* SDL2_App */,
+				50BFBF13BF1C4649B2F44F41 /* ALL_BUILD */,
+				6DF4AC7272B9494D801E16F1 /* Products */,
 			);
-			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		F6525ADB0C464FB488AD2C94 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F90EFC0747A451A902C9820 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Button.hpp */,
+				17A616F68D1E43D086B7D8F8 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MainState.hpp */,
+				829DAD27AC1D4A26AA01E3A8 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayState.hpp */,
+				13ED4EDE9D0C43F9AE93DA64 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Psylc7Engine.hpp */,
+				DD445847A4EC4AC5B8297C57 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/State.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		FCF3E8437FA64D0BB7176B25 /* SDL2_App */ = {
+			isa = PBXGroup;
+			children = (
+				63D9902F9E824F5B91A2DAF7 /* Source Files */,
+				F6525ADB0C464FB488AD2C94 /* Header Files */,
+				7C3603AF8325462BA7D82ECA /* /Users/lecheng/desktop/CPPCoursework2020-v101/CMakeLists.txt */,
+			);
+			name = SDL2_App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,19 +266,19 @@
 /* Begin PBXNativeTarget section */
 		5572199A52874D6FA4212123 /* SDL2_App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8481BCC49749479FAF4F9597 /* Build configuration list for PBXNativeTarget "SDL2_App" */;
+			buildConfigurationList = 23E17B9CCF3040A39E0ED338 /* Build configuration list for PBXNativeTarget "SDL2_App" */;
 			buildPhases = (
-				9BF17C3E31064AAC8B1F533F /* CMake PreBuild Rules */,
-				8DACA894575346D9ADB4D18E /* Sources */,
+				27ED81B0310B40E9834B97D2 /* CMake PreBuild Rules */,
+				E066E2CF81874046A59DEEDB /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2BFFFC9773BE48F7A40B49B4 /* PBXTargetDependency */,
+				0D783532E2D643F68C96D105 /* PBXTargetDependency */,
 			);
 			name = SDL2_App;
 			productName = SDL2_App;
-			productReference = EFCDDA1A3AE24E3B84BA681F /* SDL2_App */;
+			productReference = D3C94F0EDB6548E387453025 /* SDL2_App */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -290,18 +290,18 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1140;
 			};
-			buildConfigurationList = E5D1CD8B3A2F4F0DBB26D002 /* Build configuration list for PBXProject "G52CPP" */;
+			buildConfigurationList = 348A51433C924EE58B83F665 /* Build configuration list for PBXProject "G52CPP" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				35FC687687104821990EECBE /* Debug */,
-				66D51C39B000499EB2D103C5 /* Release */,
-				65C9CFA89A3643D7BA91170F /* MinSizeRel */,
-				71E54EAEE3D34946A9305E14 /* RelWithDebInfo */,
+				BB0E9805FF814110ABDDA24D /* Debug */,
+				00925E06224E4D7F8F167E2B /* Release */,
+				E82ACA4043384A80A5B4651D /* MinSizeRel */,
+				40CB9BBB43E648D5BF58085B /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 60A46840B0E140A096F2ABFD;
+			mainGroup = E40ADF05B0F240A9B5B1C258;
 			projectDirPath = ../;
 			projectRoot = "";
 			targets = (
@@ -313,48 +313,7 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		24BD6753EC354DDD8F66AD0E = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
-			showEnvVarsInLog = 0;
-		};
-		68C3F4A9FAEE4940B3526874 /* CMake Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "CMake Rules";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C /Users/lecheng/desktop/CPPCoursework2020-v101/build -f /Users/lecheng/desktop/CPPCoursework2020-v101/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
-			showEnvVarsInLog = 0;
-		};
-		9284D589DD4644FD85B349D0 = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
-			showEnvVarsInLog = 0;
-		};
-		9BF17C3E31064AAC8B1F533F /* CMake PreBuild Rules */ = {
+		27ED81B0310B40E9834B97D2 /* CMake PreBuild Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -365,7 +324,33 @@ exit 0";
 			shellScript = "make -C /Users/lecheng/desktop/CPPCoursework2020-v101/build -f /Users/lecheng/desktop/CPPCoursework2020-v101/build/CMakeScripts/SDL2_App_preBuildCommands.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
 			showEnvVarsInLog = 0;
 		};
-		BEA38A7FF35144B3A6245B0C /* CMake Rules */ = {
+		3935BAC62F5248D596F1FCD2 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/lecheng/desktop/CPPCoursework2020-v101/build -f /Users/lecheng/desktop/CPPCoursework2020-v101/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		4B81E076C81742E78C87EB3D = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		6EE670C684654C87BFFD0DA1 /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -376,128 +361,83 @@ exit 0";
 			shellScript = "make -C /Users/lecheng/desktop/CPPCoursework2020-v101/build -f /Users/lecheng/desktop/CPPCoursework2020-v101/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
 			showEnvVarsInLog = 0;
 		};
+		81390173A7DC41B3A81926A4 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8DACA894575346D9ADB4D18E /* Sources */ = {
+		E066E2CF81874046A59DEEDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1311BC1DA33D4178952FE2AE /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BaseEngine.cpp */,
-				6FCBA7570E264B09B9C5BD20 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BouncingBall.cpp */,
-				073909B7892D4A61AB0317A5 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BouncingBallMain.cpp */,
-				9491410E9F644CE8BD7B109B /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Button.cpp */,
-				507F0EC366C848EFB3CD954C /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DisplayableObject.cpp */,
-				EAD4A2B68A3B4926831A1DEA /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DraggingDemo.cpp */,
-				53258EB212274BD4B3642398 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DrawingSurface.cpp */,
-				40FFAA25443640EE960421A6 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/FlashingDemo.cpp */,
-				9C0278CB85C64C7E92850D0D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/FontManager.cpp */,
-				0FBA24C28194429AA8931D43 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ImageMappingDemo.cpp */,
-				414799263A3B4D4E94181ABC /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ImageObjectDemo.cpp */,
-				59DF0A851BB64C468582D047 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsDemoA.cpp */,
-				4B6A7DA1A5284104A84AD7BD /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsObjectA.cpp */,
-				26D41D19AF4A4BB9A30A345F /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsTileManager.cpp */,
-				890810D25A1D426BABC30843 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JigsawDemo.cpp */,
-				7F219FD9889E4730BD78F26C /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MainState.cpp */,
-				2096D8725A89469FB503BFAC /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoMain.cpp */,
-				1A7FF1C5CBF94BAC8D2FAD93 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoObject.cpp */,
-				7DD21DF22AD848D3BB064656 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoTileManager.cpp */,
-				B79854062DBD439692AA23A3 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayState.cpp */,
-				2980227D14874EC2B9CC53D4 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayingCardsDemo.cpp */,
-				C031CDA7047D4617AF7DDCB6 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Psylc7Engine.cpp */,
-				B1818F64FF1F4228AE747DCC /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/RawImage.cpp */,
-				793F0F3C35744AD19B3A5083 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/SimpleDemo.cpp */,
-				668641EEFB1D41A68237A29C /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/SimpleImage.cpp */,
-				88979B6F12EC448A837EE0CB /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/StarfieldDemo.cpp */,
-				27536B499AB344609D7A6925 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/State.cpp */,
-				D2FA7C56648042BF988AE7C4 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/TileManager.cpp */,
-				F3A0014D47604648BB210196 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ZoomingDemo.cpp */,
-				1ACF92B86978497180226ECA /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/mainfunction.cpp */,
+				06A4BAFE0CF84E9DBB0407B1 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BaseEngine.cpp */,
+				35C236CEB6D641289A936CCD /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BouncingBall.cpp */,
+				32C1D6E97AC54A1B94E54335 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/BouncingBallMain.cpp */,
+				4CCA617F3884472FAF7DF49D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Button.cpp */,
+				DF0F4D9C8A2744E7B904A139 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DisplayableObject.cpp */,
+				E6F8BA6595C44F6F9FE01E4E /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DraggingDemo.cpp */,
+				D01A3C25AC214FB6A5E7D0DC /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/DrawingSurface.cpp */,
+				AE24716C3B34467FACD8C12F /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/FlashingDemo.cpp */,
+				E86882D0B2C540A2AED4F406 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/FontManager.cpp */,
+				BF11EB2B218F4BDD9115782E /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ImageMappingDemo.cpp */,
+				5BEA8882015542FB98772E6D /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ImageObjectDemo.cpp */,
+				962C19F1C1654FA8928DBD34 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsDemoA.cpp */,
+				5F8D3C3054334A4F9F4BC5B3 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsObjectA.cpp */,
+				606BD4BAF52240828CD9AEA3 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JasonsTileManager.cpp */,
+				78FCACC5A4DA46DC844C8859 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/JigsawDemo.cpp */,
+				761873501A5640F99CDC7E57 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MainState.cpp */,
+				F7A9E59E28574E94A7903E57 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoMain.cpp */,
+				F53573A6E7FD4270ADA24FF2 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoObject.cpp */,
+				8F312AB1A62E4C2193566708 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/MazeDemoTileManager.cpp */,
+				728CB9546F504B6FB06B1513 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayState.cpp */,
+				B48820E4FC94415CAF5EC71F /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/PlayingCardsDemo.cpp */,
+				4DEA2FDE4F584577A8B11597 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/Psylc7Engine.cpp */,
+				AD4980AF4345401BB5BAAED9 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/RawImage.cpp */,
+				AF546286F2FD4D71A334A000 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/SimpleDemo.cpp */,
+				175A634009774DD1BBFA2AEE /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/SimpleImage.cpp */,
+				90193867EC72472CB3220534 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/StarfieldDemo.cpp */,
+				7CC968397F1A4638AE2CAB06 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/State.cpp */,
+				AC74F3653DC347FFB445A2CD /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/TileManager.cpp */,
+				EE5488A7417C4576886BFF54 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/ZoomingDemo.cpp */,
+				9B8AC6770FD3488D81A763A1 /* /Users/lecheng/desktop/CPPCoursework2020-v101/src/mainfunction.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2BFFFC9773BE48F7A40B49B4 /* PBXTargetDependency */ = {
+		0D783532E2D643F68C96D105 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 88E14BBFBAE34A8886B7B5E1 /* ZERO_CHECK */;
-			targetProxy = C683D066343D4FCEB43950E2 /* PBXContainerItemProxy */;
+			targetProxy = 3158CE32B0714781A6CFA489 /* PBXContainerItemProxy */;
 		};
-		647F253061C74638A01C4FDB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 88E14BBFBAE34A8886B7B5E1 /* ZERO_CHECK */;
-			targetProxy = 133DCC70EB534C4FB2B57C90 /* PBXContainerItemProxy */;
-		};
-		7DD7E18E20D045FABE399B53 /* PBXTargetDependency */ = {
+		8E435E907F4C48FC84565E3F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5572199A52874D6FA4212123 /* SDL2_App */;
-			targetProxy = A253894B1FE641E0BDC28A57 /* PBXContainerItemProxy */;
+			targetProxy = 4D833FD98A534671BBA1D0DA /* PBXContainerItemProxy */;
+		};
+		E4346A6367864B85BA949C3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88E14BBFBAE34A8886B7B5E1 /* ZERO_CHECK */;
+			targetProxy = E69A33E44A604DC1ABC51D49 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		022AA21F3F8D43ACBFCF85B0 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		02EB7785B3F74F71BB16CB56 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		0C636B0E771C4AE6ACD93431 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		2FF0DFDB86FE4A8F965B686E /* RelWithDebInfo */ = {
+		043EDE0C68394B8694FBD722 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -517,140 +457,7 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
-		324BA2E5CA664210B53491DE /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include/SDL2);
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=c++11'   -std=c++11";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libSDL2main.a /usr/local/lib/libSDL2.dylib -framework Cocoa /usr/local/lib/libSDL2_ttf.dylib /usr/local/lib/libSDL2_image.dylib";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = SDL2_App;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		412BABB3109D486C93818323 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
-				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build/build";
-			};
-			name = Release;
-		};
-		51B654D885DB42AA9C3F7022 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		5E73BD2F2E264FFEA176C90F /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		8DB2E1C558B14B6B87B24F8A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
-				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build/build";
-			};
-			name = Debug;
-		};
-		9B999289D2DB4D0BA5F34842 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include/SDL2);
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = "   '-std=c++11'   -std=c++11";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libSDL2main.a /usr/local/lib/libSDL2.dylib -framework Cocoa /usr/local/lib/libSDL2_ttf.dylib /usr/local/lib/libSDL2_image.dylib";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = SDL2_App;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		A6150312518A437FB46D4533 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include/SDL2);
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++11'   -std=c++11";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libSDL2main.a /usr/local/lib/libSDL2.dylib -framework Cocoa /usr/local/lib/libSDL2_ttf.dylib /usr/local/lib/libSDL2_image.dylib";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = SDL2_App;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		B9A5FAFBFC7042B2AF56624C /* MinSizeRel */ = {
+		1487B3A18914472DB9C4493D /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -675,16 +482,7 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		CA8E12B8E428475D876E2EF5 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
-				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build/build";
-			};
-			name = MinSizeRel;
-		};
-		D21E5596AAEC4E7C9D8E5DD8 /* Debug */ = {
+		282D31B94CF04725AA308A73 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -696,24 +494,44 @@ exit 0";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
+				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
-			name = Debug;
+			name = Release;
 		};
-		E5E4C41251CD476381A74D04 /* RelWithDebInfo */ = {
+		479D24F93ECB403CAC923284 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4F667B04A9CF44B2801FAC1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
 				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build/build";
 			};
-			name = RelWithDebInfo;
+			name = Debug;
 		};
-		F43366F1701844D0ABA0DB64 /* Debug */ = {
+		4F7846AC9BA14D5CB62F96B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -733,49 +551,231 @@ exit 0";
 			};
 			name = Debug;
 		};
+		76CAC7C97B334EA59E73F664 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/SDL2);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=c++11'   -std=c++11";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libSDL2main.a /usr/local/lib/libSDL2.dylib -framework Cocoa /usr/local/lib/libSDL2_ttf.dylib /usr/local/lib/libSDL2_image.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SDL2_App;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		82119529B8424FB3A996E5E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/SDL2);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "   '-std=c++11'   -std=c++11";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libSDL2main.a /usr/local/lib/libSDL2.dylib -framework Cocoa /usr/local/lib/libSDL2_ttf.dylib /usr/local/lib/libSDL2_image.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SDL2_App;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		94253C719DDC4FCA9BE495C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		C15F2134530D4F3A9308EC27 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build/build";
+			};
+			name = MinSizeRel;
+		};
+		C8503AD438EA40A8B799BA8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/SDL2);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++11'   -std=c++11";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libSDL2main.a /usr/local/lib/libSDL2.dylib -framework Cocoa /usr/local/lib/libSDL2_ttf.dylib /usr/local/lib/libSDL2_image.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SDL2_App;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		DB9284A251B04A678F8CE308 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		DF18A57F56AB480588756355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		E84090D8C80A48C8A7A3E479 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build/build";
+			};
+			name = RelWithDebInfo;
+		};
+		FDB46ED6AD3A494D9F655F96 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FFB0A977155E4C0585063952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/lecheng/desktop/CPPCoursework2020-v101/build/build";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D469BB60BAA4846A7CC1432 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		23E17B9CCF3040A39E0ED338 /* Build configuration list for PBXNativeTarget "SDL2_App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D21E5596AAEC4E7C9D8E5DD8 /* Debug */,
-				02EB7785B3F74F71BB16CB56 /* Release */,
-				5E73BD2F2E264FFEA176C90F /* MinSizeRel */,
-				2FF0DFDB86FE4A8F965B686E /* RelWithDebInfo */,
+				82119529B8424FB3A996E5E3 /* Debug */,
+				C8503AD438EA40A8B799BA8B /* Release */,
+				1487B3A18914472DB9C4493D /* MinSizeRel */,
+				76CAC7C97B334EA59E73F664 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		8481BCC49749479FAF4F9597 /* Build configuration list for PBXNativeTarget "SDL2_App" */ = {
+		348A51433C924EE58B83F665 /* Build configuration list for PBXProject "G52CPP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B999289D2DB4D0BA5F34842 /* Debug */,
-				A6150312518A437FB46D4533 /* Release */,
-				B9A5FAFBFC7042B2AF56624C /* MinSizeRel */,
-				324BA2E5CA664210B53491DE /* RelWithDebInfo */,
+				4F667B04A9CF44B2801FAC1A /* Debug */,
+				FFB0A977155E4C0585063952 /* Release */,
+				C15F2134530D4F3A9308EC27 /* MinSizeRel */,
+				E84090D8C80A48C8A7A3E479 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		E5D1CD8B3A2F4F0DBB26D002 /* Build configuration list for PBXProject "G52CPP" */ = {
+		45E84E51505B41979B3BFD1A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8DB2E1C558B14B6B87B24F8A /* Debug */,
-				412BABB3109D486C93818323 /* Release */,
-				CA8E12B8E428475D876E2EF5 /* MinSizeRel */,
-				E5E4C41251CD476381A74D04 /* RelWithDebInfo */,
+				4F7846AC9BA14D5CB62F96B1 /* Debug */,
+				282D31B94CF04725AA308A73 /* Release */,
+				479D24F93ECB403CAC923284 /* MinSizeRel */,
+				FDB46ED6AD3A494D9F655F96 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		FC316D909895462A914C6E3B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		C0165BDC59184FD3BA12954C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F43366F1701844D0ABA0DB64 /* Debug */,
-				51B654D885DB42AA9C3F7022 /* Release */,
-				0C636B0E771C4AE6ACD93431 /* MinSizeRel */,
-				022AA21F3F8D43ACBFCF85B0 /* RelWithDebInfo */,
+				94253C719DDC4FCA9BE495C6 /* Debug */,
+				DF18A57F56AB480588756355 /* Release */,
+				DB9284A251B04A678F8CE308 /* MinSizeRel */,
+				043EDE0C68394B8694FBD722 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

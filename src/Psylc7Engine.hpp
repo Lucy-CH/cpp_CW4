@@ -18,6 +18,7 @@
 
 class State;// forward declaring classes instead of using headers
 class MainState;
+class PlayState;
 
 class Psylc7Engine:
         public BaseEngine
@@ -35,6 +36,6 @@ public:
 protected:
     State* currentState;
     MainState* menu;
- 
+    PlayState* play;
    
 };

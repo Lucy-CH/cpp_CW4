@@ -12,7 +12,7 @@
 Psylc7Engine::Psylc7Engine()
 {
     menu = new MainState(this);
-
+    //play = new PlayState(this);
     setState(menu);
 }
 

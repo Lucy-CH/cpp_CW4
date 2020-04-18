@@ -25,7 +25,7 @@ void PlayState:: update()
 
 void PlayState::SetUpBackgroundBuffer()
 {
-   
+    engine->fillBackground(0xffffff);
 }
 void PlayState::InitialiseObjects()
 {
