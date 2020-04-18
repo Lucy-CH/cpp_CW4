@@ -12,8 +12,8 @@
 Psylc7Engine::Psylc7Engine()
 {
     menu = new MainState(this);
-    //play = new PlayState(this);
-    setState(menu);
+    play = new PlayState(this);
+    currentState = menu;
 }
 
 Psylc7Engine::~Psylc7Engine()
@@ -23,7 +23,8 @@ Psylc7Engine::~Psylc7Engine()
 
 void Psylc7Engine::virtSetupBackgroundBuffer()
 {
-    currentState->SetUpBackgroundBuffer();//white background
+  
+    currentState->SetUpBackgroundBuffer();
 }
 
 void Psylc7Engine::virtMouseDown(int iButton,int iX, int iY)
@@ -45,4 +46,11 @@ void Psylc7Engine::virtKeyDown(int iKeyCode)
 void Psylc7Engine::setState(State *state)
 {
     this->currentState = state;
+    this->virtSetupBackgroundBuffer();
+}
+
+State* Psylc7Engine::isPlaying()
+{
+     return play;
+
 }

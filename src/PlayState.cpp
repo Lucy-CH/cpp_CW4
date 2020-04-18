@@ -25,11 +25,19 @@ void PlayState:: update()
 
 void PlayState::SetUpBackgroundBuffer()
 {
+    engine->lockBackgroundForDrawing();
     engine->fillBackground(0xffffff);
+    engine->unlockBackgroundForDrawing();
+    engine->redrawDisplay();
+    
 }
+
 void PlayState::InitialiseObjects()
 {
-    
+    engine->drawableObjectsChanged();
+    /* Destroy the existing objects*/
+    engine->destroyOldObjects(true);
+    /* Create an object array*/
 }
 void PlayState::MouseDown(int iButton, int iX, int iY)
 {

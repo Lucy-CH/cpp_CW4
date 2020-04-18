@@ -8,10 +8,11 @@
 #include "MainState.hpp"
 #include "Button.hpp"
 
+
 MainState::MainState(Psylc7Engine *pEngine)
     :State(pEngine)
 {
-    
+   
 }
 
 MainState::~MainState()
@@ -29,8 +30,9 @@ void MainState::SetUpBackgroundBuffer()
     engine->fillBackground(0x02163B);
  
     engine->lockBackgroundForDrawing();
-    engine->drawBackgroundOval(1151 - 30, 61 + 30, 1151 + 30, 61 - 30, 0xffff00);
+    
     engine->unlockBackgroundForDrawing();
+  
     engine->redrawDisplay();
     
 }
@@ -52,6 +54,7 @@ void MainState::InitialiseObjects()
     printf("Mouse clicked at %d %d\n", iX, iY);
     if(button1->checkMouthClick(iX, iY)){
         printf("Hello\n");
+        engine->setState(engine->isPlaying());
     }
     
 }

@@ -27,5 +27,6 @@ public:
     void MouseDown(int iButton, int iX, int iY) ;
 protected:
     Button* button1;
+    PlayState* play;
     
 };

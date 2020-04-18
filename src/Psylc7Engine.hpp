@@ -31,7 +31,7 @@ public:
     void virtMouseDown(int iButton,int iX, int iY);
     void virtKeyDown(int iKeyCode);
     void setState(State* state);
-    
+    State* isPlaying();
     
 protected:
     State* currentState;
