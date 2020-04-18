@@ -47,6 +47,8 @@ void Psylc7Engine::setState(State *state)
 {
     this->currentState = state;
     this->virtSetupBackgroundBuffer();
+    this->virtInitialiseObjects();
+
 }
 
 State* Psylc7Engine::isPlaying()

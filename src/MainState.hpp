@@ -8,6 +8,7 @@
 
 #include "State.hpp"
 #include "Button.hpp"
+#include "ImageManager.h"
 #ifndef MainState_hpp
 #define MainState_hpp
 
@@ -28,5 +29,6 @@ public:
 protected:
     Button* button1;
     PlayState* play;
+    SimpleImage image;
     
 };

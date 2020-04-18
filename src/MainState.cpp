@@ -30,7 +30,8 @@ void MainState::SetUpBackgroundBuffer()
     engine->fillBackground(0x02163B);
  
     engine->lockBackgroundForDrawing();
-    
+    image = engine->loadImage("preview-day-platformer.png",true);
+    image.renderImage(engine->getBackgroundSurface(), 0, 0, 0, 0, 800, 600);
     engine->unlockBackgroundForDrawing();
   
     engine->redrawDisplay();
