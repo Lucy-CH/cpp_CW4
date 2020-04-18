@@ -31,7 +31,9 @@ void MainState::SetUpBackgroundBuffer()
  
     engine->lockBackgroundForDrawing();
     image = engine->loadImage("preview-day-platformer.png",true);
-    image.renderImage(engine->getBackgroundSurface(), 0, 0, 0, 0, 800, 600);
+    
+    SimpleImage im2 = ImageManager::get()->resizeTo(image, engine->getWindowWidth(), engine->getWindowHeight()); 
+    im2.renderImage(engine->getBackgroundSurface(), 0, 0,0,0, engine->getWindowWidth(), engine->getWindowHeight());
     engine->unlockBackgroundForDrawing();
   
     engine->redrawDisplay();
