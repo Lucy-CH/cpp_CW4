@@ -34,7 +34,8 @@ void Button::virtDraw()
         m_iCurrentScreenY + m_iDrawHeight - 1,
         0x000000);
     
-    getEngine()->drawForegroundString( m_iCurrentScreenX+8,m_iCurrentScreenY+8,this->m_text,0xffffff,NULL );
+    getEngine()->drawForegroundString( m_iCurrentScreenX+8,m_iCurrentScreenY+8,this->m_text,0xffffff,NULL);
+    
 }
 
 bool Button::checkMouthClick(int iX, int iY)

@@ -43,3 +43,7 @@ void PlayState::MouseDown(int iButton, int iX, int iY)
 {
     
 }
+void PlayState::virtDrawStringsOnTop()
+{
+    
+}

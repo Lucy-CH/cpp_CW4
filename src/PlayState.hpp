@@ -24,4 +24,5 @@ public:
     void SetUpBackgroundBuffer();
     void InitialiseObjects();
     void MouseDown(int iButton, int iX, int iY) ;
+    void virtDrawStringsOnTop();
 };

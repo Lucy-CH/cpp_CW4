@@ -30,9 +30,10 @@ void MainState::SetUpBackgroundBuffer()
     engine->fillBackground(0x02163B);
  
     engine->lockBackgroundForDrawing();
+
     image = engine->loadImage("preview-day-platformer.png",true);
     
-    SimpleImage im2 = ImageManager::get()->resizeTo(image, engine->getWindowWidth(), engine->getWindowHeight()); 
+    SimpleImage im2 = ImageManager::get()->resizeTo(image, engine->getWindowWidth(), engine->getWindowHeight());
     im2.renderImage(engine->getBackgroundSurface(), 0, 0,0,0, engine->getWindowWidth(), engine->getWindowHeight());
     engine->unlockBackgroundForDrawing();
   
@@ -47,7 +48,7 @@ void MainState::InitialiseObjects()
     engine->destroyOldObjects(true);
     /* Create an object array*/
     engine->createObjectArray(1);
-    button1 = new Button (engine,"START GAME",400,200,200,50);
+    button1 = new Button (engine,"START GAME",(engine->getWindowWidth())*0.4,500,200,50);
     engine->storeObjectInArray(0,button1);
     
     engine->setAllObjectsVisible(true);
@@ -60,4 +61,12 @@ void MainState::InitialiseObjects()
         engine->setState(engine->isPlaying());
     }
     
+}
+
+void MainState::virtDrawStringsOnTop()
+{   printf("Hmmm\n");
+    char buf[128];
+    sprintf(buf, "Tower of the Sorcer");
+    engine->drawForegroundString(engine->getWindowWidth()*0.35, 100, buf, 0x000000, NULL);
+    //engine->drawBackgroundString(150, 40, "Hello", 0xff00ff,NULL);
 }

@@ -32,6 +32,7 @@ public:
     void virtKeyDown(int iKeyCode);
     void setState(State* state);
     State* isPlaying();
+    void virtDrawStringsOnTop();
     
 protected:
     State* currentState;

@@ -56,3 +56,8 @@ State* Psylc7Engine::isPlaying()
      return play;
 
 }
+void Psylc7Engine::virtDrawStringsOnTop()
+{
+
+    currentState->virtDrawStringsOnTop();
+}

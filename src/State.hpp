@@ -24,6 +24,7 @@ public:
     virtual void SetUpBackgroundBuffer() = 0;
     virtual void InitialiseObjects() = 0;
     virtual void MouseDown(int iButton, int iX, int iY) = 0;
+    virtual void virtDrawStringsOnTop() =0;
 protected:
     Psylc7Engine *engine;
     
