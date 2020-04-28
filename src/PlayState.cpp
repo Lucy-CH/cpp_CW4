@@ -6,7 +6,7 @@
 //
 #include "header.h"
 #include "Psylc7Engine.hpp"
-
+#include "Character.hpp"
 #include "PlayState.hpp"
 PlayState::PlayState(Psylc7Engine* pEngine)
 :State(pEngine)
@@ -38,6 +38,11 @@ void PlayState::InitialiseObjects()
     /* Destroy the existing objects*/
     engine->destroyOldObjects(true);
     /* Create an object array*/
+    engine->createObjectArray(1);
+    engine->storeObjectInArray(0, new Character(engine));
+    engine->setAllObjectsVisible(true);
+    
+    
 }
 void PlayState::MouseDown(int iButton, int iX, int iY)
 {

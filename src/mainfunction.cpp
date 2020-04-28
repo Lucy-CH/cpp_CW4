@@ -19,8 +19,8 @@
 #include "JasonsDemoA.h"
 #include "Psylc7Engine.hpp"
 // These are passed to initialise to determine the window size
-const int BaseScreenWidth = 800;
-const int BaseScreenHeight = 600;
+const int BaseScreenWidth = 640;
+const int BaseScreenHeight = 640;
 
 
 // This was only moved outside of main so that I can do some memory checking once it ends.

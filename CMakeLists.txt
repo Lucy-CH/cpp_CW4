@@ -51,6 +51,8 @@ src/Button.cpp
 src/Button.hpp
 src/PlayState.cpp
 src/PlayState.hpp
+src/Character.hpp
+src/Character.cpp
 
 
 )
