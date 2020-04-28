@@ -8,39 +8,39 @@ default:
 # link.  This forces Xcode to relink the targets from scratch.  It
 # does not seem to check these dependencies itself.
 PostBuild.SDL2_App.Debug:
-/Users/lecheng/desktop/CPPCoursework2020-v101/build/Debug/SDL2_App:\
+/Users/lecheng/Desktop/CPPCoursework2020-v101/build/Debug/SDL2_App:\
 	/usr/local/lib/libSDL2main.a\
 	/usr/local/lib/libSDL2.dylib\
 	/usr/local/lib/libSDL2_ttf.dylib\
 	/usr/local/lib/libSDL2_image.dylib
-	/bin/rm -f /Users/lecheng/desktop/CPPCoursework2020-v101/build/Debug/SDL2_App
+	/bin/rm -f /Users/lecheng/Desktop/CPPCoursework2020-v101/build/Debug/SDL2_App
 
 
 PostBuild.SDL2_App.Release:
-/Users/lecheng/desktop/CPPCoursework2020-v101/build/Release/SDL2_App:\
+/Users/lecheng/Desktop/CPPCoursework2020-v101/build/Release/SDL2_App:\
 	/usr/local/lib/libSDL2main.a\
 	/usr/local/lib/libSDL2.dylib\
 	/usr/local/lib/libSDL2_ttf.dylib\
 	/usr/local/lib/libSDL2_image.dylib
-	/bin/rm -f /Users/lecheng/desktop/CPPCoursework2020-v101/build/Release/SDL2_App
+	/bin/rm -f /Users/lecheng/Desktop/CPPCoursework2020-v101/build/Release/SDL2_App
 
 
 PostBuild.SDL2_App.MinSizeRel:
-/Users/lecheng/desktop/CPPCoursework2020-v101/build/MinSizeRel/SDL2_App:\
+/Users/lecheng/Desktop/CPPCoursework2020-v101/build/MinSizeRel/SDL2_App:\
 	/usr/local/lib/libSDL2main.a\
 	/usr/local/lib/libSDL2.dylib\
 	/usr/local/lib/libSDL2_ttf.dylib\
 	/usr/local/lib/libSDL2_image.dylib
-	/bin/rm -f /Users/lecheng/desktop/CPPCoursework2020-v101/build/MinSizeRel/SDL2_App
+	/bin/rm -f /Users/lecheng/Desktop/CPPCoursework2020-v101/build/MinSizeRel/SDL2_App
 
 
 PostBuild.SDL2_App.RelWithDebInfo:
-/Users/lecheng/desktop/CPPCoursework2020-v101/build/RelWithDebInfo/SDL2_App:\
+/Users/lecheng/Desktop/CPPCoursework2020-v101/build/RelWithDebInfo/SDL2_App:\
 	/usr/local/lib/libSDL2main.a\
 	/usr/local/lib/libSDL2.dylib\
 	/usr/local/lib/libSDL2_ttf.dylib\
 	/usr/local/lib/libSDL2_image.dylib
-	/bin/rm -f /Users/lecheng/desktop/CPPCoursework2020-v101/build/RelWithDebInfo/SDL2_App
+	/bin/rm -f /Users/lecheng/Desktop/CPPCoursework2020-v101/build/RelWithDebInfo/SDL2_App
 
 
 

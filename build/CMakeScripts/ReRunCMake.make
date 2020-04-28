@@ -5,13 +5,13 @@ empty:=
 space:= $(empty) $(empty)
 spaceplus:= $(empty)\ $(empty)
 
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/lecheng/desktop/CPPCoursework2020-v101/CMakeLists.txt))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/lecheng/desktop/CPPCoursework2020-v101/build/CMakeFiles/3.16.5/CMakeCCompiler.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/lecheng/desktop/CPPCoursework2020-v101/build/CMakeFiles/3.16.5/CMakeCXXCompiler.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/lecheng/desktop/CPPCoursework2020-v101/build/CMakeFiles/3.16.5/CMakeSystem.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/lecheng/desktop/CPPCoursework2020-v101/cmake/FindSDL2.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/lecheng/desktop/CPPCoursework2020-v101/cmake/FindSDL2_image.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/lecheng/desktop/CPPCoursework2020-v101/cmake/FindSDL2_ttf.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/lecheng/Desktop/CPPCoursework2020-v101/CMakeLists.txt))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/lecheng/Desktop/CPPCoursework2020-v101/build/CMakeFiles/3.16.5/CMakeCCompiler.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/lecheng/Desktop/CPPCoursework2020-v101/build/CMakeFiles/3.16.5/CMakeCXXCompiler.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/lecheng/Desktop/CPPCoursework2020-v101/build/CMakeFiles/3.16.5/CMakeSystem.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/lecheng/Desktop/CPPCoursework2020-v101/cmake/FindSDL2.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/lecheng/Desktop/CPPCoursework2020-v101/cmake/FindSDL2_image.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/lecheng/Desktop/CPPCoursework2020-v101/cmake/FindSDL2_ttf.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/CMakeCInformation.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/CMakeCXXInformation.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake))
@@ -38,5 +38,5 @@ TARGETS += $(subst $(space),$(spaceplus),$(wildcard /usr/local/Cellar/cmake/3.16
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/Platform/Darwin.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/Platform/UnixPaths.cmake))
 
-/Users/lecheng/desktop/CPPCoursework2020-v101/build/CMakeFiles/cmake.check_cache: $(TARGETS)
-	/usr/local/Cellar/cmake/3.16.5/bin/cmake -H/Users/lecheng/desktop/CPPCoursework2020-v101 -B/Users/lecheng/desktop/CPPCoursework2020-v101/build
+/Users/lecheng/Desktop/CPPCoursework2020-v101/build/CMakeFiles/cmake.check_cache: $(TARGETS)
+	/usr/local/Cellar/cmake/3.16.5/bin/cmake -H/Users/lecheng/Desktop/CPPCoursework2020-v101 -B/Users/lecheng/Desktop/CPPCoursework2020-v101/build

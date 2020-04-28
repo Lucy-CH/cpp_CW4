@@ -22,8 +22,23 @@ public:
     Character(Psylc7Engine* pEngine);
     ~Character();
     void virtDraw();
+    //Accessors
+    inline const int& gethp() const {return this->hp;}
+    inline const int& getatk() const {return this->atk;}
+    inline const int& getdef() const {return this->def;}
+    inline const int& getgold() const {return this->gold;}
     
-private:
+    //Modifiers
+    void sethp(int iChange){this->hp += iChange;}
+    void setatk(int iChange){this->atk += iChange;}
+    void setdef(int iChange){this->def += iChange;}
+    void setgold(int iChange){this->gold += iChange;}
+    
+protected:
     SimpleImage character;
+    int hp;
+    int atk;
+    int def;
+    int gold;
     
 };

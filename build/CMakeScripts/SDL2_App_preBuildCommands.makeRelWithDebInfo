@@ -6,4 +6,4 @@ all: \
 
 
 SDL2_App_buildpart_0: 
-	/usr/local/Cellar/cmake/3.16.5/bin/cmake -E copy_directory /Users/lecheng/desktop/CPPCoursework2020-v101/src/resources /Users/lecheng/desktop/CPPCoursework2020-v101/build/Debug
+	/usr/local/Cellar/cmake/3.16.5/bin/cmake -E copy_directory /Users/lecheng/Desktop/CPPCoursework2020-v101/src/resources /Users/lecheng/Desktop/CPPCoursework2020-v101/build/Debug

@@ -2,9 +2,9 @@
 # Custom rules for ALL_BUILD
 .SUFFIXES: 
 all: \
-	/Users/lecheng/desktop/CPPCoursework2020-v101/build/CMakeFiles/ALL_BUILD
+	/Users/lecheng/Desktop/CPPCoursework2020-v101/build/CMakeFiles/ALL_BUILD
 
 
-/Users/lecheng/desktop/CPPCoursework2020-v101/build/CMakeFiles/ALL_BUILD: 
+/Users/lecheng/Desktop/CPPCoursework2020-v101/build/CMakeFiles/ALL_BUILD: 
 	echo ""
 	echo Build\ all\ projects

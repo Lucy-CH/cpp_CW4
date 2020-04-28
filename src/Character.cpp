@@ -10,12 +10,17 @@
 Character::Character(Psylc7Engine* pEngine)
     :DisplayableObject(pEngine)
 {
+    hp = 1000;
+    atk = 100;
+    def = 100;
+    gold = 0;
+    
     character = pEngine -> loadImage("./gameres/Character/Hero.png",false);
     m_iStartDrawPosX = -16;
     m_iStartDrawPosY = -16;
     
     m_iCurrentScreenX = (getEngine()->getWindowWidth())/2;
-    m_iCurrentScreenY = (getEngine()->getWindowHeight()) - 32;
+    m_iCurrentScreenY = (getEngine()->getWindowHeight()) - 16 -160;
 }
 
 Character::~Character()

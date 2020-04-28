@@ -8,6 +8,7 @@
 #include "Psylc7Engine.hpp"
 #include "Character.hpp"
 #include "PlayState.hpp"
+#include "Statusbox.hpp"
 PlayState::PlayState(Psylc7Engine* pEngine)
 :State(pEngine)
 {
@@ -38,8 +39,9 @@ void PlayState::InitialiseObjects()
     /* Destroy the existing objects*/
     engine->destroyOldObjects(true);
     /* Create an object array*/
-    engine->createObjectArray(1);
+    engine->createObjectArray(2);
     engine->storeObjectInArray(0, new Character(engine));
+    engine->storeObjectInArray(1, new Statusbox(engine));
     engine->setAllObjectsVisible(true);
     
     
