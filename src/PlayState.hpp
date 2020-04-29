@@ -13,7 +13,7 @@
 #include <stdio.h>
 
 #endif /* PlayState_hpp */
-
+class Character;
 class PlayState:
     public State
 {
@@ -25,4 +25,6 @@ public:
     void InitialiseObjects();
     void MouseDown(int iButton, int iX, int iY) ;
     void virtDrawStringsOnTop();
+protected:
+    Character* character;
 };

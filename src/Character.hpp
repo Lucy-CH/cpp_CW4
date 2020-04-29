@@ -19,20 +19,22 @@ class Character:
     public DisplayableObject
 {
 public:
+    friend class Statusbox;
     Character(Psylc7Engine* pEngine);
     ~Character();
     void virtDraw();
     //Accessors
-    inline const int& gethp() const {return this->hp;}
-    inline const int& getatk() const {return this->atk;}
-    inline const int& getdef() const {return this->def;}
-    inline const int& getgold() const {return this->gold;}
+    int gethp();
+    int getatk();
+    int getdef();
+    int getgold();
     
     //Modifiers
-    void sethp(int iChange){this->hp += iChange;}
-    void setatk(int iChange){this->atk += iChange;}
-    void setdef(int iChange){this->def += iChange;}
-    void setgold(int iChange){this->gold += iChange;}
+    void sethp(int iChange);
+    void setatk(int iChange);
+    void setdef(int iChange);
+    void setgold(int iChange);
+    
     
 protected:
     SimpleImage character;
@@ -40,5 +42,7 @@ protected:
     int atk;
     int def;
     int gold;
+    
+
     
 };

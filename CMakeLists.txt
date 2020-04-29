@@ -53,8 +53,7 @@ src/PlayState.cpp
 src/PlayState.hpp
 src/Character.hpp
 src/Character.cpp
-src/Statusbox.cpp
-src/Statusbox.hpp
+
 
 )
 

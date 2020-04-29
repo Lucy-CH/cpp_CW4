@@ -30,8 +30,8 @@ void MainState::SetUpBackgroundBuffer()
     engine->fillBackground(0x02163B);
  
     engine->lockBackgroundForDrawing();
-
-    image = engine->loadImage("preview-day-platformer.png",true);
+        
+    image = engine->loadImage("scene.png",true);
     
     SimpleImage im2 = ImageManager::get()->resizeTo(image, engine->getWindowWidth(), engine->getWindowHeight());
     im2.renderImage(engine->getBackgroundSurface(), 0, 0,0,0, engine->getWindowWidth(), engine->getWindowHeight());

@@ -27,6 +27,18 @@ Character::~Character()
 {
     
 }
+//Accessors
+int Character::gethp(){return this->hp;}
+int Character::getatk(){return this->atk;}
+
+int Character::getdef()  {return this->def;}
+int Character::getgold()  {return this->gold;}
+
+//Modifiers
+void Character::sethp(int iChange){this->hp += iChange;}
+void Character::setatk(int iChange){this->atk += iChange;}
+void Character::setdef(int iChange){this->def += iChange;}
+void Character::setgold(int iChange){this->gold += iChange;}
 
 void Character::virtDraw()
 {
