@@ -35,7 +35,7 @@ int doProgram(int argc, char *argv[])
 	//SimpleDemo oMain;
 	//ImageObjectDemo oMain; // Shows drawing images to the foreground and background
 	//BouncingBallMain oMain; // A ball bouncing around with images and shapes drawn
-	//MazeDemoMain oMain; // Demonstrates a tile manager being used and updated
+    //MazeDemoMain oMain; // Demonstrates a tile manager being used and updated
 	//StarfieldDemo oMain; // Does a simple scrolling background
 	
 	//DraggingDemo oMain; // Includes dragable images and image objects

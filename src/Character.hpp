@@ -23,6 +23,7 @@ public:
     Character(Psylc7Engine* pEngine);
     ~Character();
     void virtDraw();
+    void virtDoUpdate(int iCurrentTime);
     //Accessors
     int gethp();
     int getatk();
@@ -36,13 +37,15 @@ public:
     void setgold(int iChange);
     
     
+    
 protected:
     SimpleImage character;
     int hp;
     int atk;
     int def;
     int gold;
-    
+    int iconx;
+    int icony;
 
     
 };
