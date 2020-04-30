@@ -7,6 +7,7 @@
 #pragma once
 #include "DisplayableObject.h"
 #include "Psylc7Engine.hpp"
+#include "Psylc7TileManager.hpp"
 
 #ifndef Character_hpp
 #define Character_hpp
@@ -20,16 +21,20 @@ class Character:
 {
 public:
     friend class Statusbox;
-    Character(Psylc7Engine* pEngine,int ix,int iy);
+    Character(Psylc7Engine* pEngine,int ix,int iy, Psylc7TileManager* pTile);
     ~Character();
     void virtDraw();
     void virtDoUpdate(int iCurrentTime);
     void MoveBodyImage();
+    int checkTileNumber();
+    
     //Accessors
     int gethp();
     int getatk();
     int getdef();
     int getgold();
+    int getCurrentX(){return m_iCurrentScreenX;}
+    int getCurrentY(){return m_iCurrentScreenY;}
     
     //Modifiers
     void sethp(int iChange);
@@ -41,6 +46,7 @@ public:
     
 protected:
     SimpleImage character;
+    Psylc7TileManager* Ptile;
     int hp;
     int atk;
     int def;

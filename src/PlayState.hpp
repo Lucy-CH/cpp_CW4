@@ -30,5 +30,6 @@ public:
 protected:
     Character* character;
     Psylc7TileManager m_tile;
+    Psylc7TileManager* p_m_tile = &m_tile;
     
 };

@@ -7,9 +7,18 @@
 #include "header.h"
 #include "Character.hpp"
 
-Character::Character(Psylc7Engine* pEngine,int ix,int iy)
+Character::Character(Psylc7Engine* pEngine,int ix,int iy, Psylc7TileManager* pTile)
     :DisplayableObject(pEngine)
 {
+    this->Ptile = pTile;
+    std:: cout << "Tile loaded at character"<< std::endl;
+    for ( int y = 0 ; y < 11 ; y++ )
+    {
+      for ( int x = 0 ; x < 11 ; x++ )
+          std::cout << Ptile->getMapValue(x,y);
+      std::cout << std::endl;
+    }
+    
     hp = 1000;
     atk = 100;
     def = 100;
@@ -50,44 +59,81 @@ void Character::virtDraw()
         return;
     }
     
+
     character.renderImageWithMask(getEngine()->getForegroundSurface(), iconx, icony, m_iCurrentScreenX+m_iStartDrawPosX, m_iCurrentScreenY+m_iStartDrawPosY, 32, 32);
 }
 
 void Character::virtDoUpdate(int iCurrentTime)
 {
- 
+
+    /*
+     !!Here it comes the collision detection
+     */
     
+    //Checks which tile is the player currently at
+    int iTileX = Ptile->getMapXForScreenX(m_iCurrentScreenX+m_iStartDrawPosX);
+    int iTileY = Ptile->getMapYForScreenY(m_iCurrentScreenY+m_iStartDrawPosY);
+    int iCurrentTile = Ptile->getMapValue(iTileX, iTileY);
+    std::cout<<iCurrentTile<<std::endl;
+   
     if (getEngine()->isKeyPressed(SDLK_UP))
     {
+        
         m_iCurrentScreenY -= 2;
-        icony = 32*3;
-        MoveBodyImage();
+        
+        if(checkTileNumber() == 2)
+        {
+            m_iCurrentScreenY +=2;
+            
+        }else{
+            
+            icony = 32*3;
+            MoveBodyImage();
+        }
+
 
     }
     if (getEngine()->isKeyPressed(SDLK_DOWN))
     {
-         m_iCurrentScreenY += 2;
-         icony = 32*0;
-         MoveBodyImage();
+        m_iCurrentScreenY += 2;
+        if(checkTileNumber() == 2)
+        {
+            m_iCurrentScreenY -= 2;
+        }else{
+            icony = 32*0;
+            MoveBodyImage();
+        }
     }
-       
+              
     if (getEngine()->isKeyPressed(SDLK_LEFT))
     {
         m_iCurrentScreenX -= 2;
-        icony = 32*1;
-        MoveBodyImage();
-    }
-      
+        if(checkTileNumber() == 2)
+        {
+            m_iCurrentScreenX +=2;
+        }else{
+            icony = 32*1;
+            MoveBodyImage();
+        }
 
+    }
+        
     if (getEngine()->isKeyPressed(SDLK_RIGHT))
     {
         m_iCurrentScreenX += 2;
-        icony = 32*2;
-        MoveBodyImage();
-    }
         
-   
+        if(checkTileNumber() == 2)
+        {
+            m_iCurrentScreenX -= 2;
+        }else{
+            icony = 32*2;
+            MoveBodyImage();
+        }
 
+    }
+    
+  
+    
 
     this->redrawDisplay();
 }
@@ -109,4 +155,14 @@ void Character::MoveBodyImage(){
          iconx = 64;
      }
 }
+int  Character::checkTileNumber()
+{
+    int iTileX = Ptile->getMapXForScreenX(m_iCurrentScreenX+m_iStartDrawPosX);
+    int iTileY = Ptile->getMapYForScreenY(m_iCurrentScreenY+m_iStartDrawPosY);
+    int iCurrentTile = Ptile->getMapValue(iTileX, iTileY);
+    std::cout<<"Next tile is "<<iCurrentTile<<std::endl;
+    return iCurrentTile;
+}
+
+
 

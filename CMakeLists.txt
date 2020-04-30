@@ -57,7 +57,7 @@ src/TileManager.h
 src/MazeDemoTileManager.h
 src/Psylc7TileManager.cpp
 src/Psylc7TileManager.hpp
-
+src/CollisionDetection.h
 )
 
 add_executable(SDL2_App ${SOURCE_FILES})

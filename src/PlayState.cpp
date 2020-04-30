@@ -13,7 +13,7 @@ PlayState::PlayState(Psylc7Engine* pEngine)
 :State(pEngine)
 ,m_tile(pEngine)
 {
-    
+
 }
 
 PlayState::~PlayState()
@@ -74,8 +74,9 @@ void PlayState::InitialiseObjects()
     engine->destroyOldObjects(true);
     /* Create an object array*/
     engine->createObjectArray(1);
-    
-    character = new Character(engine,192, 352);
+  
+    character = new Character(engine,192, 352,p_m_tile);
+
     engine->storeObjectInArray(0,character);
     
     engine->setAllObjectsVisible(true);
