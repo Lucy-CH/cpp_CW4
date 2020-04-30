@@ -11,9 +11,9 @@
 Psylc7TileManager::Psylc7TileManager(Psylc7Engine* pEngine)
                 :TileManager(32, 32)
 {
-    floor = pEngine->loadImage("./gameres/Brick_Wall/marbletile.png",false);
+    wall = pEngine->loadImage("./gameres/Brick_Wall/marbletile.png",false);
     
-     wall = pEngine->loadImage("./gameres/Brick_Wall/wallside.png",false);
+     floor = pEngine->loadImage("./gameres/Brick_Wall/wallside.png",false);
     
 }
 
@@ -54,10 +54,17 @@ void Psylc7TileManager::drawSomeTiles(Psylc7Engine * pEngine, DrawingSurface* pS
 void Psylc7TileManager::virtDrawTileAt(Psylc7Engine *pEngine, DrawingSurface *pSurface, int iMapX, int iMapY, int iStartPositionScreenX, int iStartPositionScreenY) const
 {
     
-
-wall.renderImageWithMask(pEngine->getBackgroundSurface(), 0, 0, iStartPositionScreenX, iStartPositionScreenY, wall.getWidth(), wall.getHeight());
+switch(getMapValue(iMapX, iMapY))
+{
+    case 1:
+    wall.renderImageWithMask(pEngine->getBackgroundSurface(), 0, 0, iStartPositionScreenX, iStartPositionScreenY, wall.getWidth(), wall.getHeight());
+       break;
+    
+    case 2:
+    floor.renderImageWithMask(pEngine->getBackgroundSurface(), 0, 0, iStartPositionScreenX, iStartPositionScreenY, wall.getWidth(), wall.getHeight());
+        break;
  
     
-
+}
      
 }

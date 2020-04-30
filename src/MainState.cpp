@@ -48,7 +48,7 @@ void MainState::InitialiseObjects()
     engine->destroyOldObjects(true);
     /* Create an object array*/
     engine->createObjectArray(1);
-    button1 = new Button (engine,"START GAME",(engine->getWindowWidth())*0.4,500,200,50);
+    button1 = new Button (engine,"START GAME",270,280,200,50);
     engine->storeObjectInArray(0,button1);
     
     engine->setAllObjectsVisible(true);

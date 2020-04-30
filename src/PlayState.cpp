@@ -31,33 +31,31 @@ void PlayState::SetUpBackgroundBuffer()
     engine->fillBackground(0xffffff);
     
     
-    m_tile.setMapSize(20, 15);
+    m_tile.setMapSize(11, 11);
     
     const char* data[] = {
-        "bbbbbbbbbbbbbbbbbbbb",
-        "baeaeadadaeaeabbbbbb",
-        "babbbcbcbcbbbebbbbbb",
-        "badadgdadhdadhbbbbbb",
-        "bgbcbbbcbbbcbebbbbbb",
-        "babadadadadababbbbbb",
-        "bfbcbbbcbbbcbebbbbbb",
-        "bahadadhdadadabbbbbb",
-        "bfbbbcbibcbbbebbbbbb",
-        "badadadadadadabbbbbb",
-        "bbbbbbbbbbbbbbbbbbbb"
-        "bahadadhdadadabbbbbb",
-        "bfbbbcbibcbbbebbbbbb",
-        "badadadadadadabbbbbb",
-        "bbbbbbbbbbbbbbbbbbbb"
+        "bbbbbbbbbbb",
+        "ccccccccccb",
+        "bbbcbcbbbcb",
+        "bbbcbcbbbcb",
+        "ccccbcccccb",
+        "bbbcbcbbbcb",
+        "bbbcbcccccb",
+        "ccccbbbbbbb",
+        "bbbcccccccc",
+        "bbbcbbbcbbb",
+        "bbbcbbbcbbb"
+        "bbbcbbbcbbb",
+
     };
     
-    for ( int x = 0 ; x < 15 ; x++ )
+    for ( int x = 0 ; x < 11 ; x++ )
     for ( int y = 0 ; y < 11 ; y++ )
     m_tile.setMapValue( x, y, data[y][x]-'a' );
     
     for ( int y = 0 ; y < 11 ; y++ )
     {
-      for ( int x = 0 ; x < 15 ; x++ )
+      for ( int x = 0 ; x < 11 ; x++ )
       std::cout << m_tile.getMapValue(x,y);
       std::cout << std::endl;
     }
@@ -77,7 +75,7 @@ void PlayState::InitialiseObjects()
     /* Create an object array*/
     engine->createObjectArray(1);
     
-    character = new Character(engine);
+    character = new Character(engine,192, 352);
     engine->storeObjectInArray(0,character);
     
     engine->setAllObjectsVisible(true);
@@ -90,9 +88,7 @@ void PlayState::MouseDown(int iButton, int iX, int iY)
 }
 void PlayState::virtDrawStringsOnTop()
 {  //draws the beige status box on screen and print its status
-    engine->drawForegroundRectangle(0, 480, 160 + 640 - 1,
-                                    480 + 160 - 1,
-                                    0xF9E4B7);
+
     //check it works :D
     int atk = character->getatk();
     int def = character->getdef();
@@ -105,13 +101,13 @@ void PlayState::virtDrawStringsOnTop()
     char buf4[128];
     
     sprintf(buf, "Attack: %d ",atk);
-    engine->drawForegroundString(100, 480 +10, buf, 0x000000, NULL);
+    engine->drawForegroundString(370, 230, buf, 0x000000, engine->getFont("Helvetica-Normal.ttf", 20));
     sprintf(buf2, "defence: %d ", def);
-    engine->drawForegroundString(100, 480 + 10 + 30, buf2, 0x000000, NULL);
+    engine->drawForegroundString(370, 230 + 30, buf2, 0x000000, engine->getFont("Helvetica-Normal.ttf", 20));
     sprintf(buf3, "hp: %d ",hp);
-    engine->drawForegroundString(100, 480 + 10 +30 +30, buf3, 0x000000, NULL);
+    engine->drawForegroundString(370, 230 +30 +30, buf3, 0x000000, engine->getFont("Helvetica-Normal.ttf", 20));
     sprintf(buf4, "gold: %d ",gold);
-    engine->drawForegroundString(100, 480 + 10 +30 +30 +30, buf4, 0x000000, NULL);
+    engine->drawForegroundString(370, 230 +30 +30 +30, buf4, 0x000000, engine->getFont("Helvetica-Normal.ttf", 20));
     
     
    

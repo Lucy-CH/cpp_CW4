@@ -7,7 +7,7 @@
 #include "header.h"
 #include "Character.hpp"
 
-Character::Character(Psylc7Engine* pEngine)
+Character::Character(Psylc7Engine* pEngine,int ix,int iy)
     :DisplayableObject(pEngine)
 {
     hp = 1000;
@@ -21,11 +21,11 @@ Character::Character(Psylc7Engine* pEngine)
     
     
     character = pEngine -> loadImage("./gameres/Character/Hero.png",false);
-    m_iStartDrawPosX = -16;
-    m_iStartDrawPosY = -16;
+    m_iStartDrawPosX = -32;
+    m_iStartDrawPosY = -32;
     
-    m_iCurrentScreenX = (getEngine()->getWindowWidth())/2;
-    m_iCurrentScreenY = (getEngine()->getWindowHeight()) - 16 -160;
+    m_iCurrentScreenX = ix;
+    m_iCurrentScreenY = iy;
 }
 
 Character::~Character()

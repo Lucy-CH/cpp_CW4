@@ -20,7 +20,7 @@ class Character:
 {
 public:
     friend class Statusbox;
-    Character(Psylc7Engine* pEngine);
+    Character(Psylc7Engine* pEngine,int ix,int iy);
     ~Character();
     void virtDraw();
     void virtDoUpdate(int iCurrentTime);
