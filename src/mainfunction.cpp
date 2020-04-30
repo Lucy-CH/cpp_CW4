@@ -30,12 +30,12 @@ int doProgram(int argc, char *argv[])
 	int iResult = 0;
 	// Needs just one of the following lines - choose which object to create - ENSURE ONLY ONE IS CREATED.
 	// Note these are from simplest to most complex demo.
-    Psylc7Engine oMain;
+    //Psylc7Engine oMain;
 	//JasonsDemoA oMain; // Jason's version of MyDemoA, MyObjectA and MyTileManagerA
 	//SimpleDemo oMain;
 	//ImageObjectDemo oMain; // Shows drawing images to the foreground and background
 	//BouncingBallMain oMain; // A ball bouncing around with images and shapes drawn
-    //MazeDemoMain oMain; // Demonstrates a tile manager being used and updated
+    MazeDemoMain oMain; // Demonstrates a tile manager being used and updated
 	//StarfieldDemo oMain; // Does a simple scrolling background
 	
 	//DraggingDemo oMain; // Includes dragable images and image objects

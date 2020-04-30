@@ -11,6 +11,7 @@
 
 PlayState::PlayState(Psylc7Engine* pEngine)
 :State(pEngine)
+,m_tile(pEngine)
 {
     
 }

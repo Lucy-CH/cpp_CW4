@@ -11,9 +11,11 @@
 #define PlayState_hpp
 
 #include <stdio.h>
-
+#include "Psylc7TileManager.hpp"
 #endif /* PlayState_hpp */
 class Character;
+
+
 class PlayState:
     public State
 {
@@ -27,4 +29,6 @@ public:
     void virtDrawStringsOnTop();
 protected:
     Character* character;
+    Psylc7TileManager m_tile;
+    
 };

@@ -53,7 +53,10 @@ src/PlayState.cpp
 src/PlayState.hpp
 src/Character.hpp
 src/Character.cpp
-
+src/TileManager.h
+src/MazeDemoTileManager.h
+src/Psylc7TileManager.cpp
+src/Psylc7TileManager.hpp
 
 )
 

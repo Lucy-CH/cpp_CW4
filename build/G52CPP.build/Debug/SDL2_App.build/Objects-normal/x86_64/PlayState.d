@@ -58,4 +58,6 @@ dependencies: \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/ImageManager.h \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Character.hpp \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/PlayState.hpp \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/State.hpp
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/State.hpp \
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Psylc7TileManager.hpp \
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/TileManager.h

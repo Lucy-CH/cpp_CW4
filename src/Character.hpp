@@ -24,6 +24,7 @@ public:
     ~Character();
     void virtDraw();
     void virtDoUpdate(int iCurrentTime);
+    void MoveBodyImage();
     //Accessors
     int gethp();
     int getatk();
@@ -44,8 +45,11 @@ protected:
     int atk;
     int def;
     int gold;
+    
     int iconx;
     int icony;
+    
+
 
     
 };

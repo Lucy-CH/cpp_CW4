@@ -18,6 +18,8 @@ Character::Character(Psylc7Engine* pEngine)
     iconx = 32;
     icony = 0;
     
+    
+    
     character = pEngine -> loadImage("./gameres/Character/Hero.png",false);
     m_iStartDrawPosX = -16;
     m_iStartDrawPosY = -16;
@@ -48,20 +50,6 @@ void Character::virtDraw()
         return;
     }
     
-    int iTick = getEngine()->getModifiedTime()/100; // 1 per 20ms
-    int iFrame = iTick%30 +30;
-  
-    if(iFrame % 3 == 0) {
-           iconx = 0;
-    }
-    if(iFrame % 3 == 1) {
-           iconx = 32;
-    }
-    
-    if(iFrame % 3 == 2) {
-           iconx = 64;
-    }
-    
     character.renderImageWithMask(getEngine()->getForegroundSurface(), iconx, icony, m_iCurrentScreenX+m_iStartDrawPosX, m_iCurrentScreenY+m_iStartDrawPosY, 32, 32);
 }
 
@@ -73,19 +61,21 @@ void Character::virtDoUpdate(int iCurrentTime)
     {
         m_iCurrentScreenY -= 2;
         icony = 32*3;
+        MoveBodyImage();
 
-    
     }
     if (getEngine()->isKeyPressed(SDLK_DOWN))
     {
          m_iCurrentScreenY += 2;
          icony = 32*0;
+         MoveBodyImage();
     }
        
     if (getEngine()->isKeyPressed(SDLK_LEFT))
     {
         m_iCurrentScreenX -= 2;
         icony = 32*1;
+        MoveBodyImage();
     }
       
 
@@ -93,9 +83,30 @@ void Character::virtDoUpdate(int iCurrentTime)
     {
         m_iCurrentScreenX += 2;
         icony = 32*2;
+        MoveBodyImage();
     }
         
-    
+   
+
+
     this->redrawDisplay();
+}
+
+void Character::MoveBodyImage(){
+    
+     int iTick = getEngine()->getModifiedTime()/100; // 1 per 100ms
+     int iFrame = iTick%30 +30;
+     
+     if(iFrame % 3 == 0) {
+         iconx = 0;
+     }
+     
+     if(iFrame % 3 == 1) {
+         iconx = 32;
+     }
+            
+     if(iFrame % 3 == 2) {
+         iconx = 64;
+     }
 }
 
