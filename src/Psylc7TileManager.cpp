@@ -17,12 +17,47 @@ Psylc7TileManager::Psylc7TileManager(Psylc7Engine* pEngine)
     
 }
 
+
+
 Psylc7TileManager::~Psylc7TileManager()
 {
     
+}
+void Psylc7TileManager::drawAllTiles(Psylc7Engine* pEngine, DrawingSurface* pSurface) const
+{
+    pSurface->mySDLLockSurface();
+    for (int iTX = 0; iTX < m_iMapWidth; iTX++)
+        for (int iTY = 0; iTY < m_iMapHeight; iTY++)
+        {
+            this->virtDrawTileAt(pEngine, pSurface,
+                iTX, iTY,
+                m_iBaseScreenX + getTileWidth()*iTX,
+                m_iBaseScreenY + getTileHeight()*iTY );
+        }
+    pSurface->mySDLUnlockSurface();
+}
+
+void Psylc7TileManager::drawSomeTiles(Psylc7Engine * pEngine, DrawingSurface* pSurface, int iMapXStart, int iMapYStart, int iWidth, int iHeight ) const
+{
+    pSurface->mySDLLockSurface();
+    for (int iTX = 0; iTX < iWidth; iTX++)
+        for (int iTY = 0; iTY < iHeight; iTY++)
+        {
+            this->virtDrawTileAt(pEngine, pSurface,
+                iTX + iMapXStart, iTY + iMapYStart,
+                m_iBaseScreenX + getTileWidth()*iTX,
+                m_iBaseScreenY + getTileHeight()*iTY);
+        }
+    pSurface->mySDLUnlockSurface();
 }
 
 void Psylc7TileManager::virtDrawTileAt(Psylc7Engine *pEngine, DrawingSurface *pSurface, int iMapX, int iMapY, int iStartPositionScreenX, int iStartPositionScreenY) const
 {
     
+
+wall.renderImageWithMask(pEngine->getBackgroundSurface(), 0, 0, iStartPositionScreenX, iStartPositionScreenY, wall.getWidth(), wall.getHeight());
+ 
+    
+
+     
 }

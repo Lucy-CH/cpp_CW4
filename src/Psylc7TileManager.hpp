@@ -21,6 +21,10 @@ class Psylc7TileManager:
     Psylc7TileManager(Psylc7Engine *pEngine);
     ~Psylc7TileManager();
     
+    void drawSomeTiles(Psylc7Engine * pEngine, DrawingSurface* pSurface, int iMapXStart, int iMapYStart, int iWidth, int iHeight ) const;
+    
+    void drawAllTiles(Psylc7Engine* pEngine, DrawingSurface* pSurface) const;
+    
     virtual void virtDrawTileAt(
         Psylc7Engine* pEngine,
         DrawingSurface* pSurface,

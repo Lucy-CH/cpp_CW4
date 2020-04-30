@@ -29,6 +29,41 @@ void PlayState::SetUpBackgroundBuffer()
 {
     engine->lockBackgroundForDrawing();
     engine->fillBackground(0xffffff);
+    
+    
+    m_tile.setMapSize(20, 15);
+    
+    const char* data[] = {
+        "bbbbbbbbbbbbbbbbbbbb",
+        "baeaeadadaeaeabbbbbb",
+        "babbbcbcbcbbbebbbbbb",
+        "badadgdadhdadhbbbbbb",
+        "bgbcbbbcbbbcbebbbbbb",
+        "babadadadadababbbbbb",
+        "bfbcbbbcbbbcbebbbbbb",
+        "bahadadhdadadabbbbbb",
+        "bfbbbcbibcbbbebbbbbb",
+        "badadadadadadabbbbbb",
+        "bbbbbbbbbbbbbbbbbbbb"
+        "bahadadhdadadabbbbbb",
+        "bfbbbcbibcbbbebbbbbb",
+        "badadadadadadabbbbbb",
+        "bbbbbbbbbbbbbbbbbbbb"
+    };
+    
+    for ( int x = 0 ; x < 15 ; x++ )
+    for ( int y = 0 ; y < 11 ; y++ )
+    m_tile.setMapValue( x, y, data[y][x]-'a' );
+    
+    for ( int y = 0 ; y < 11 ; y++ )
+    {
+      for ( int x = 0 ; x < 15 ; x++ )
+      std::cout << m_tile.getMapValue(x,y);
+      std::cout << std::endl;
+    }
+    m_tile.setTopLeftPositionOnScreen( 0, 0 );
+    m_tile.drawAllTiles( engine, engine->getBackgroundSurface() );
+    
     engine->unlockBackgroundForDrawing();
     engine->redrawDisplay();
     
