@@ -45,7 +45,6 @@ void PlayState::SetUpBackgroundBuffer()
         "bbbcccccccc",
         "bbbcbbbcbbb",
         "bbbcbbbcbbb"
-        "bbbcbbbcbbb",
 
     };
     

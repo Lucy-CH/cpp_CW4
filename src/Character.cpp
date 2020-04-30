@@ -96,7 +96,17 @@ void Character::virtDoUpdate(int iCurrentTime)
     if (getEngine()->isKeyPressed(SDLK_DOWN))
     {
         m_iCurrentScreenY += 2;
-        if(checkTileNumber() == 2)
+        //check right hand side
+        int iTileX = Ptile->getMapXForScreenX(m_iCurrentScreenX+m_iStartDrawPosX+32);
+         int iTileY = Ptile->getMapYForScreenY(m_iCurrentScreenY+m_iStartDrawPosY+32);
+         int iCurrentTile = Ptile->getMapValue(iTileX, iTileY);
+        
+        //check left hand side
+        int iTileX_left = Ptile->getMapXForScreenX(m_iCurrentScreenX+m_iStartDrawPosX);
+        
+        int iCurrentTile_left = Ptile->getMapValue(iTileX_left, iTileY);
+    
+        if(iCurrentTile == 2 || iCurrentTile_left == 2)
         {
             m_iCurrentScreenY -= 2;
         }else{
@@ -108,6 +118,7 @@ void Character::virtDoUpdate(int iCurrentTime)
     if (getEngine()->isKeyPressed(SDLK_LEFT))
     {
         m_iCurrentScreenX -= 2;
+        
         if(checkTileNumber() == 2)
         {
             m_iCurrentScreenX +=2;
@@ -122,7 +133,14 @@ void Character::virtDoUpdate(int iCurrentTime)
     {
         m_iCurrentScreenX += 2;
         
-        if(checkTileNumber() == 2)
+        //check right hand side
+        int iTileX = Ptile->getMapXForScreenX(m_iCurrentScreenX+m_iStartDrawPosX+32);
+        int iTileY = Ptile->getMapYForScreenY(m_iCurrentScreenY+m_iStartDrawPosY);
+        int iCurrentTile = Ptile->getMapValue(iTileX, iTileY);
+        
+  
+        
+        if(iCurrentTile == 2)
         {
             m_iCurrentScreenX -= 2;
         }else{
@@ -132,7 +150,16 @@ void Character::virtDoUpdate(int iCurrentTime)
 
     }
     
+      if (m_iCurrentScreenX < 0)
+          m_iCurrentScreenX = 0;
+      if (m_iCurrentScreenX >= getEngine()->getWindowWidth() - m_iDrawWidth)
+          m_iCurrentScreenX = getEngine()->getWindowWidth() - m_iDrawWidth;
+      if (m_iCurrentScreenY < 0)
+          m_iCurrentScreenY = 0;
+      if (m_iCurrentScreenY >= getEngine()->getWindowHeight() - m_iDrawHeight)
+          m_iCurrentScreenY = getEngine()->getWindowHeight() - m_iDrawHeight;
   
+
     
 
     this->redrawDisplay();
@@ -155,7 +182,7 @@ void Character::MoveBodyImage(){
          iconx = 64;
      }
 }
-int  Character::checkTileNumber()
+int Character::checkTileNumber()
 {
     int iTileX = Ptile->getMapXForScreenX(m_iCurrentScreenX+m_iStartDrawPosX);
     int iTileY = Ptile->getMapYForScreenY(m_iCurrentScreenY+m_iStartDrawPosY);

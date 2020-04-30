@@ -55,11 +55,11 @@ void Psylc7TileManager::virtDrawTileAt(Psylc7Engine *pEngine, DrawingSurface *pS
 {
     
 switch(getMapValue(iMapX, iMapY))
-{
+{   //This is actually the wall
     case 1:
     wall.renderImageWithMask(pEngine->getBackgroundSurface(), 0, 0, iStartPositionScreenX, iStartPositionScreenY, wall.getWidth(), wall.getHeight());
        break;
-    
+    //And this is the floor
     case 2:
     floor.renderImageWithMask(pEngine->getBackgroundSurface(), 0, 0, iStartPositionScreenX, iStartPositionScreenY, wall.getWidth(), wall.getHeight());
         break;

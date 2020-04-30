@@ -25,12 +25,14 @@ class Psylc7TileManager:
     
     void drawAllTiles(Psylc7Engine* pEngine, DrawingSurface* pSurface) const;
     
-    virtual void virtDrawTileAt(
+    void virtDrawTileAt(
         Psylc7Engine* pEngine,
         DrawingSurface* pSurface,
         int iMapX, int iMapY,
         int iStartPositionScreenX, int iStartPositionScreenY ) const ;
-    
+        
+
+
  protected:
     SimpleImage floor;
     SimpleImage wall;
