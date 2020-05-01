@@ -22,6 +22,7 @@ public:
     Key(Psylc7Engine* pEngine, int iStartX,int iStartY);
     ~Key();
     void virtDraw();
+    int getvalue(){return this->value;}
     
 protected:
     SimpleImage yellowkey;

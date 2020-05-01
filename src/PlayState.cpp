@@ -117,7 +117,4 @@ void PlayState::virtDrawStringsOnTop()
     sprintf(buf5, "key: %d ",key);
     engine->drawForegroundString(370+150, 230 +30 +30 +30, buf5, 0x000000, engine->getFont("Helvetica-Normal.ttf", 15));
     
-   
-    
-    
 }

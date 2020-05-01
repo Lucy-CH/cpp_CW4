@@ -8,11 +8,12 @@
 #include "Character.hpp"
 #include<math.h>
 #include "CollisionDetection.h"
+#include "Button.hpp"
 
 Character::Character(Psylc7Engine* pEngine,int ix,int iy, Psylc7TileManager* pTile)
     :DisplayableObject(pEngine)
-    ,key(0)
     ,pEngineMain(pEngine)
+    ,key(0)
 
 {
     this->Ptile = pTile;
@@ -161,11 +162,12 @@ void Character::virtDoUpdate(int iCurrentTime)
                                                 m_iCurrentScreenX - 16, m_iCurrentScreenX + 16,
                                                  m_iCurrentScreenY - 16, m_iCurrentScreenY + 16 ) )
         {
-           
-            pEngineMain->removeDisplayableObject(pObject);
-            
-            std::cout<<"A key has been found"<< std:: endl;
-            this->setkey(1);
+ 
+
+              pEngineMain->removeDisplayableObject(pObject);
+              std::cout<<"A key has been found"<< std:: endl;
+              this->setkey(1);
+
         }
     }
     //3.The player cannot go into area that it's not supposed to be
