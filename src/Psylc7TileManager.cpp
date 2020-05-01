@@ -11,10 +11,11 @@
 Psylc7TileManager::Psylc7TileManager(Psylc7Engine* pEngine)
                 :TileManager(32, 32)
 {
-    wall = pEngine->loadImage("./gameres/Brick_Wall/marbletile.png",false);
+    floor = pEngine->loadImage("./gameres/Brick_Wall/marbletile.png",false);
     
-     floor = pEngine->loadImage("./gameres/Brick_Wall/wallside.png",false);
+    wall = pEngine->loadImage("./gameres/Brick_Wall/wallside.png",false);
     
+    yellow_door = pEngine->loadImage("./gameres/Brick_Wall/yellow_door.png",false);
 }
 
 
@@ -55,16 +56,31 @@ void Psylc7TileManager::virtDrawTileAt(Psylc7Engine *pEngine, DrawingSurface *pS
 {
     
 switch(getMapValue(iMapX, iMapY))
-{   //This is actually the wall
+{
     case 1:
-    wall.renderImageWithMask(pEngine->getBackgroundSurface(), 0, 0, iStartPositionScreenX, iStartPositionScreenY, wall.getWidth(), wall.getHeight());
-       break;
-    //And this is the floor
-    case 2:
     floor.renderImageWithMask(pEngine->getBackgroundSurface(), 0, 0, iStartPositionScreenX, iStartPositionScreenY, wall.getWidth(), wall.getHeight());
-        break;
- 
+       break;
+
+    case 2:
+    wall.renderImageWithMask(pEngine->getBackgroundSurface(), 0, 0, iStartPositionScreenX, iStartPositionScreenY, wall.getWidth(), wall.getHeight());
+
+    break;
+        
+    case 3:
+    yellow_door.renderImageWithMask(pEngine->getBackgroundSurface(), 0, 0, iStartPositionScreenX, iStartPositionScreenY, wall.getWidth(), wall.getHeight());
     
+ 
+     
 }
      
+}
+
+bool Psylc7TileManager::isWall(int iScreenX, int iScreenY)
+{
+    int iX = getMapXForScreenX(iScreenX);
+    int iY = getMapYForScreenY(iScreenY);
+    int tile =getMapValue(iX, iY);
+    if(tile == 2){return true;}
+    else{return false;}
+   
 }

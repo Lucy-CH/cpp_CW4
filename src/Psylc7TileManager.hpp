@@ -31,9 +31,10 @@ class Psylc7TileManager:
         int iMapX, int iMapY,
         int iStartPositionScreenX, int iStartPositionScreenY ) const ;
         
-
+    bool isWall(int iScreenX, int iScreenY);
 
  protected:
     SimpleImage floor;
     SimpleImage wall;
+    SimpleImage yellow_door;
 };

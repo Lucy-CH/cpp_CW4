@@ -36,13 +36,13 @@ void PlayState::SetUpBackgroundBuffer()
     const char* data[] = {
         "bbbbbbbbbbb",
         "ccccccccccb",
+        "bbbdbcbbbcb",
         "bbbcbcbbbcb",
-        "bbbcbcbbbcb",
-        "ccccbcccccb",
-        "bbbcbcbbbcb",
+        "cdccbcccdcb",
+        "bbbcbdbbbcb",
         "bbbcbcccccb",
-        "ccccbbbbbbb",
-        "bbbcccccccc",
+        "cdccbbbbbbb",
+        "bbbccdcccdc",
         "bbbcbbbcbbb",
         "bbbcbbbcbbb"
 
@@ -74,7 +74,7 @@ void PlayState::InitialiseObjects()
     /* Create an object array*/
     engine->createObjectArray(1);
   
-    character = new Character(engine,192, 352,p_m_tile);
+    character = new Character(engine,192, 352-16,p_m_tile);
 
     engine->storeObjectInArray(0,character);
     

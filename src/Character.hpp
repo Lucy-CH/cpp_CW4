@@ -26,8 +26,8 @@ public:
     void virtDraw();
     void virtDoUpdate(int iCurrentTime);
     void MoveBodyImage();
-    int checkTileNumber();
-    
+   
+
     //Accessors
     int gethp();
     int getatk();
@@ -55,6 +55,7 @@ protected:
     int iconx;
     int icony;
     
+
 
 
     
