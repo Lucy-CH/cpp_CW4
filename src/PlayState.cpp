@@ -79,6 +79,7 @@ void PlayState::InitialiseObjects()
     character = new Character(engine,192-16, 352-16,p_m_tile);
     yellowKey1 = new Key(engine, 160-16, 320-16);
     greenslime1 = new GreenSlime(engine,96-16, 32-16);
+    
     engine->storeObjectInArray(0,character);
     engine->storeObjectInArray(1, yellowKey1);
     engine->storeObjectInArray(2, greenslime1);

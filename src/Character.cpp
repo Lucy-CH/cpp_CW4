@@ -170,13 +170,19 @@ void Character::virtDoUpdate(int iCurrentTime)
                                                  m_iCurrentScreenY - 16, m_iCurrentScreenY + 16 ) )
         {
  
-           // std:: cout<<pObject->value<<std::endl;
+           //IF THE OBJECT HIT IS THE KEY!
             if(pObject->value ==1)
             {
                   pEngineMain->removeDisplayableObject(pObject);
                   std::cout<<"A key has been found"<< std:: endl;
                   this->setkey(1);
 
+            }
+            //If THE OBJECT IS MONSTER
+            if(pObject->value == 2)
+            {
+                pEngineMain->removeDisplayableObject(pObject);
+                this->sethp(-(pObject->attack));
             }
 
         }
