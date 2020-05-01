@@ -14,6 +14,7 @@
 #include "Psylc7TileManager.hpp"
 #endif /* PlayState_hpp */
 class Character;
+class Key;
 
 
 class PlayState:
@@ -31,5 +32,5 @@ protected:
     Character* character;
     Psylc7TileManager m_tile;
     Psylc7TileManager* p_m_tile = &m_tile;
-    
+    Key* yellowKey1;
 };

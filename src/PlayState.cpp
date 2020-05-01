@@ -8,6 +8,7 @@
 #include "Psylc7Engine.hpp"
 #include "Character.hpp"
 #include "PlayState.hpp"
+#include "Key.hpp"
 
 PlayState::PlayState(Psylc7Engine* pEngine)
 :State(pEngine)
@@ -72,11 +73,14 @@ void PlayState::InitialiseObjects()
     /* Destroy the existing objects*/
     engine->destroyOldObjects(true);
     /* Create an object array*/
-    engine->createObjectArray(1);
-  
-    character = new Character(engine,192, 352-16,p_m_tile);
-
+    engine->createObjectArray(3);
+    
+    character = new Character(engine,192-16, 352-16,p_m_tile);
+    yellowKey1 = new Key(engine, 160-16, 320-16);
+    
     engine->storeObjectInArray(0,character);
+    engine->storeObjectInArray(1, yellowKey1);
+    engine->storeObjectInArray(2, NULL);
     
     engine->setAllObjectsVisible(true);
     
@@ -94,21 +98,24 @@ void PlayState::virtDrawStringsOnTop()
     int def = character->getdef();
     int hp = character->gethp();
     int gold = character->getgold();
+    int key = character->getKeyNumber();
     //Print it out on screen
     char buf[128];
     char buf2[128];
     char buf3[128];
     char buf4[128];
+    char buf5[128];
     
     sprintf(buf, "Attack: %d ",atk);
-    engine->drawForegroundString(370, 230, buf, 0x000000, engine->getFont("Helvetica-Normal.ttf", 20));
+    engine->drawForegroundString(370, 230, buf, 0x000000, engine->getFont("Helvetica-Normal.ttf", 15));
     sprintf(buf2, "defence: %d ", def);
-    engine->drawForegroundString(370, 230 + 30, buf2, 0x000000, engine->getFont("Helvetica-Normal.ttf", 20));
+    engine->drawForegroundString(370, 230 + 30, buf2, 0x000000, engine->getFont("Helvetica-Normal.ttf", 15));
     sprintf(buf3, "hp: %d ",hp);
-    engine->drawForegroundString(370, 230 +30 +30, buf3, 0x000000, engine->getFont("Helvetica-Normal.ttf", 20));
+    engine->drawForegroundString(370, 230 +30 +30, buf3, 0x000000, engine->getFont("Helvetica-Normal.ttf", 15));
     sprintf(buf4, "gold: %d ",gold);
-    engine->drawForegroundString(370, 230 +30 +30 +30, buf4, 0x000000, engine->getFont("Helvetica-Normal.ttf", 20));
-    
+    engine->drawForegroundString(370, 230 +30 +30 +30, buf4, 0x000000, engine->getFont("Helvetica-Normal.ttf", 15));
+    sprintf(buf5, "key: %d ",key);
+    engine->drawForegroundString(370+150, 230 +30 +30 +30, buf5, 0x000000, engine->getFont("Helvetica-Normal.ttf", 15));
     
    
     

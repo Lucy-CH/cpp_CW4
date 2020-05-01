@@ -33,20 +33,21 @@ public:
     int getatk();
     int getdef();
     int getgold();
-    int getCurrentX(){return m_iCurrentScreenX;}
-    int getCurrentY(){return m_iCurrentScreenY;}
-    
+    int getCurrentX(){return this->m_iCurrentScreenX;}
+    int getCurrentY(){return this->m_iCurrentScreenY;}
+    int getKeyNumber(){return this->key;}
     //Modifiers
     void sethp(int iChange);
     void setatk(int iChange);
     void setdef(int iChange);
     void setgold(int iChange);
-    
+    void setkey(int iChange);
     
     
 protected:
     SimpleImage character;
     Psylc7TileManager* Ptile;
+    Psylc7Engine* pEngineMain;
     int hp;
     int atk;
     int def;
@@ -55,6 +56,7 @@ protected:
     int iconx;
     int icony;
     
+    int key;
 
 
 

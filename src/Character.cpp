@@ -7,9 +7,12 @@
 #include "header.h"
 #include "Character.hpp"
 #include<math.h>
+#include "CollisionDetection.h"
 
 Character::Character(Psylc7Engine* pEngine,int ix,int iy, Psylc7TileManager* pTile)
     :DisplayableObject(pEngine)
+    ,key(0)
+    ,pEngineMain(pEngine)
 
 {
     this->Ptile = pTile;
@@ -54,7 +57,7 @@ Character::Character(Psylc7Engine* pEngine,int ix,int iy, Psylc7TileManager* pTi
     std::cout << Ptile->getMapValue(iTileX,iTileY-2);
     std::cout << std::endl;
     
-    
+
 }
 
 Character::~Character()
@@ -72,6 +75,7 @@ void Character::sethp(int iChange){this->hp += iChange;}
 void Character::setatk(int iChange){this->atk += iChange;}
 void Character::setdef(int iChange){this->def += iChange;}
 void Character::setgold(int iChange){this->gold += iChange;}
+void Character::setkey(int iChange){this->key += iChange;}
 
 void Character::virtDraw()
 {
@@ -90,7 +94,7 @@ void Character::virtDoUpdate(int iCurrentTime)
      !!Here it comes the collision detection
      */
     
-   
+    // 1. Check and decide how the user will interact with the tiles
     if (getEngine()->isKeyPressed(SDLK_UP))
     {
     
@@ -140,6 +144,31 @@ void Character::virtDoUpdate(int iCurrentTime)
 
     }
     
+    //2. Check if the player has hit an object
+    DisplayableObject* pObject;
+    for ( int iObjectId = 0 ;
+         (pObject = pEngineMain->getDisplayableObject( iObjectId )
+                ) != NULL ;
+        iObjectId++ )
+    {
+        if ( pObject == this ) // This is us, skip it
+            continue;
+        if (pObject == nullptr) // Object does not exist, skip it
+            continue;        // If you need to cast to the sub-class type, you must use dynamic_cast, see lecture 19
+        
+        if (CollisionDetection::checkRectangles(pObject->getXCentre() - 16, pObject->getXCentre() + 16,
+                                                pObject->getYCentre() - 16, pObject->getYCentre() + 16,
+                                                m_iCurrentScreenX - 16, m_iCurrentScreenX + 16,
+                                                 m_iCurrentScreenY - 16, m_iCurrentScreenY + 16 ) )
+        {
+           
+            pEngineMain->removeDisplayableObject(pObject);
+            
+            std::cout<<"A key has been found"<< std:: endl;
+            this->setkey(1);
+        }
+    }
+    //3.The player cannot go into area that it's not supposed to be
       if (m_iCurrentScreenX < 16)
           m_iCurrentScreenX = 16;
       if (m_iCurrentScreenX >= getEngine()->getWindowWidth() - m_iDrawWidth)
