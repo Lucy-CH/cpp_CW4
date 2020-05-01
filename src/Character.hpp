@@ -8,7 +8,7 @@
 #include "DisplayableObject.h"
 #include "Psylc7Engine.hpp"
 #include "Psylc7TileManager.hpp"
-
+#include "MyDisplayableObject.hpp"
 #ifndef Character_hpp
 #define Character_hpp
 
@@ -17,15 +17,16 @@
 #endif /* Character_hpp */
 
 class Character:
-    public DisplayableObject
+    public MyDisplayableObject
 {
 public:
-    friend class Statusbox;
+
     Character(Psylc7Engine* pEngine,int ix,int iy, Psylc7TileManager* pTile);
     ~Character();
     void virtDraw();
     void virtDoUpdate(int iCurrentTime);
     void MoveBodyImage();
+    
    
 
     //Accessors

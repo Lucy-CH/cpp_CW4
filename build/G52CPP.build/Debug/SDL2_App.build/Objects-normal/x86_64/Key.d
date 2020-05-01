@@ -46,6 +46,7 @@ dependencies: /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Key.cpp \
   /usr/local/include/SDL2/SDL_version.h \
   /usr/local/include/SDL2/SDL_ttf.h /usr/local/include/SDL2/SDL_image.h \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Key.hpp \
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/MyDisplayableObject.hpp \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/DisplayableObject.h \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Psylc7Engine.hpp \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/BaseEngine.h \

@@ -7,8 +7,19 @@
 #include "header.h"
 #include "MyDisplayableObject.hpp"
 
-MyDisplayableObject::MyDisplayableObject(Psylc7Engine* pEngine)
+//L LIFE
+//A ATTACK
+//D DEFENCE
+//G GOLD
+
+MyDisplayableObject::MyDisplayableObject(Psylc7Engine* pEngine,int id,int L,int A, int D, int G)
 :DisplayableObject(pEngine)
+,value(id)
+,life(L)
+,attack(A)
+,defence(D)
+,gold(G)
+
 {
     
 }

@@ -18,9 +18,13 @@ class MyDisplayableObject:
 public DisplayableObject
 {
 public:
-    MyDisplayableObject(Psylc7Engine* pEngine);
+    MyDisplayableObject(Psylc7Engine* pEngine,int id,int L,int A, int D, int G);
     ~MyDisplayableObject();
-    int getvalue(){return value;}
-protected:
-   int  value;
+    
+    int value;
+    int life;
+    int attack;
+    int defence;
+    int gold;
+    
 };

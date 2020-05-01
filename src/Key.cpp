@@ -6,11 +6,19 @@
 //
 #include "header.h"
 #include "Key.hpp"
-
+/*
+ A key doesn't have any stats
+ thus Life 0
+ Defence 0
+ Gold 0
+ Attack 0
+ */
 Key::Key(Psylc7Engine* pEngine, int iStartX,int iStartY)
-    :DisplayableObject(pEngine)
-    ,value(1)
+    :MyDisplayableObject(pEngine,1,0,0,0,0)
+
 {
+    value = 1;
+    std::cout<<value<<std::endl;
     m_iStartDrawPosX = -16;
     m_iStartDrawPosY = -16;
     
@@ -26,6 +34,7 @@ Key::~Key()
 {
     
 }
+int Key:: getvalue(){return this->value;}
 
 void Key::virtDraw()
 {
@@ -35,3 +44,4 @@ void Key::virtDraw()
     
     yellowkey.renderImageWithMask(getEngine()->getForegroundSurface(), 288, 352, m_iCurrentScreenX+m_iStartDrawPosX,m_iCurrentScreenY+m_iStartDrawPosY,32,32);
 }
+

@@ -5,7 +5,7 @@
 //  Created by Le Cheng on 01/05/2020.
 //
 #pragma once
-#include "DisplayableObject.h"
+#include "MyDisplayableObject.hpp"
 #include "Psylc7Engine.hpp"
 
 #ifndef Key_hpp
@@ -16,15 +16,16 @@
 #endif /* Key_hpp */
 
 class Key:
-    public DisplayableObject
+    public MyDisplayableObject
 {
 public:
     Key(Psylc7Engine* pEngine, int iStartX,int iStartY);
     ~Key();
     void virtDraw();
-    int getvalue(){return this->value;}
-    
+
+    int getvalue();
+    int value;
 protected:
     SimpleImage yellowkey;
-    int value;
+
 };

@@ -15,7 +15,7 @@
 #endif /* PlayState_hpp */
 class Character;
 class Key;
-
+class GreenSlime;
 
 class PlayState:
     public State
@@ -33,4 +33,5 @@ protected:
     Psylc7TileManager m_tile;
     Psylc7TileManager* p_m_tile = &m_tile;
     Key* yellowKey1;
+    GreenSlime* greenslime1;
 };

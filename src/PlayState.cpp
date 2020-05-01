@@ -9,6 +9,7 @@
 #include "Character.hpp"
 #include "PlayState.hpp"
 #include "Key.hpp"
+#include "GreenSlime.hpp"
 
 PlayState::PlayState(Psylc7Engine* pEngine)
 :State(pEngine)
@@ -73,15 +74,15 @@ void PlayState::InitialiseObjects()
     /* Destroy the existing objects*/
     engine->destroyOldObjects(true);
     /* Create an object array*/
-    engine->createObjectArray(3);
+    engine->createObjectArray(4);
     
     character = new Character(engine,192-16, 352-16,p_m_tile);
     yellowKey1 = new Key(engine, 160-16, 320-16);
-    
+    greenslime1 = new GreenSlime(engine,96-16, 32-16);
     engine->storeObjectInArray(0,character);
     engine->storeObjectInArray(1, yellowKey1);
-    engine->storeObjectInArray(2, NULL);
-    
+    engine->storeObjectInArray(2, greenslime1);
+    engine->storeObjectInArray(3, NULL);
     engine->setAllObjectsVisible(true);
     
     

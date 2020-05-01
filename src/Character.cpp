@@ -9,9 +9,15 @@
 #include<math.h>
 #include "CollisionDetection.h"
 #include "Button.hpp"
-
+/*
+ Character should initiallu have
+ life 1000
+ attack 100
+ defence 100
+ gold 0
+ */
 Character::Character(Psylc7Engine* pEngine,int ix,int iy, Psylc7TileManager* pTile)
-    :DisplayableObject(pEngine)
+    :MyDisplayableObject(pEngine,0,1000,100,100,0)
     ,pEngineMain(pEngine)
     ,key(0)
 
@@ -21,7 +27,7 @@ Character::Character(Psylc7Engine* pEngine,int ix,int iy, Psylc7TileManager* pTi
     for ( int y = 0 ; y < 11 ; y++ )
     {
       for ( int x = 0 ; x < 11 ; x++ )
-          std::cout << Ptile->getMapValue(x,y);
+      std::cout << Ptile->getMapValue(x,y);
       std::cout << std::endl;
     }
 
@@ -146,9 +152,10 @@ void Character::virtDoUpdate(int iCurrentTime)
     }
     
     //2. Check if the player has hit an object
-    DisplayableObject* pObject;
+    
+    MyDisplayableObject* pObject;
     for ( int iObjectId = 0 ;
-         (pObject = pEngineMain->getDisplayableObject( iObjectId )
+         (pObject = dynamic_cast<MyDisplayableObject*>(pEngineMain->getDisplayableObject( iObjectId ))
                 ) != NULL ;
         iObjectId++ )
     {
@@ -163,10 +170,14 @@ void Character::virtDoUpdate(int iCurrentTime)
                                                  m_iCurrentScreenY - 16, m_iCurrentScreenY + 16 ) )
         {
  
+           // std:: cout<<pObject->value<<std::endl;
+            if(pObject->value ==1)
+            {
+                  pEngineMain->removeDisplayableObject(pObject);
+                  std::cout<<"A key has been found"<< std:: endl;
+                  this->setkey(1);
 
-              pEngineMain->removeDisplayableObject(pObject);
-              std::cout<<"A key has been found"<< std:: endl;
-              this->setkey(1);
+            }
 
         }
     }
