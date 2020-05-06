@@ -183,6 +183,7 @@ void Character::virtDoUpdate(int iCurrentTime)
             {
                 pEngineMain->removeDisplayableObject(pObject);
                 this->sethp(-(pObject->attack));
+                this->setgold(pObject->gold);
             }
 
         }
