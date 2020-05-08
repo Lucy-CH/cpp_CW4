@@ -30,7 +30,8 @@ public:
     void MouseDown(int iButton, int iX, int iY) ;
     void virtDrawStringsOnTop();
     void virtKeyDown(int iKeyCode);
-    
+    void savegame();
+    void loadgame();
     
 protected:
     Character* character;

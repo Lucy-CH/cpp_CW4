@@ -25,6 +25,8 @@ class Psylc7Engine:
         public BaseEngine
 {
 public:
+    bool is_resumed;
+    
     Psylc7Engine();
     ~Psylc7Engine();
     void virtSetupBackgroundBuffer();
@@ -42,4 +44,5 @@ protected:
     MainState* menu;
     PlayState* play;
     PauseState* pausestate;
+
 };

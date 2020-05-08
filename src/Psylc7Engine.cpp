@@ -11,11 +11,14 @@
 #include "PauseState.hpp"
 
 Psylc7Engine::Psylc7Engine()
+
 {
     menu = new MainState(this);
     play = new PlayState(this);
     pausestate= new PauseState(this);
     currentState = menu;
+    
+    is_resumed = false;
 }
 
 Psylc7Engine::~Psylc7Engine()

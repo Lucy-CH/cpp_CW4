@@ -83,6 +83,9 @@ void Character::setatk(int iChange){this->atk += iChange;}
 void Character::setdef(int iChange){this->def += iChange;}
 void Character::setgold(int iChange){this->gold += iChange;}
 void Character::setkey(int iChange){this->key += iChange;}
+void Character::setX(int iChange){this->m_iCurrentScreenX = iChange;}
+void Character::setY(int iChange){this->m_iCurrentScreenY = iChange;}
+
 
 void Character::virtDraw()
 {

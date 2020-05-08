@@ -37,12 +37,17 @@ public:
     int getCurrentX(){return this->m_iCurrentScreenX;}
     int getCurrentY(){return this->m_iCurrentScreenY;}
     int getKeyNumber(){return this->key;}
+    
     //Modifiers
     void sethp(int iChange);
     void setatk(int iChange);
     void setdef(int iChange);
     void setgold(int iChange);
     void setkey(int iChange);
+    
+    void setX(int iChange);
+    void setY(int iChange);
+    
     
     
 protected:

@@ -26,14 +26,14 @@ void PauseState::SetUpBackgroundBuffer()
 }
 void PauseState::virtDrawStringsOnTop()
 
-{  printf("print?\n");
+{  
    char buf[128];
-   sprintf(buf, "Game paused press esc to resume");
+   sprintf(buf, "Game paused press SPACE to resume");
    engine->drawForegroundString(engine->getWindowWidth()*0.35, 100, buf, 0xffffff, engine->getFont("Helvetica-Normal.ttf", 15));
 }
 void PauseState::virtKeyDown(int iKeyCode)
 {
-  if(iKeyCode ==SDLK_ESCAPE)
+  if(iKeyCode ==SDLK_SPACE)
   {
       engine->setState(engine->isPlaying());
   }
@@ -42,7 +42,7 @@ void PauseState::virtKeyDown(int iKeyCode)
 void PauseState::InitialiseObjects()
 {
 
-   // engine->destroyOldObjects(true);
+    engine->setAllObjectsVisible(false);
 }
 
 void PauseState:: update()
