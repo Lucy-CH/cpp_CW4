@@ -36,10 +36,10 @@ public:
     State* isPaused();
     void virtDrawStringsOnTop();
     
-    
+
 protected:
     State* currentState;
     MainState* menu;
     PlayState* play;
-    PauseState* pause;
+    PauseState* pausestate;
 };

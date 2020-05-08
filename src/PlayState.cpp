@@ -10,12 +10,14 @@
 #include "PlayState.hpp"
 #include "Key.hpp"
 #include "GreenSlime.hpp"
+#include "Stairs.hpp"
 #include <fstream>
 #include <iostream>
 
 PlayState::PlayState(Psylc7Engine* pEngine)
 :State(pEngine)
 ,m_tile(pEngine)
+,m_ipause(false)
 {
 
 }
@@ -81,16 +83,19 @@ void PlayState::InitialiseObjects()
     /* Destroy the existing objects*/
     engine->destroyOldObjects(true);
     /* Create an object array*/
-    engine->createObjectArray(4);
+    engine->createObjectArray(5);
     
-    character = new Character(engine,192-16, 352-16,p_m_tile);
+    
     yellowKey1 = new Key(engine, 160-16, 320-16);
     greenslime1 = new GreenSlime(engine,96-16, 32-16);
-    
-    engine->storeObjectInArray(0,character);
+    stair = new Stairs(engine, 16,16);
+    character = new Character(engine,192-16, 352-16,p_m_tile);
+    engine->storeObjectInArray(3,character);
     engine->storeObjectInArray(1, yellowKey1);
     engine->storeObjectInArray(2, greenslime1);
-    engine->storeObjectInArray(3, NULL);
+    engine->storeObjectInArray(0, stair);
+    
+    engine->storeObjectInArray(4, NULL);
     engine->setAllObjectsVisible(true);
     
     
@@ -129,10 +134,16 @@ void PlayState::virtDrawStringsOnTop()
 }
 void PlayState:: virtKeyDown(int iKeyCode)
 {
-    if(iKeyCode == SDLK_ESCAPE)
+    switch (iKeyCode)
     {
-       // engine->pause();
-        std::cout<<"pause??"<<std::endl;
-        engine->setState(engine->isPaused());
+    case SDLK_ESCAPE: // End program when escape is pressed
+        engine->setExitWithCode(0);
+        break;
+    case SDLK_SPACE: // SPACE Pauses
+        if (engine->BaseEngine::isPaused())
+            engine->unpause();
+        else
+            engine->pause();
+        break;
     }
 }

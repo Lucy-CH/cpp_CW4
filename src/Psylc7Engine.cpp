@@ -14,7 +14,7 @@ Psylc7Engine::Psylc7Engine()
 {
     menu = new MainState(this);
     play = new PlayState(this);
-    pause= new PauseState(this);
+    pausestate= new PauseState(this);
     currentState = menu;
 }
 
@@ -60,7 +60,7 @@ State* Psylc7Engine::isPlaying()
 }
 State* Psylc7Engine::isPaused()
 {
-    return pause;
+    return pausestate;
 }
 
 void Psylc7Engine::virtDrawStringsOnTop()

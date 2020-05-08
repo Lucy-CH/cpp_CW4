@@ -97,6 +97,9 @@ void Character::virtDraw()
 void Character::virtDoUpdate(int iCurrentTime)
 {
 
+    if (!isVisible() || getEngine()->isPaused() )
+        return;
+
     /*
      !!Here it comes the collision detection
      */
@@ -104,7 +107,7 @@ void Character::virtDoUpdate(int iCurrentTime)
     // 1. Check and decide how the user will interact with the tiles
     // logic is, if the following tile is a wall, player shouldn't move
     // if it's a door, check if the player has at least a key, if not the player shouldn't move
-    
+
     if (getEngine()->isKeyPressed(SDLK_UP))
     {
     
@@ -192,7 +195,11 @@ void Character::virtDoUpdate(int iCurrentTime)
                 this->sethp(-(pObject->attack));
                 this->setgold(pObject->gold);
             }
-
+           //IF THE OBJECT IS A STAIRCASE
+            if(pObject->value == 3)
+            {
+                
+            }
         }
     }
     //3.The player cannot go into area that it's not supposed to be

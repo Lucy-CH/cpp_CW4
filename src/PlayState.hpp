@@ -16,6 +16,7 @@
 class Character;
 class Key;
 class GreenSlime;
+class Stairs;
 
 class PlayState:
     public State
@@ -30,10 +31,13 @@ public:
     void virtDrawStringsOnTop();
     void virtKeyDown(int iKeyCode);
     
+    
 protected:
     Character* character;
     Psylc7TileManager m_tile;
     Psylc7TileManager* p_m_tile = &m_tile;
     Key* yellowKey1;
     GreenSlime* greenslime1;
+    Stairs* stair;
+    bool m_ipause;
 };
