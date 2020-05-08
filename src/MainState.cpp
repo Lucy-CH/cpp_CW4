@@ -70,3 +70,7 @@ void MainState::virtDrawStringsOnTop()
     engine->drawForegroundString(engine->getWindowWidth()*0.35, 100, buf, 0x000000, NULL);
     //engine->drawBackgroundString(150, 40, "Hello", 0xff00ff,NULL);
 }
+void MainState::virtKeyDown(int iKeyCode)
+{
+    
+}

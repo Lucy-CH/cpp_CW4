@@ -8,11 +8,13 @@
 #include "Psylc7Engine.hpp"
 #include "MainState.hpp"
 #include "PlayState.hpp"
+#include "PauseState.hpp"
 
 Psylc7Engine::Psylc7Engine()
 {
     menu = new MainState(this);
     play = new PlayState(this);
+    pause= new PauseState(this);
     currentState = menu;
 }
 
@@ -23,7 +25,7 @@ Psylc7Engine::~Psylc7Engine()
 
 void Psylc7Engine::virtSetupBackgroundBuffer()
 {
-  
+    
     currentState->SetUpBackgroundBuffer();
 }
 
@@ -41,7 +43,7 @@ int Psylc7Engine::virtInitialiseObjects()
 
 void Psylc7Engine::virtKeyDown(int iKeyCode)
 {
-    
+    currentState->virtKeyDown(iKeyCode);
 }
 void Psylc7Engine::setState(State *state)
 {
@@ -56,6 +58,11 @@ State* Psylc7Engine::isPlaying()
      return play;
 
 }
+State* Psylc7Engine::isPaused()
+{
+    return pause;
+}
+
 void Psylc7Engine::virtDrawStringsOnTop()
 {
 

@@ -33,6 +33,7 @@ class Psylc7TileManager:
         
     bool isWall(int iScreenX, int iScreenY);
 
+
  protected:
     SimpleImage floor;
     SimpleImage wall;

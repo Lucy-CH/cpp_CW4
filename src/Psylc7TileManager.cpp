@@ -84,3 +84,4 @@ bool Psylc7TileManager::isWall(int iScreenX, int iScreenY)
     else{return false;}
    
 }
+

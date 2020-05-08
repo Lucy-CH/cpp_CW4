@@ -102,14 +102,20 @@ void Character::virtDoUpdate(int iCurrentTime)
      */
     
     // 1. Check and decide how the user will interact with the tiles
+    // logic is, if the following tile is a wall, player shouldn't move
+    // if it's a door, check if the player has at least a key, if not the player shouldn't move
+    
     if (getEngine()->isKeyPressed(SDLK_UP))
     {
     
     if(!(Ptile->isWall(m_iCurrentScreenX+m_iStartDrawPosX, m_iCurrentScreenY+m_iStartDrawPosY)))
     {
-          m_iCurrentScreenY -= 2;
-          icony = 32*3;
-          MoveBodyImage();
+   
+            m_iCurrentScreenY -= 2;
+            icony = 32*3;
+            MoveBodyImage();
+        
+
     }
     }
     
@@ -118,6 +124,7 @@ void Character::virtDoUpdate(int iCurrentTime)
     {
     if(!(Ptile->isWall(m_iCurrentScreenX, m_iCurrentScreenY-m_iStartDrawPosY)))
     {
+    
          m_iCurrentScreenY += 2;
          icony = 32*0;
          MoveBodyImage();
@@ -191,10 +198,10 @@ void Character::virtDoUpdate(int iCurrentTime)
     //3.The player cannot go into area that it's not supposed to be
       if (m_iCurrentScreenX < 16)
           m_iCurrentScreenX = 16;
-      if (m_iCurrentScreenX >= getEngine()->getWindowWidth() - m_iDrawWidth)
-          m_iCurrentScreenX = getEngine()->getWindowWidth() - m_iDrawWidth;
-      if (m_iCurrentScreenY < 0)
-          m_iCurrentScreenY = 0;
+      if (m_iCurrentScreenX >= 11*32 - m_iDrawWidth-16)
+          m_iCurrentScreenX = 11*32 - m_iDrawWidth-16;
+      if (m_iCurrentScreenY < 16)
+          m_iCurrentScreenY = 16;
       if (m_iCurrentScreenY >= getEngine()->getWindowHeight() - m_iDrawHeight -16)
           m_iCurrentScreenY = getEngine()->getWindowHeight() - m_iDrawHeight -16;
   

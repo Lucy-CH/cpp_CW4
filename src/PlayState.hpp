@@ -28,6 +28,8 @@ public:
     void InitialiseObjects();
     void MouseDown(int iButton, int iX, int iY) ;
     void virtDrawStringsOnTop();
+    void virtKeyDown(int iKeyCode);
+    
 protected:
     Character* character;
     Psylc7TileManager m_tile;

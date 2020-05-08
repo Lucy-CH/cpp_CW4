@@ -19,6 +19,7 @@
 class State;// forward declaring classes instead of using headers
 class MainState;
 class PlayState;
+class PauseState;
 
 class Psylc7Engine:
         public BaseEngine
@@ -32,11 +33,13 @@ public:
     void virtKeyDown(int iKeyCode);
     void setState(State* state);
     State* isPlaying();
+    State* isPaused();
     void virtDrawStringsOnTop();
+    
     
 protected:
     State* currentState;
     MainState* menu;
     PlayState* play;
-   
+    PauseState* pause;
 };

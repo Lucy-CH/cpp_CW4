@@ -25,6 +25,7 @@ public:
     virtual void InitialiseObjects() = 0;
     virtual void MouseDown(int iButton, int iX, int iY) = 0;
     virtual void virtDrawStringsOnTop() =0;
+    virtual void virtKeyDown(int iKeyCode) = 0;
 protected:
     Psylc7Engine *engine;
     

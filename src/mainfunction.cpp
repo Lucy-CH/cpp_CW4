@@ -31,6 +31,9 @@ int doProgram(int argc, char *argv[])
 	// Needs just one of the following lines - choose which object to create - ENSURE ONLY ONE IS CREATED.
 	// Note these are from simplest to most complex demo.
     Psylc7Engine oMain;
+
+
+
 	//JasonsDemoA oMain; // Jason's version of MyDemoA, MyObjectA and MyTileManagerA
 	//SimpleDemo oMain;
 	//ImageObjectDemo oMain; // Shows drawing images to the foreground and background

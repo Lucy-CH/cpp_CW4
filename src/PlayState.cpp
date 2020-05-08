@@ -10,6 +10,8 @@
 #include "PlayState.hpp"
 #include "Key.hpp"
 #include "GreenSlime.hpp"
+#include <fstream>
+#include <iostream>
 
 PlayState::PlayState(Psylc7Engine* pEngine)
 :State(pEngine)
@@ -34,25 +36,30 @@ void PlayState::SetUpBackgroundBuffer()
     
     
     m_tile.setMapSize(11, 11);
+    std::ifstream myfile("./gameres/Level1.txt");
+    char array[121];
+    if(!myfile.is_open())
+    {std::cout<<"wrong"<< std::endl;}
+    if(myfile.is_open()){
+        std::cout<<"is open"<<std::endl;
     
-    const char* data[] = {
-        "bbbbbbbbbbb",
-        "ccccccccccb",
-        "bbbdbcbbbcb",
-        "bbbcbcbbbcb",
-        "cdccbcccdcb",
-        "bbbcbdbbbcb",
-        "bbbcbcccccb",
-        "cdccbbbbbbb",
-        "bbbccdcccdc",
-        "bbbcbbbcbbb",
-        "bbbcbbbcbbb"
+        for(int x = 0; x < 121;x++){
+            myfile>> array[x];
+            std::cout<< array[x]<< std::endl;
+        }
+    }
 
-    };
-    
-    for ( int x = 0 ; x < 11 ; x++ )
+    int z = 0;
     for ( int y = 0 ; y < 11 ; y++ )
-    m_tile.setMapValue( x, y, data[y][x]-'a' );
+    {
+         for ( int x = 0 ; x < 11 ; x++ )
+         {
+               m_tile.setMapValue( x, y, array[z]-'a');
+               z++;
+         }
+    }
+
+  
     
     for ( int y = 0 ; y < 11 ; y++ )
     {
@@ -119,4 +126,13 @@ void PlayState::virtDrawStringsOnTop()
     sprintf(buf5, "key: %d ",key);
     engine->drawForegroundString(370+150, 230 +30 +30 +30, buf5, 0x000000, engine->getFont("Helvetica-Normal.ttf", 15));
     
+}
+void PlayState:: virtKeyDown(int iKeyCode)
+{
+    if(iKeyCode == SDLK_ESCAPE)
+    {
+       // engine->pause();
+        std::cout<<"pause??"<<std::endl;
+        engine->setState(engine->isPaused());
+    }
 }

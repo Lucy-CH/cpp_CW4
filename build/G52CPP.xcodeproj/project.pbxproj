@@ -66,9 +66,11 @@
 		D4F93DA0702942199FA12B19 /* StarfieldDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0D6DAA5E43A4FD586024E37 /* StarfieldDemo.cpp */; };
 		D5B525472B02499EAF37CE08 /* mainfunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4E314E4646CFB95FDE68 /* mainfunction.cpp */; };
 		D9A95B7456E44695ADDD4457 /* PlayingCardsDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A026FB92B24E54AC7B6989 /* PlayingCardsDemo.cpp */; };
+		DB3EF5D42464AFAA00AD426C /* PauseState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB3EF5D22464AFAA00AD426C /* PauseState.cpp */; };
 		DB77B4C3245C772A0033FFAB /* Key.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB77B4C1245C772A0033FFAB /* Key.cpp */; };
 		DB77B4C9245C99150033FFAB /* MyDisplayableObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB77B4C7245C99150033FFAB /* MyDisplayableObject.cpp */; };
 		DB77B4CC245CAFD70033FFAB /* GreenSlime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB77B4CA245CAFD70033FFAB /* GreenSlime.cpp */; };
+		DBA62CFE2464E640009F7F22 /* Stairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBA62CFC2464E640009F7F22 /* Stairs.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,12 +136,16 @@
 		CF5830AD039749C9A5E2BEFD /* TileManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TileManager.cpp; path = src/TileManager.cpp; sourceTree = SOURCE_ROOT; };
 		D88796DF320F491BB1903EDB /* PlayState.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PlayState.cpp; path = src/PlayState.cpp; sourceTree = SOURCE_ROOT; };
 		D8BE7300F2A746409E0BFA93 /* JasonsTileManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = JasonsTileManager.cpp; path = src/JasonsTileManager.cpp; sourceTree = SOURCE_ROOT; };
+		DB3EF5D22464AFAA00AD426C /* PauseState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PauseState.cpp; path = src/PauseState.cpp; sourceTree = "<group>"; };
+		DB3EF5D32464AFAA00AD426C /* PauseState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = PauseState.hpp; path = src/PauseState.hpp; sourceTree = "<group>"; };
 		DB77B4C1245C772A0033FFAB /* Key.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Key.cpp; path = src/Key.cpp; sourceTree = "<group>"; };
 		DB77B4C2245C772A0033FFAB /* Key.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Key.hpp; path = src/Key.hpp; sourceTree = "<group>"; };
 		DB77B4C7245C99150033FFAB /* MyDisplayableObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MyDisplayableObject.cpp; path = src/MyDisplayableObject.cpp; sourceTree = "<group>"; };
 		DB77B4C8245C99150033FFAB /* MyDisplayableObject.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = MyDisplayableObject.hpp; path = src/MyDisplayableObject.hpp; sourceTree = "<group>"; };
 		DB77B4CA245CAFD70033FFAB /* GreenSlime.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GreenSlime.cpp; path = src/GreenSlime.cpp; sourceTree = "<group>"; };
 		DB77B4CB245CAFD70033FFAB /* GreenSlime.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = GreenSlime.hpp; path = src/GreenSlime.hpp; sourceTree = "<group>"; };
+		DBA62CFC2464E640009F7F22 /* Stairs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Stairs.cpp; path = src/Stairs.cpp; sourceTree = "<group>"; };
+		DBA62CFD2464E640009F7F22 /* Stairs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Stairs.hpp; path = src/Stairs.hpp; sourceTree = "<group>"; };
 		DC20BB4511A54D9A94752B5E /* ZoomingDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ZoomingDemo.cpp; path = src/ZoomingDemo.cpp; sourceTree = SOURCE_ROOT; };
 		DE8A7BF600A943BCA9704241 /* FontManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FontManager.cpp; path = src/FontManager.cpp; sourceTree = SOURCE_ROOT; };
 		E4BC49B3997045C3BBF9C0FE /* BouncingBallMain.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BouncingBallMain.cpp; path = src/BouncingBallMain.cpp; sourceTree = SOURCE_ROOT; };
@@ -236,6 +242,10 @@
 				DB77B4C8245C99150033FFAB /* MyDisplayableObject.hpp */,
 				DB77B4CA245CAFD70033FFAB /* GreenSlime.cpp */,
 				DB77B4CB245CAFD70033FFAB /* GreenSlime.hpp */,
+				DB3EF5D22464AFAA00AD426C /* PauseState.cpp */,
+				DB3EF5D32464AFAA00AD426C /* PauseState.hpp */,
+				DBA62CFC2464E640009F7F22 /* Stairs.cpp */,
+				DBA62CFD2464E640009F7F22 /* Stairs.hpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
@@ -353,6 +363,7 @@
 				CDFFBD735E7242A3909300E7 /* DraggingDemo.cpp in Sources */,
 				9B2ED45851EB44BE9C8611D0 /* DrawingSurface.cpp in Sources */,
 				BF03221F08554890BF5DA209 /* FlashingDemo.cpp in Sources */,
+				DB3EF5D42464AFAA00AD426C /* PauseState.cpp in Sources */,
 				5AC44D13AF81466DB539BCE8 /* FontManager.cpp in Sources */,
 				C310085A63FB45998181B1A9 /* ImageMappingDemo.cpp in Sources */,
 				4B25238E710648B48CD9349D /* ImageObjectDemo.cpp in Sources */,
@@ -362,6 +373,7 @@
 				D01D68FDEAD04C4E92014D6D /* JigsawDemo.cpp in Sources */,
 				B205E7C36CF54CA891444D86 /* MainState.cpp in Sources */,
 				6773F5F183AE40549FCE478C /* MazeDemoMain.cpp in Sources */,
+				DBA62CFE2464E640009F7F22 /* Stairs.cpp in Sources */,
 				42D77F3CFBA94672BE5A1568 /* MazeDemoObject.cpp in Sources */,
 				1A25017F393D45FAA41B4A23 /* MazeDemoTileManager.cpp in Sources */,
 				DB77B4CC245CAFD70033FFAB /* GreenSlime.cpp in Sources */,
