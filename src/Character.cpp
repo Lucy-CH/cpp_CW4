@@ -187,6 +187,7 @@ void Character::virtDoUpdate(int iCurrentTime)
             if(pObject->value ==1)
             {
                   pEngineMain->removeDisplayableObject(pObject);
+                  pEngineMain->yellowkey1removed = true;
                   std::cout<<"A key has been found"<< std:: endl;
                   this->setkey(1);
 
@@ -195,8 +196,10 @@ void Character::virtDoUpdate(int iCurrentTime)
             if(pObject->value == 2)
             {
                 pEngineMain->removeDisplayableObject(pObject);
+                pEngineMain->greenslime1removed = true;
                 this->sethp(-(pObject->attack));
                 this->setgold(pObject->gold);
+         
             }
            //IF THE OBJECT IS A STAIRCASE
             if(pObject->value == 3)

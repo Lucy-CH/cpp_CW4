@@ -88,16 +88,24 @@ void PlayState::InitialiseObjects()
     greenslime1 = new GreenSlime(engine,96-16, 32-16);
     stair = new Stairs(engine, 16,16);
     character = new Character(engine,192-16, 352-16,p_m_tile);
-    engine->storeObjectInArray(3,character);
+    
+    engine->storeObjectInArray(0, stair);
     engine->storeObjectInArray(1, yellowKey1);
     engine->storeObjectInArray(2, greenslime1);
-    engine->storeObjectInArray(0, stair);
+    engine->storeObjectInArray(3,character);
     engine->storeObjectInArray(4, NULL);
     
     if(engine->is_resumed)
     {
         std:: cout<< "is resumed"<<std::endl;
         loadgame();
+        if(engine->yellowkey1removed){
+            engine->removeDisplayableObject(yellowKey1);
+        }
+        if(engine->greenslime1removed){
+             engine->removeDisplayableObject(greenslime1);
+        }
+        
 
     }
     
@@ -155,7 +163,7 @@ void PlayState:: virtKeyDown(int iKeyCode)
 /*
  Game need to be saved before pausing
  */
-void PlayState:: savegame()
+void PlayState::savegame()
 {
     std:: ofstream saveFile;
     saveFile.open("saveData.txt");

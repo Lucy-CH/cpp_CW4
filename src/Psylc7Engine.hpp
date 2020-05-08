@@ -26,6 +26,8 @@ class Psylc7Engine:
 {
 public:
     bool is_resumed;
+    bool yellowkey1removed;
+    bool greenslime1removed;
     
     Psylc7Engine();
     ~Psylc7Engine();

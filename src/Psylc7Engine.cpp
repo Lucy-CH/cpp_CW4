@@ -19,6 +19,8 @@ Psylc7Engine::Psylc7Engine()
     currentState = menu;
     
     is_resumed = false;
+    yellowkey1removed = false;
+    greenslime1removed = false;
 }
 
 Psylc7Engine::~Psylc7Engine()

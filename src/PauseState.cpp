@@ -42,7 +42,7 @@ void PauseState::virtKeyDown(int iKeyCode)
 void PauseState::InitialiseObjects()
 {
 
-    engine->setAllObjectsVisible(false);
+    engine->destroyOldObjects(true);
 }
 
 void PauseState:: update()
