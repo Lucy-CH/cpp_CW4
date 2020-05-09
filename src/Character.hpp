@@ -26,6 +26,7 @@ public:
     void virtDraw();
     void virtDoUpdate(int iCurrentTime);
     void MoveBodyImage();
+    void MouseDown(int iButton, int iX, int iY);
     
    
 
@@ -44,7 +45,6 @@ public:
     void setdef(int iChange);
     void setgold(int iChange);
     void setkey(int iChange);
-    
     void setX(int iChange);
     void setY(int iChange);
     

@@ -116,12 +116,12 @@ void PlayState::InitialiseObjects()
 }
 void PlayState::MouseDown(int iButton, int iX, int iY)
 {
-    
+    character->MouseDown(iButton, iX, iY);
 }
 void PlayState::virtDrawStringsOnTop()
 {  //draws the beige status box on screen and print its status
 
-    //check it works :D
+    
     int atk = character->getatk();
     int def = character->getdef();
     int hp = character->gethp();
@@ -144,6 +144,9 @@ void PlayState::virtDrawStringsOnTop()
     engine->drawForegroundString(370, 230 +30 +30 +30, buf4, 0x000000, engine->getFont("Helvetica-Normal.ttf", 15));
     sprintf(buf5, "key: %d ",key);
     engine->drawForegroundString(370+150, 230 +30 +30 +30, buf5, 0x000000, engine->getFont("Helvetica-Normal.ttf", 15));
+    
+    //Also print out dialogs
+
     
 }
 void PlayState:: virtKeyDown(int iKeyCode)

@@ -71,6 +71,7 @@
 		DB77B4C9245C99150033FFAB /* MyDisplayableObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB77B4C7245C99150033FFAB /* MyDisplayableObject.cpp */; };
 		DB77B4CC245CAFD70033FFAB /* GreenSlime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB77B4CA245CAFD70033FFAB /* GreenSlime.cpp */; };
 		DBA62CFE2464E640009F7F22 /* Stairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBA62CFC2464E640009F7F22 /* Stairs.cpp */; };
+		DBDDA5EB246624C200CF937B /* FireBall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBDDA5E9246624C200CF937B /* FireBall.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +147,8 @@
 		DB77B4CB245CAFD70033FFAB /* GreenSlime.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = GreenSlime.hpp; path = src/GreenSlime.hpp; sourceTree = "<group>"; };
 		DBA62CFC2464E640009F7F22 /* Stairs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Stairs.cpp; path = src/Stairs.cpp; sourceTree = "<group>"; };
 		DBA62CFD2464E640009F7F22 /* Stairs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Stairs.hpp; path = src/Stairs.hpp; sourceTree = "<group>"; };
+		DBDDA5E9246624C200CF937B /* FireBall.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = FireBall.cpp; path = src/FireBall.cpp; sourceTree = "<group>"; };
+		DBDDA5EA246624C200CF937B /* FireBall.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = FireBall.hpp; path = src/FireBall.hpp; sourceTree = "<group>"; };
 		DC20BB4511A54D9A94752B5E /* ZoomingDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ZoomingDemo.cpp; path = src/ZoomingDemo.cpp; sourceTree = SOURCE_ROOT; };
 		DE8A7BF600A943BCA9704241 /* FontManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FontManager.cpp; path = src/FontManager.cpp; sourceTree = SOURCE_ROOT; };
 		E4BC49B3997045C3BBF9C0FE /* BouncingBallMain.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BouncingBallMain.cpp; path = src/BouncingBallMain.cpp; sourceTree = SOURCE_ROOT; };
@@ -246,6 +249,8 @@
 				DB3EF5D32464AFAA00AD426C /* PauseState.hpp */,
 				DBA62CFC2464E640009F7F22 /* Stairs.cpp */,
 				DBA62CFD2464E640009F7F22 /* Stairs.hpp */,
+				DBDDA5E9246624C200CF937B /* FireBall.cpp */,
+				DBDDA5EA246624C200CF937B /* FireBall.hpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
@@ -387,6 +392,7 @@
 				4A0B0700E1B14F81A3D00316 /* SimpleImage.cpp in Sources */,
 				D4F93DA0702942199FA12B19 /* StarfieldDemo.cpp in Sources */,
 				A88E6D260D154158BB3B74F1 /* State.cpp in Sources */,
+				DBDDA5EB246624C200CF937B /* FireBall.cpp in Sources */,
 				7618F977F21E458489831608 /* TileManager.cpp in Sources */,
 				52586EC6610E48FAA28A7098 /* ZoomingDemo.cpp in Sources */,
 				D5B525472B02499EAF37CE08 /* mainfunction.cpp in Sources */,

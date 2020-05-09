@@ -217,11 +217,19 @@ void Character::virtDoUpdate(int iCurrentTime)
           m_iCurrentScreenY = 16;
       if (m_iCurrentScreenY >= getEngine()->getWindowHeight() - m_iDrawHeight -16)
           m_iCurrentScreenY = getEngine()->getWindowHeight() - m_iDrawHeight -16;
-  
+    
+   //4.Handle mouse input,player can also move character around using mouse
+    
 
     
 
     this->redrawDisplay();
+}
+
+void Character::MouseDown(int iButton, int iX, int iY)
+{
+    std::cout<<iX<<","<<iY<<std::endl;
+  
 }
 
 void Character::MoveBodyImage(){
