@@ -21,8 +21,11 @@ PlayState::PlayState(Psylc7Engine* pEngine)
 ,m_tile(pEngine)
 ,m_ipause(false)
 ,fire_visible(false)
+,offset(0)
 {
-    image = pEngine->loadImage("./gameres/Background/playstate_background.png",true);
+    image = pEngine->loadImage("./gameres/Backgrounds/playstate_background.png",true);
+    
+    
 
 }
 
@@ -40,7 +43,7 @@ void PlayState::SetUpBackgroundBuffer()
     engine->lockBackgroundForDrawing();
     engine->fillBackground(0xffffff);
     
-    //load tile value from file
+    //!1.load tile value from file
     m_tile.setMapSize(11, 11);
     std::ifstream myfile("./gameres/Level1.txt");
     char array[121];
@@ -52,7 +55,7 @@ void PlayState::SetUpBackgroundBuffer()
             myfile>> array[x];
         }
     }
-    // set the values
+    //!2.set the values
     int z = 0;
     for ( int y = 0 ; y < 11 ; y++ )
     {
@@ -62,18 +65,21 @@ void PlayState::SetUpBackgroundBuffer()
                z++;
          }
     }
-    //print value on console for checking
+    //!3.print value on console for checking
     for ( int y = 0 ; y < 11 ; y++ )
     {
       for ( int x = 0 ; x < 11 ; x++ )
       std::cout << m_tile.getMapValue(x,y);
       std::cout << std::endl;
     }
-    //rendering tiles
-    
+    //!4.Rendering tiles
     m_tile.setTopLeftPositionOnScreen( 0, 0 );
     m_tile.drawAllTiles( engine, engine->getBackgroundSurface() );
     
+    //!5.Animated Background
+
+    im2 = ImageManager::get()->resizeTo(image, engine->getWindowWidth(), engine->getWindowHeight());
+    im2.renderImage(engine->getBackgroundSurface(),offset,0,352,0,image.getWidth(),image.getHeight());
     engine->unlockBackgroundForDrawing();
     engine->redrawDisplay();
     
@@ -152,15 +158,15 @@ void PlayState::virtDrawStringsOnTop()
     char buf5[128];
     
     sprintf(buf, "Attack: %d ",atk);
-    engine->drawForegroundString(370, 230, buf, 0x000000, engine->getFont("Helvetica-Normal.ttf", 15));
+    engine->drawForegroundString(370, 230, buf, 0xffffff, engine->getFont("Helvetica-Normal.ttf", 15));
     sprintf(buf2, "defence: %d ", def);
-    engine->drawForegroundString(370, 230 + 30, buf2, 0x000000, engine->getFont("Helvetica-Normal.ttf", 15));
+    engine->drawForegroundString(370, 230 + 30, buf2, 0xffffff, engine->getFont("Helvetica-Normal.ttf", 15));
     sprintf(buf3, "hp: %d ",hp);
-    engine->drawForegroundString(370, 230 +30 +30, buf3, 0x000000, engine->getFont("Helvetica-Normal.ttf", 15));
+    engine->drawForegroundString(370, 230 +30 +30, buf3, 0xffffff, engine->getFont("Helvetica-Normal.ttf", 15));
     sprintf(buf4, "gold: %d ",gold);
-    engine->drawForegroundString(370, 230 +30 +30 +30, buf4, 0x000000, engine->getFont("Helvetica-Normal.ttf", 15));
+    engine->drawForegroundString(370, 230 +30 +30 +30, buf4, 0xffffff, engine->getFont("Helvetica-Normal.ttf", 15));
     sprintf(buf5, "key: %d ",key);
-    engine->drawForegroundString(370+150, 230 +30 +30 +30, buf5, 0x000000, engine->getFont("Helvetica-Normal.ttf", 15));
+    engine->drawForegroundString(370+150, 230 +30 +30 +30, buf5, 0xffffff, engine->getFont("Helvetica-Normal.ttf", 15));
     
     //Also print out dialogs
 
@@ -213,5 +219,16 @@ void PlayState::loadgame()
     character->setY(array[1]);
    
     
+}
+
+int PlayState::changeoffset()
+{
+    if(offset < 671)
+    {
+         this->offset += 1;
+    }else{offset = 0;}
+
+
+    return this->offset;
 }
 

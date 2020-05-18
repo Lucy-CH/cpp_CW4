@@ -12,12 +12,15 @@
 
 Psylc7Engine::Psylc7Engine()
 
+
 {
     menu = new MainState(this);
     play = new PlayState(this);
     pausestate= new PauseState(this);
+    
     currentState = menu;
     
+    is_play_state = false;
     is_resumed = false;
     yellowkey1removed = false;
     greenslime1removed = false;
@@ -60,11 +63,13 @@ void Psylc7Engine::setState(State *state)
 
 State* Psylc7Engine::isPlaying()
 {
-     return play;
+    is_play_state = true;
+    return play;
 
 }
 State* Psylc7Engine::isPaused()
 {
+    is_play_state = false;
     return pausestate;
 }
 
@@ -74,3 +79,13 @@ void Psylc7Engine::virtDrawStringsOnTop()
     currentState->virtDrawStringsOnTop();
 }
 
+void Psylc7Engine::virtMainLoopDoBeforeUpdate()
+{
+    if(is_play_state)
+   {
+       currentState->changeoffset();
+       this->virtSetupBackgroundBuffer();
+       return;
+   }
+else{return;}
+}

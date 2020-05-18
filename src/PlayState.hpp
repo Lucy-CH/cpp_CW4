@@ -33,6 +33,9 @@ public:
     void virtKeyDown(int iKeyCode);
     void savegame();
     void loadgame();
+    //setters
+    int changeoffset();
+
 
   
 protected:
@@ -45,7 +48,10 @@ protected:
     FireBall* fireball;
     
     SimpleImage image;
+    SimpleImage im2;
     
     bool m_ipause;
     bool fire_visible;
+    int offset;
 };
+

@@ -28,6 +28,7 @@ public:
     bool is_resumed;
     bool yellowkey1removed;
     bool greenslime1removed;
+    bool is_play_state;
     
     Psylc7Engine();
     ~Psylc7Engine();
@@ -39,7 +40,7 @@ public:
     State* isPlaying();
     State* isPaused();
     void virtDrawStringsOnTop();
-    
+    void virtMainLoopDoBeforeUpdate();
     
 
 protected:

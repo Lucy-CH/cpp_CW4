@@ -24,7 +24,8 @@ public:
  void virtKeyDown(int iKeyCode);
  void InitialiseObjects();
  void update();
-void MouseDown(int iButton, int iX, int iY);
+ void MouseDown(int iButton, int iX, int iY);
+ int changeoffset();
     
  
 protected:
