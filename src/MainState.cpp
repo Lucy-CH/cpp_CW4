@@ -78,5 +78,5 @@ void MainState::virtKeyDown(int iKeyCode)
 
 int MainState::changeoffset()
 {
-    
+    return 0;
 }

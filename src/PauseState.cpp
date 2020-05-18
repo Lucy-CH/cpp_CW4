@@ -56,5 +56,5 @@ void PauseState::MouseDown(int iButton, int iX, int iY)
 }
 int PauseState::changeoffset()
 {
-    
+    return 0;
 }

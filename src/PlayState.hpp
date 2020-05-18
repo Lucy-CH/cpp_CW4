@@ -49,9 +49,13 @@ protected:
     
     SimpleImage image;
     SimpleImage im2;
+    SimpleImage snow;
     
     bool m_ipause;
     bool fire_visible;
-    int offset;
+  
+    int init;
+    int iconx;
+    int icony;
 };
 

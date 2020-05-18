@@ -21,9 +21,14 @@ PlayState::PlayState(Psylc7Engine* pEngine)
 ,m_tile(pEngine)
 ,m_ipause(false)
 ,fire_visible(false)
-,offset(0)
+,init(0)
+,iconx(0)
+,icony(0)
+
 {
     image = pEngine->loadImage("./gameres/Backgrounds/playstate_background.png",true);
+    snow = pEngine->loadImage("./gameres/Stuff/fireworks.png",true);
+    
     
     
 
@@ -40,6 +45,8 @@ void PlayState:: update()
 
 void PlayState::SetUpBackgroundBuffer()
 {
+    if(init == 0)
+    {
     engine->lockBackgroundForDrawing();
     engine->fillBackground(0xffffff);
     
@@ -76,11 +83,23 @@ void PlayState::SetUpBackgroundBuffer()
     m_tile.setTopLeftPositionOnScreen( 0, 0 );
     m_tile.drawAllTiles( engine, engine->getBackgroundSurface() );
     
-    //!5.Animated Background
+    //!5.Background for score board
 
     im2 = ImageManager::get()->resizeTo(image, engine->getWindowWidth(), engine->getWindowHeight());
-    im2.renderImage(engine->getBackgroundSurface(),offset,0,352,0,image.getWidth(),image.getHeight());
+    im2.renderImage(engine->getBackgroundSurface(),0,0,352,0,image.getWidth(),image.getHeight());
+    
+    snow.renderImageWithMask(engine->getBackgroundSurface(), iconx, icony, 352+64*4,0, 64, 64);
+        
     engine->unlockBackgroundForDrawing();
+        
+    init = 1;// if init is 1, it means tiles have been initialized and it doesn't have to be set again
+    }
+    //!Animated snow in the background
+    if(init == 1)
+    {   std::cout<<"Hello"<<std::endl;
+        snow.renderImage(engine->getBackgroundSurface(), iconx, icony, 352+64*4,0, 64, 64);
+    }
+    
     engine->redrawDisplay();
     
 }
@@ -181,6 +200,7 @@ void PlayState:: virtKeyDown(int iKeyCode)
         break;
     case SDLK_SPACE: // SPACE Pauses
         savegame();
+        init = 0;
         engine->setState(engine->isPaused());
             engine->is_resumed = true;
         break;
@@ -223,12 +243,48 @@ void PlayState::loadgame()
 
 int PlayState::changeoffset()
 {
-    if(offset < 671)
-    {
-         this->offset += 1;
-    }else{offset = 0;}
+      int iTick = engine->getModifiedTime()/100; // 1 per 100ms
+      int iFrame = iTick%16;
+    
+ 
+      if(iFrame % 9 == 1) {
+             
+          icony= 64*1;
+          
+      }
+    
+      if(iFrame % 9 == 2) {
+            
+         icony= 64*2;
+     }
+     if(iFrame % 9 == 3) {
+           
+        icony= 64*3;
+     }
+     if(iFrame % 9 == 4) {
+           
+        icony= 64*4;
+    }
+    
+    if(iFrame % 9 == 5) {
+           
+        icony= 64*5;
+    }
+    if(iFrame % 9 == 6) {
+           
+        icony= 64*6;
+    }
+    if(iFrame % 9 == 7) {
+           
+        icony= 64*7;
+    }
+    if(iFrame % 9 == 8) {
+           
+        icony = 0;
+    }
 
-
-    return this->offset;
+    this->SetUpBackgroundBuffer();
+   
+    return 0;
 }
 

@@ -13,7 +13,7 @@
 Psylc7Engine::Psylc7Engine()
 
 
-{
+{ 
     menu = new MainState(this);
     play = new PlayState(this);
     pausestate= new PauseState(this);
@@ -81,11 +81,13 @@ void Psylc7Engine::virtDrawStringsOnTop()
 
 void Psylc7Engine::virtMainLoopDoBeforeUpdate()
 {
-    if(is_play_state)
+   if(is_play_state)
    {
+       
        currentState->changeoffset();
-       this->virtSetupBackgroundBuffer();
+       
        return;
    }
-else{return;}
+    
+   return;
 }
