@@ -19,7 +19,7 @@ class GreenSlime:
     public MyDisplayableObject
 {
 public:
-    GreenSlime(Psylc7Engine* pEngine, int iStartX,int iStartY);
+    GreenSlime(Psylc7Engine* pEngine, int iStartX,int iStartY,int id);
     ~GreenSlime();
     void virtDraw();
 

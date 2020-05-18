@@ -12,9 +12,10 @@
  Defence 0
  Gold 0
  Attack 0
+ identifier 0 //0 means this object is unique so doesn't have to be specified
  */
 Key::Key(Psylc7Engine* pEngine, int iStartX,int iStartY)
-    :MyDisplayableObject(pEngine,1,0,0,0,0)
+    :MyDisplayableObject(pEngine,1,0,0,0,0,0)
 
 {
     value = 1;

@@ -8,7 +8,7 @@
 #include "FireBall.hpp"
 
 FireBall::FireBall(Psylc7Engine* pEngine,int ix,int iy,Character* chara)
-:MyDisplayableObject(pEngine,4,0,0,0,0)
+:MyDisplayableObject(pEngine,4,0,0,0,0,0)
 ,iconx(0)
 ,icony(0)
 ,pCharacter(chara)

@@ -7,8 +7,8 @@
 #include "header.h"
 #include "GreenSlime.hpp"
 
-GreenSlime::GreenSlime(Psylc7Engine* pEngine, int iStartX,int iStartY)
-:MyDisplayableObject(pEngine,2,35,18,1,1)
+GreenSlime::GreenSlime(Psylc7Engine* pEngine, int iStartX,int iStartY, int id)
+:MyDisplayableObject(pEngine,2,35,18,1,1,id)
 {
 
      m_iStartDrawPosX = -16;

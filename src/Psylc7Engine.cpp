@@ -9,11 +9,22 @@
 #include "MainState.hpp"
 #include "PlayState.hpp"
 #include "PauseState.hpp"
+#include <fstream>
+#include <iostream>
 
 Psylc7Engine::Psylc7Engine()
 
 
-{ 
+{
+    
+    //!deletedobjects.txt stores list of objects that should have been destroyed, this
+    //!line of code ensure that this file is cleared every time the game restarts
+    
+    if( remove( "deletedobjects.txt" ) != 0 )
+      perror( "Error deleting file" );
+    else
+      puts( "File successfully deleted" );
+    
     menu = new MainState(this);
     play = new PlayState(this);
     pausestate= new PauseState(this);
@@ -91,3 +102,12 @@ void Psylc7Engine::virtMainLoopDoBeforeUpdate()
     
    return;
 }
+void Psylc7Engine::savegame(int id)
+{
+    std:: ofstream saveFile;
+    saveFile.open("deletedobjects.txt",std::ios_base::app);
+    saveFile<< id<< std::endl;
+  
+    saveFile.close();
+}
+

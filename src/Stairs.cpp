@@ -8,7 +8,7 @@
 #include "Stairs.hpp"
 
 Stairs::Stairs(Psylc7Engine* pEngine, int iStartX,int iStartY)
-:MyDisplayableObject(pEngine,3,0,0,0,0)
+:MyDisplayableObject(pEngine,3,0,0,0,0,0)
 {
     
      m_iStartDrawPosX = -16;

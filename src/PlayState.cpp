@@ -96,7 +96,7 @@ void PlayState::SetUpBackgroundBuffer()
     }
     //!Animated snow in the background
     if(init == 1)
-    {   std::cout<<"Hello"<<std::endl;
+    {  
         snow.renderImage(engine->getBackgroundSurface(), iconx, icony, 352+64*4,0, 64, 64);
     }
     
@@ -110,11 +110,13 @@ void PlayState::InitialiseObjects()
     /* Destroy the existing objects*/
     engine->destroyOldObjects(true);
     /* Create an object array*/
-    engine->createObjectArray(6);
+    engine->createObjectArray(10);
     
     
     yellowKey1 = new Key(engine, 160-16, 320-16);
-    greenslime1 = new GreenSlime(engine,96-16, 32-16);
+    greenslime1 = new GreenSlime(engine,96-16, 32-16,1);
+    greenslime2 = new GreenSlime(engine,112,32-16,2);
+    
     stair = new Stairs(engine, 16,16);
     character = new Character(engine,192-16, 352-16,p_m_tile);
     fireball = new FireBall(engine, 192-32, 352-16,character);
@@ -123,19 +125,46 @@ void PlayState::InitialiseObjects()
     engine->storeObjectInArray(1, yellowKey1);
     engine->storeObjectInArray(2, greenslime1);
     engine->storeObjectInArray(3,fireball);
-    engine->storeObjectInArray(4, character);
-    engine->storeObjectInArray(5, NULL);
+    engine->storeObjectInArray(4,greenslime2);
+    engine->storeObjectInArray(8, character);
+    engine->storeObjectInArray(9, NULL);
     
     if(engine->is_resumed)
     {
         std:: cout<< "is resumed"<<std::endl;
         loadgame();
+        
+        std::ifstream loadFile;
+           loadFile.open("deletedobjects.txt");
+           int i;
+           if(!loadFile.is_open())
+           {std::cout<<"cannot find the deletedobject file"<< std::endl;}
+           if(loadFile.is_open()){
+               std::cout<<"load deletedobject file successfully"<<std::endl;
+               while(loadFile>>i){
+                   switch(i)
+                   {
+                       case 1:
+                           engine->removeDisplayableObject(greenslime1);
+                           delete greenslime1;
+                           break;
+                       case 2:
+                           engine->removeDisplayableObject(greenslime2);
+                           delete greenslime2;
+                           break;
+                   }
+               }
+           }
+        
         if(engine->yellowkey1removed){
             engine->removeDisplayableObject(yellowKey1);
+            delete yellowKey1;
         }
         if(engine->greenslime1removed){
              engine->removeDisplayableObject(greenslime1);
+            delete greenslime1;
         }
+        
     }
     
     
@@ -237,13 +266,18 @@ void PlayState::loadgame()
     }
     character->setX(array[0]);
     character->setY(array[1]);
+    character->sethp(array[2]-character->gethp());
+    character->setatk(array[3]-character->getatk());
+    character->setdef(array[4]-character->getdef());
+    character->setgold(array[5]- character->getgold());
+    character->setkey(array[6]-character->getKeyNumber());
    
     
 }
 
 int PlayState::changeoffset()
 {
-      int iTick = engine->getModifiedTime()/100; // 1 per 100ms
+      int iTick = engine->getModifiedTime()/100;
       int iFrame = iTick%16;
     
  

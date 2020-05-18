@@ -41,6 +41,9 @@ public:
     State* isPaused();
     void virtDrawStringsOnTop();
     void virtMainLoopDoBeforeUpdate();
+    void savegame(int id);
+    
+
     
 
 protected:

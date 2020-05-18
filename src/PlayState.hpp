@@ -44,6 +44,7 @@ protected:
     Psylc7TileManager* p_m_tile = &m_tile;
     Key* yellowKey1;
     GreenSlime* greenslime1;
+    GreenSlime* greenslime2;
     Stairs* stair;
     FireBall* fireball;
     

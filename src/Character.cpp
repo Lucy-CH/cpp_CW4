@@ -9,28 +9,34 @@
 #include<math.h>
 #include "CollisionDetection.h"
 #include "Button.hpp"
+
+#include <fstream>
+#include <iostream>
+
 /*
  Character should initiallu have
  life 1000
  attack 100
  defence 100
  gold 0
+ identifier 0
  */
 Character::Character(Psylc7Engine* pEngine,int ix,int iy, Psylc7TileManager* pTile)
-    :MyDisplayableObject(pEngine,0,1000,100,100,0)
+    :MyDisplayableObject(pEngine,0,1000,100,100,0,0)
     ,pEngineMain(pEngine)
     ,key(0)
 
 {
     this->Ptile = pTile;
     std:: cout << "Tile loaded at character"<< std::endl;
+    /*
     for ( int y = 0 ; y < 11 ; y++ )
     {
       for ( int x = 0 ; x < 11 ; x++ )
       std::cout << Ptile->getMapValue(x,y);
       std::cout << std::endl;
     }
-
+    */
     /*
     std::cout << Ptile->getMapValue(1,1);
     std::cout << std::endl;
@@ -196,9 +202,10 @@ void Character::virtDoUpdate(int iCurrentTime)
             if(pObject->value == 2)
             {
                 pEngineMain->removeDisplayableObject(pObject);
-                pEngineMain->greenslime1removed = true;
                 this->sethp(-(pObject->attack));
                 this->setgold(pObject->gold);
+                pEngineMain->savegame(pObject->identifier);
+                
          
             }
            //IF THE OBJECT IS A STAIRCASE

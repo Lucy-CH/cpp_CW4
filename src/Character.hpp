@@ -27,6 +27,7 @@ public:
     void virtDoUpdate(int iCurrentTime);
     void MoveBodyImage();
     void MouseDown(int iButton, int iX, int iY);
+
     
    
 

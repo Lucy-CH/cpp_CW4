@@ -18,7 +18,7 @@ class MyDisplayableObject:
 public DisplayableObject
 {
 public:
-    MyDisplayableObject(Psylc7Engine* pEngine,int id,int L,int A, int D, int G);
+    MyDisplayableObject(Psylc7Engine* pEngine,int id,int L,int A, int D, int G,int ident);
     ~MyDisplayableObject();
     
     int value;
@@ -26,5 +26,7 @@ public:
     int attack;
     int defence;
     int gold;
+    int identifier;
+    
     
 };

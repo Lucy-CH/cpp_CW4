@@ -12,13 +12,14 @@
 //D DEFENCE
 //G GOLD
 
-MyDisplayableObject::MyDisplayableObject(Psylc7Engine* pEngine,int id,int L,int A, int D, int G)
+MyDisplayableObject::MyDisplayableObject(Psylc7Engine* pEngine,int id,int L,int A, int D, int G,int ident)
 :DisplayableObject(pEngine)
 ,value(id)
 ,life(L)
 ,attack(A)
 ,defence(D)
 ,gold(G)
+,identifier(ident)
 
 {
     
