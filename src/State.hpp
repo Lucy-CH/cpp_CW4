@@ -20,12 +20,13 @@ class State
 public:
     State(Psylc7Engine* pEngine);
     ~State();
-    virtual void update() = 0 ; //pure virtual function
+   
     virtual void SetUpBackgroundBuffer() = 0;
     virtual void InitialiseObjects() = 0;
     virtual void MouseDown(int iButton, int iX, int iY) = 0;
     virtual void virtDrawStringsOnTop() =0;
     virtual void virtKeyDown(int iKeyCode) = 0;
+
 protected:
     Psylc7Engine *engine;
     

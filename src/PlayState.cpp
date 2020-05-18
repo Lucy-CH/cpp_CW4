@@ -11,6 +11,8 @@
 #include "Key.hpp"
 #include "GreenSlime.hpp"
 #include "Stairs.hpp"
+#include "FireBall.hpp"
+
 #include <fstream>
 #include <iostream>
 
@@ -18,7 +20,9 @@ PlayState::PlayState(Psylc7Engine* pEngine)
 :State(pEngine)
 ,m_tile(pEngine)
 ,m_ipause(false)
+,fire_visible(false)
 {
+    image = pEngine->loadImage("./gameres/Background/playstate_background.png",true);
 
 }
 
@@ -81,19 +85,21 @@ void PlayState::InitialiseObjects()
     /* Destroy the existing objects*/
     engine->destroyOldObjects(true);
     /* Create an object array*/
-    engine->createObjectArray(5);
+    engine->createObjectArray(6);
     
     
     yellowKey1 = new Key(engine, 160-16, 320-16);
     greenslime1 = new GreenSlime(engine,96-16, 32-16);
     stair = new Stairs(engine, 16,16);
     character = new Character(engine,192-16, 352-16,p_m_tile);
+    fireball = new FireBall(engine, 192-32, 352-16,character);
     
     engine->storeObjectInArray(0, stair);
     engine->storeObjectInArray(1, yellowKey1);
     engine->storeObjectInArray(2, greenslime1);
-    engine->storeObjectInArray(3,character);
-    engine->storeObjectInArray(4, NULL);
+    engine->storeObjectInArray(3,fireball);
+    engine->storeObjectInArray(4, character);
+    engine->storeObjectInArray(5, NULL);
     
     if(engine->is_resumed)
     {
@@ -105,18 +111,29 @@ void PlayState::InitialiseObjects()
         if(engine->greenslime1removed){
              engine->removeDisplayableObject(greenslime1);
         }
-        
-
     }
     
     
     engine->setAllObjectsVisible(true);
+    fireball->setVisible(false);
     
     
 }
 void PlayState::MouseDown(int iButton, int iX, int iY)
 {
-    character->MouseDown(iButton, iX, iY);
+    if(!fire_visible)
+    {
+ 
+        fireball->setVisible(true);
+        fire_visible = true;
+    }
+    
+    else if(fire_visible){
+        fireball->setVisible(false);
+        fire_visible = false;
+    }
+    
+   
 }
 void PlayState::virtDrawStringsOnTop()
 {  //draws the beige status box on screen and print its status
@@ -197,3 +214,4 @@ void PlayState::loadgame()
    
     
 }
+

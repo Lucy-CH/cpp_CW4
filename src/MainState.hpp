@@ -28,6 +28,7 @@ public:
     void MouseDown(int iButton, int iX, int iY) ;
     void virtDrawStringsOnTop();
     void virtKeyDown(int iKeyCode);
+    void virtMainLoopDoBeforeUpdate();
 protected:
     Button* button1;
     PlayState* play;

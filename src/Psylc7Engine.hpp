@@ -40,6 +40,7 @@ public:
     State* isPaused();
     void virtDrawStringsOnTop();
     
+    
 
 protected:
     State* currentState;

@@ -57,4 +57,7 @@ dependencies: \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/DisplayableObjectContainer.h \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/SimpleImage.h \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/RawImage.h \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/ImageManager.h
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/ImageManager.h \
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Character.hpp \
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Psylc7TileManager.hpp \
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/TileManager.h

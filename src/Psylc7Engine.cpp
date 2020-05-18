@@ -73,3 +73,4 @@ void Psylc7Engine::virtDrawStringsOnTop()
 
     currentState->virtDrawStringsOnTop();
 }
+

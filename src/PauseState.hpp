@@ -25,6 +25,8 @@ public:
  void InitialiseObjects();
  void update();
 void MouseDown(int iButton, int iX, int iY);
+    
+    void virtMainLoopDoBeforeUpdate();
 protected:
     
     

@@ -17,6 +17,7 @@ class Character;
 class Key;
 class GreenSlime;
 class Stairs;
+class FireBall;
 
 class PlayState:
     public State
@@ -32,7 +33,8 @@ public:
     void virtKeyDown(int iKeyCode);
     void savegame();
     void loadgame();
-    
+
+  
 protected:
     Character* character;
     Psylc7TileManager m_tile;
@@ -40,5 +42,10 @@ protected:
     Key* yellowKey1;
     GreenSlime* greenslime1;
     Stairs* stair;
+    FireBall* fireball;
+    
+    SimpleImage image;
+    
     bool m_ipause;
+    bool fire_visible;
 };

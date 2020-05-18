@@ -31,7 +31,7 @@ void MainState::SetUpBackgroundBuffer()
  
     engine->lockBackgroundForDrawing();
         
-    image = engine->loadImage("scene.png",true);
+    image = engine->loadImage("./gameres/Backgrounds/opening_background.png",true);
     
     SimpleImage im2 = ImageManager::get()->resizeTo(image, engine->getWindowWidth(), engine->getWindowHeight());
     im2.renderImage(engine->getBackgroundSurface(), 0, 0,0,0, engine->getWindowWidth(), engine->getWindowHeight());
@@ -71,6 +71,11 @@ void MainState::virtDrawStringsOnTop()
     //engine->drawBackgroundString(150, 40, "Hello", 0xff00ff,NULL);
 }
 void MainState::virtKeyDown(int iKeyCode)
+{
+    
+}
+
+void MainState::virtMainLoopDoBeforeUpdate()
 {
     
 }

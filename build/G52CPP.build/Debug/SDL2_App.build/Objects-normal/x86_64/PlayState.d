@@ -64,4 +64,5 @@ dependencies: \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/State.hpp \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Key.hpp \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/GreenSlime.hpp \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Stairs.hpp
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Stairs.hpp \
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/FireBall.hpp
