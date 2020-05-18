@@ -54,7 +54,3 @@ void PauseState::MouseDown(int iButton, int iX, int iY)
 {
 
 }
-void PauseState::virtMainLoopDoBeforeUpdate()
-{
-    
-}

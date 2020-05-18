@@ -75,7 +75,4 @@ void MainState::virtKeyDown(int iKeyCode)
     
 }
 
-void MainState::virtMainLoopDoBeforeUpdate()
-{
-    
-}
+
