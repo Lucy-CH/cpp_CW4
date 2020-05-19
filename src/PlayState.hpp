@@ -23,6 +23,7 @@ class Sword;
 class Shield;
 class Guardian;
 class chest;
+class Potion;
 
 class PlayState:
     public State
@@ -63,6 +64,7 @@ protected:
     Sword* sword;
     Shield* shield;
     chest* chest1;
+    Potion* potion;
     
     SimpleImage image;
     SimpleImage im2;

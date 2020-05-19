@@ -70,4 +70,5 @@ dependencies: \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Sword.hpp \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Shield.hpp \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Guardian.hpp \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/chest.hpp
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/chest.hpp \
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Potion.hpp

@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Guardian.cpp \
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Potion.cpp \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/header.h \
   /usr/local/include/SDL2/SDL.h /usr/local/include/SDL2/SDL_main.h \
   /usr/local/include/SDL2/SDL_stdinc.h \
@@ -46,7 +46,7 @@ dependencies: \
   /usr/local/include/SDL2/SDL_timer.h \
   /usr/local/include/SDL2/SDL_version.h \
   /usr/local/include/SDL2/SDL_ttf.h /usr/local/include/SDL2/SDL_image.h \
-  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Guardian.hpp \
+  /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Potion.hpp \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/MyDisplayableObject.hpp \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/DisplayableObject.h \
   /Users/lecheng/Desktop/CPPCoursework2020-v101/src/Psylc7Engine.hpp \

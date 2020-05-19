@@ -4,7 +4,7 @@
 //
 //  Created by Le Cheng on 19/05/2020.
 //
-
+#include "header.h"
 #include "chest.hpp"
 
 chest::chest(Psylc7Engine* pEngine, int iStartX,int iStartY)

@@ -4,7 +4,7 @@
 //
 //  Created by Le Cheng on 19/05/2020.
 //
-
+#include "header.h"
 #include "Guardian.hpp"
 Guardian::Guardian(Psylc7Engine* pEngine, int iStartX,int iStartY, int id)
 :MyDisplayableObject(pEngine,2,35,210,1,50,id)

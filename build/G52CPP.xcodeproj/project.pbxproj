@@ -78,6 +78,7 @@
 		DBE28C9D24739E3000EAD24F /* Guardian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBE28C9B24739E3000EAD24F /* Guardian.cpp */; };
 		DBE28CA024739FB400EAD24F /* DeathState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBE28C9E24739FB400EAD24F /* DeathState.cpp */; };
 		DBE28CA32473BFD200EAD24F /* chest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBE28CA12473BFD200EAD24F /* chest.cpp */; };
+		DBE28CA92473D3A600EAD24F /* Potion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBE28CA72473D3A600EAD24F /* Potion.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +168,8 @@
 		DBE28C9F24739FB400EAD24F /* DeathState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DeathState.hpp; path = src/DeathState.hpp; sourceTree = "<group>"; };
 		DBE28CA12473BFD200EAD24F /* chest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = chest.cpp; path = src/chest.cpp; sourceTree = "<group>"; };
 		DBE28CA22473BFD200EAD24F /* chest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = chest.hpp; path = src/chest.hpp; sourceTree = "<group>"; };
+		DBE28CA72473D3A600EAD24F /* Potion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Potion.cpp; path = src/Potion.cpp; sourceTree = "<group>"; };
+		DBE28CA82473D3A600EAD24F /* Potion.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Potion.hpp; path = src/Potion.hpp; sourceTree = "<group>"; };
 		DC20BB4511A54D9A94752B5E /* ZoomingDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ZoomingDemo.cpp; path = src/ZoomingDemo.cpp; sourceTree = SOURCE_ROOT; };
 		DE8A7BF600A943BCA9704241 /* FontManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FontManager.cpp; path = src/FontManager.cpp; sourceTree = SOURCE_ROOT; };
 		E4BC49B3997045C3BBF9C0FE /* BouncingBallMain.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BouncingBallMain.cpp; path = src/BouncingBallMain.cpp; sourceTree = SOURCE_ROOT; };
@@ -281,6 +284,8 @@
 				DBE28C9F24739FB400EAD24F /* DeathState.hpp */,
 				DBE28CA12473BFD200EAD24F /* chest.cpp */,
 				DBE28CA22473BFD200EAD24F /* chest.hpp */,
+				DBE28CA72473D3A600EAD24F /* Potion.cpp */,
+				DBE28CA82473D3A600EAD24F /* Potion.hpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
@@ -432,6 +437,7 @@
 				7618F977F21E458489831608 /* TileManager.cpp in Sources */,
 				52586EC6610E48FAA28A7098 /* ZoomingDemo.cpp in Sources */,
 				D5B525472B02499EAF37CE08 /* mainfunction.cpp in Sources */,
+				DBE28CA92473D3A600EAD24F /* Potion.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

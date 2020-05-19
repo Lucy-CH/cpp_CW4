@@ -33,6 +33,7 @@ public:
     bool swordremoved ;
     bool shieldremoved ;
     bool chestremoved;
+    bool potionremoved;
     
     Psylc7Engine();
     ~Psylc7Engine();

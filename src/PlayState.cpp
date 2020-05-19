@@ -17,6 +17,7 @@
 #include "Shield.hpp"
 #include "Guardian.hpp"
 #include "chest.hpp"
+#include "Potion.hpp"
 
 #include <fstream>
 #include <iostream>
@@ -114,7 +115,7 @@ void PlayState::InitialiseObjects()
     /* Destroy the existing objects*/
     engine->destroyOldObjects(true);
     /* Create an object array*/
-    engine->createObjectArray(17);
+    engine->createObjectArray(18);
     
     
     yellowKey1 = new Key(engine, 160-16, 320-16);
@@ -134,6 +135,7 @@ void PlayState::InitialiseObjects()
     sword = new Sword(engine,45, 11*32-16);
     shield = new Shield(engine,8*32-16,3*32-16);
     chest1 = new chest(engine,10*32-16,11*32-16);
+    potion = new Potion(engine,2*32-16,7*32-16);
     
     engine->storeObjectInArray(0, stair);
     engine->storeObjectInArray(1, yellowKey1);
@@ -150,9 +152,10 @@ void PlayState::InitialiseObjects()
     engine->storeObjectInArray(12, guardian3);
     engine->storeObjectInArray(13, guardian4);
     engine->storeObjectInArray(14, chest1);
-    engine->storeObjectInArray(15, character);
+    engine->storeObjectInArray(15, potion);
+    engine->storeObjectInArray(16, character);
    
-    engine->storeObjectInArray(16, NULL);
+    engine->storeObjectInArray(17, NULL);
     
     if(engine->is_resumed)
     {
@@ -230,6 +233,11 @@ void PlayState::InitialiseObjects()
             engine->removeDisplayableObject(chest1);
             delete chest1;
         }
+        
+        if(engine->potionremoved){
+                engine->removeDisplayableObject(potion);
+                delete potion;
+            }
         
     }
     

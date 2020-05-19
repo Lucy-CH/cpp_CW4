@@ -234,7 +234,7 @@ void Character::virtDoUpdate(int iCurrentTime)
                 pEngineMain->removeDisplayableObject(pObject);
              
             }
-            //IF THE OBJECT IS A CHESR
+            //IF THE OBJECT IS A CHEST
             if(pObject->value == 6)
             {
                 if(this->key >= 1)
@@ -244,10 +244,18 @@ void Character::virtDoUpdate(int iCurrentTime)
                     pEngineMain->chestremoved= true;
                     pEngineMain->removeDisplayableObject(pObject);
                 }else{return;}
+            }
+            //IF THE OBJECT IS A POTION
+            if(pObject->value == 8)
+            {
+                this->hp +=200;
+                pEngineMain->potionremoved= true;
+                pEngineMain->removeDisplayableObject(pObject);
+            }
               
              
-            }
         }
+        
     }
     //3.The player cannot go into area that it's not supposed to be
       if (m_iCurrentScreenX < 16)
