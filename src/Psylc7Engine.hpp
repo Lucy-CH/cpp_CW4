@@ -21,6 +21,7 @@ class MainState;
 class PlayState;
 class PauseState;
 class DeathState;
+class SuccessState;
 
 class Psylc7Engine:
         public BaseEngine
@@ -45,6 +46,7 @@ public:
     State* isPlaying();
     State* isPaused();
     State* isDead();
+    State* isSuccessed();
     void virtDrawStringsOnTop();
     void virtMainLoopDoBeforeUpdate();
     void savegame(int id);
@@ -58,5 +60,6 @@ protected:
     PlayState* play;
     PauseState* pausestate;
     DeathState* death;
+    SuccessState* success;
 
 };

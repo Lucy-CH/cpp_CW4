@@ -10,6 +10,8 @@
 #include "PlayState.hpp"
 #include "PauseState.hpp"
 #include "DeathState.hpp"
+#include "SuccessState.hpp"
+
 #include <fstream>
 #include <iostream>
 
@@ -33,7 +35,7 @@ Psylc7Engine::Psylc7Engine()
     play = new PlayState(this);
     pausestate= new PauseState(this);
     death = new DeathState(this);
-    
+    success = new SuccessState(this);
     currentState = menu;
     
     is_play_state = false;
@@ -96,6 +98,11 @@ State* Psylc7Engine::isDead()
 {
     is_play_state = false;
     return death;
+}
+State* Psylc7Engine::isSuccessed()
+{
+    is_play_state = false;
+    return success;
 }
 void Psylc7Engine::virtDrawStringsOnTop()
 {
