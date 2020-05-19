@@ -50,7 +50,10 @@ protected:
     GreenSlime* greenslime2;
     Stairs* stair;
     FireBall* fireball;
-    Boss* boss;
+    Boss* boss1;
+    Boss* boss2;
+    Boss* boss3;
+    Boss* boss4;
     Sword* sword;
     Shield* shield;
     

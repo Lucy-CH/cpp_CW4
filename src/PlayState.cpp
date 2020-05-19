@@ -112,13 +112,16 @@ void PlayState::InitialiseObjects()
     /* Destroy the existing objects*/
     engine->destroyOldObjects(true);
     /* Create an object array*/
-    engine->createObjectArray(10);
+    engine->createObjectArray(20);
     
     
     yellowKey1 = new Key(engine, 160-16, 320-16);
     greenslime1 = new GreenSlime(engine,96-16, 32-16,1);
     greenslime2 = new GreenSlime(engine,112,32-16,2);
-    boss = new Boss(engine,45,32-16);
+    boss1 = new Boss(engine,45,32-16,3);//exit boss
+    boss2 = new Boss(engine,10*32-16,10*32-16,4);//top
+    boss3 = new Boss(engine,9*32-16,11*32-16,5);//botton left
+    boss4 = new Boss(engine,11*32-16,11*32-16,6);//botton right
     
     stair = new Stairs(engine, 16,16);
     character = new Character(engine,192-16, 352-16,p_m_tile);
@@ -131,12 +134,14 @@ void PlayState::InitialiseObjects()
     engine->storeObjectInArray(2, greenslime1);
     engine->storeObjectInArray(3,fireball);
     engine->storeObjectInArray(4,greenslime2);
-    engine->storeObjectInArray(5, boss);
-    engine->storeObjectInArray(6, sword);
-    engine->storeObjectInArray(7, shield);
-    
-    engine->storeObjectInArray(8, character);
-    engine->storeObjectInArray(9, NULL);
+    engine->storeObjectInArray(5,boss1);
+    engine->storeObjectInArray(6,boss2);
+    engine->storeObjectInArray(7,boss3);
+    engine->storeObjectInArray(8,boss4);
+    engine->storeObjectInArray(9, sword);
+    engine->storeObjectInArray(10, shield);
+    engine->storeObjectInArray(18, character);
+    engine->storeObjectInArray(19, NULL);
     
     if(engine->is_resumed)
     {
@@ -161,6 +166,23 @@ void PlayState::InitialiseObjects()
                            engine->removeDisplayableObject(greenslime2);
                            delete greenslime2;
                            break;
+                       case 3:
+                           engine->removeDisplayableObject(boss1);
+                           delete boss1;
+                           break;
+                       case 4:
+                           engine->removeDisplayableObject(boss2);
+                           delete boss2;
+                           break;
+                       case 5:
+                           engine->removeDisplayableObject(boss3);
+                           delete boss3;
+                           break;
+                       case 6:
+                          engine->removeDisplayableObject(boss4);
+                          delete boss4;
+                          break;
+ 
                    }
                }
            }

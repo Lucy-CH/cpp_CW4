@@ -14,8 +14,8 @@
  Gold:100
  Identifier:0
  */
-Boss::Boss(Psylc7Engine* pEngine,int ix, int iy)
-:MyDisplayableObject(pEngine, 2, 500, 1100, 50, 100, 0)
+Boss::Boss(Psylc7Engine* pEngine,int ix, int iy,int id)
+:MyDisplayableObject(pEngine, 2, 500, 1100, 50, 100, id)
 {
     state = "green";
        m_iCurrentScreenX = ix;

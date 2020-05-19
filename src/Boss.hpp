@@ -19,7 +19,7 @@ class Boss
      :public MyDisplayableObject
 {
 public:
-    Boss(Psylc7Engine* pEngine,int ix,int iy);
+    Boss(Psylc7Engine* pEngine,int ix,int iy,int id);
     ~Boss();
     
     void virtDraw();
