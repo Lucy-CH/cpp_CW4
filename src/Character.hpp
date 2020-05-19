@@ -39,7 +39,8 @@ public:
     int getCurrentX(){return this->m_iCurrentScreenX;}
     int getCurrentY(){return this->m_iCurrentScreenY;}
     int getKeyNumber(){return this->key;}
-  
+    int getshield();
+    int getsword();
     
     //Modifiers
     void sethp(int iChange);
@@ -49,13 +50,15 @@ public:
     void setkey(int iChange);
     void setX(int iChange);
     void setY(int iChange);
-    
+    void setshield(int iChange);
+    void setsword(int iChange);
     
     
 protected:
     SimpleImage character;
     Psylc7TileManager* Ptile;
     Psylc7Engine* pEngineMain;
+    
     int hp;
     int atk;
     int def;
@@ -65,6 +68,8 @@ protected:
     int icony;
     
     int key;
+    int sword;
+    int shield;
 
 
 

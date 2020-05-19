@@ -13,6 +13,8 @@
 #include "Stairs.hpp"
 #include "FireBall.hpp"
 #include "Boss.hpp"
+#include "sword.hpp"
+
 #include <fstream>
 #include <iostream>
 
@@ -28,8 +30,6 @@ PlayState::PlayState(Psylc7Engine* pEngine)
 {
     image = pEngine->loadImage("./gameres/Backgrounds/playstate_background.png",true);
     snow = pEngine->loadImage("./gameres/Stuff/fireworks.png",true);
-    
-    
     
 
 }
@@ -122,13 +122,15 @@ void PlayState::InitialiseObjects()
     stair = new Stairs(engine, 16,16);
     character = new Character(engine,192-16, 352-16,p_m_tile);
     fireball = new FireBall(engine, 192-32, 352-16,character);
-   
+    sword = new Sword(engine,45, 11*32-16);
+    
     engine->storeObjectInArray(0, stair);
     engine->storeObjectInArray(1, yellowKey1);
     engine->storeObjectInArray(2, greenslime1);
     engine->storeObjectInArray(3,fireball);
     engine->storeObjectInArray(4,greenslime2);
     engine->storeObjectInArray(5, boss);
+    engine->storeObjectInArray(6, sword);
     engine->storeObjectInArray(8, character);
     engine->storeObjectInArray(9, NULL);
     
@@ -225,12 +227,19 @@ void PlayState::virtDrawStringsOnTop()
     char intro3[128];
     char intro4[128];
     char intro5[128];
+    char intro6[128];
+    char intro7[128];
+    char intro8[128];
     
     sprintf(intro1,  "You were dragged into this dungeon by");
     sprintf(intro2,  "accident.There are many dangerous");
     sprintf(intro3,  "monsters nesting in the darkness.if");
     sprintf(intro4,  "not careful you might end up dying in");
     sprintf(intro5,  "this place...");
+    
+    sprintf(intro6,  "The color changing monster looks intimidating,");
+    sprintf(intro7,  "but maybe the treature in the ");
+    sprintf(intro8,  "dungeon could lend you a hand...");
      
     
     engine->drawForegroundString(370, 50, intro1, 0xffffff, engine->getFont("Helvetica-Normal.ttf", 15));
@@ -242,6 +251,12 @@ void PlayState::virtDrawStringsOnTop()
     engine->drawForegroundString(370, 50+15*3, intro4, 0xffffff, engine->getFont("Helvetica-Normal.ttf", 15));
        
     engine->drawForegroundString(370, 50+15*4, intro5, 0xffffff, engine->getFont("Helvetica-Normal.ttf", 15));
+    
+    engine->drawForegroundString(370, 50+15*6, intro6, 0xffffff, engine->getFont("Helvetica-Normal.ttf", 15));
+        
+     engine->drawForegroundString(370, 50+15*7, intro7, 0xffffff, engine->getFont("Helvetica-Normal.ttf", 15));
+        
+     engine->drawForegroundString(370, 50+15*8, intro8, 0xffffff, engine->getFont("Helvetica-Normal.ttf", 15));
     
         
     
@@ -278,18 +293,21 @@ void PlayState::savegame()
     saveFile<< character->getdef()<<std::endl;
     saveFile<< character->getgold()<<std::endl;
     saveFile<< character->getKeyNumber()<<std::endl;
+    saveFile<< character->getsword()<<std::endl;
+    saveFile<< character->getshield()<<std::endl;
+    
     saveFile.close();
 }
 void PlayState::loadgame()
 {
     std::ifstream loadFile;
     loadFile.open("saveData.txt");
-    int array[7];
+    int array[9];
     if(!loadFile.is_open())
     {std::cout<<"cannot find the save file"<< std::endl;}
     if(loadFile.is_open()){
         std::cout<<"load save file successfully"<<std::endl;
-        for(int x = 0; x < 7;x++){
+        for(int x = 0; x < 9;x++){
             loadFile>> array[x];
         }
     }
@@ -300,7 +318,8 @@ void PlayState::loadgame()
     character->setdef(array[4]-character->getdef());
     character->setgold(array[5]- character->getgold());
     character->setkey(array[6]-character->getKeyNumber());
-   
+    character->setsword(array[7]);
+    character->setshield(array[8]);
     
 }
 

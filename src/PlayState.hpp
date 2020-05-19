@@ -19,6 +19,7 @@ class GreenSlime;
 class Stairs;
 class FireBall;
 class Boss;
+class Sword;
 
 class PlayState:
     public State
@@ -49,6 +50,7 @@ protected:
     Stairs* stair;
     FireBall* fireball;
     Boss* boss;
+    Sword* sword;
     
     SimpleImage image;
     SimpleImage im2;

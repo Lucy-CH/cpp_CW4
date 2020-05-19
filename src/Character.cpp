@@ -25,6 +25,8 @@ Character::Character(Psylc7Engine* pEngine,int ix,int iy, Psylc7TileManager* pTi
     :MyDisplayableObject(pEngine,0,1000,100,100,0,0)
     ,pEngineMain(pEngine)
     ,key(0)
+    ,sword(0)
+    ,shield(0)
 
 {
     this->Ptile = pTile;
@@ -38,7 +40,7 @@ Character::Character(Psylc7Engine* pEngine,int ix,int iy, Psylc7TileManager* pTi
     iconx = 32;
     icony = 0;
     
-   
+    
     
     character = pEngine ->loadImage("./gameres/Character/Hero.png",false);
     m_iStartDrawPosX = -16;
@@ -59,7 +61,8 @@ int Character::gethp(){return this->hp;}
 int Character::getatk(){return this->atk;}
 int Character::getdef()  {return this->def;}
 int Character::getgold()  {return this->gold;}
-
+int Character::getshield()  {return this->shield;}
+int Character::getsword()  {return this->sword;}
 //Modifiers
 void Character::sethp(int iChange){this->hp += iChange;}
 void Character::setatk(int iChange){this->atk += iChange;}
@@ -68,7 +71,8 @@ void Character::setgold(int iChange){this->gold += iChange;}
 void Character::setkey(int iChange){this->key += iChange;}
 void Character::setX(int iChange){this->m_iCurrentScreenX = iChange;}
 void Character::setY(int iChange){this->m_iCurrentScreenY = iChange;}
-
+void Character::setshield(int iChange){this->shield = iChange;}
+void Character::setsword(int iChange){this->sword = iChange;}
 
 void Character::virtDraw()
 {
@@ -169,17 +173,29 @@ void Character::virtDoUpdate(int iCurrentTime)
            //IF THE OBJECT HIT IS THE KEY!
             if(pObject->value ==1)
             {
-                  pEngineMain->removeDisplayableObject(pObject);
-                  pEngineMain->yellowkey1removed = true;
-                  std::cout<<"A key has been found"<< std:: endl;
-                  this->setkey(1);
+
+                pEngineMain->removeDisplayableObject(pObject);
+                pEngineMain->yellowkey1removed = true;
+                std::cout<<"A key has been found"<< std:: endl;
+                this->setkey(1);
 
             }
             //If THE OBJECT IS MONSTER
             
-            if(pObject->value == 2)
+            if(pObject->value == 2 )
             {
-                int demage =  pObject->attack - this->def;
+                int demage;
+                
+                if(this->getshield() == 1)
+                {
+                    demage = (pObject->attack/2) - this->def;
+                }
+                
+                if(this->getshield()!=1)
+                {
+                    demage =  pObject->attack - this->def;
+                }
+                
                 if( demage>= this->hp )
                 {
                     exit(0);
@@ -199,6 +215,18 @@ void Character::virtDoUpdate(int iCurrentTime)
             {
                 
             }
+            
+            //IF THE OBJECT IS A SHIELD
+            if(pObject->value == 4)
+            {
+                
+            }
+            //IF THE OBJECT IS A SWORD
+            if(pObject->value == 5)
+            {
+                
+            }
+            
         }
     }
     //3.The player cannot go into area that it's not supposed to be
