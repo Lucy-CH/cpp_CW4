@@ -60,5 +60,6 @@ protected:
     int init;
     int iconx;
     int icony;
+
 };
 

@@ -38,7 +38,7 @@ Character::Character(Psylc7Engine* pEngine,int ix,int iy, Psylc7TileManager* pTi
     iconx = 32;
     icony = 0;
     
-    
+   
     
     character = pEngine ->loadImage("./gameres/Character/Hero.png",false);
     m_iStartDrawPosX = -16;
@@ -187,6 +187,7 @@ void Character::virtDoUpdate(int iCurrentTime)
                 {
                     this->hp -= demage;
                     this->setgold(pObject->gold);
+                   
                     pEngineMain->removeDisplayableObject(pObject);
                     pEngineMain->savegame(pObject->identifier);
                 }

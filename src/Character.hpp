@@ -39,6 +39,7 @@ public:
     int getCurrentX(){return this->m_iCurrentScreenX;}
     int getCurrentY(){return this->m_iCurrentScreenY;}
     int getKeyNumber(){return this->key;}
+  
     
     //Modifiers
     void sethp(int iChange);

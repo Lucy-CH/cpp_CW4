@@ -193,9 +193,8 @@ void PlayState::MouseDown(int iButton, int iX, int iY)
    
 }
 void PlayState::virtDrawStringsOnTop()
-{  //draws the beige status box on screen and print its status
-
-    
+{
+    //draws the beige status box on screen and print its status
     int atk = character->getatk();
     int def = character->getdef();
     int hp = character->gethp();
@@ -207,7 +206,7 @@ void PlayState::virtDrawStringsOnTop()
     char buf3[128];
     char buf4[128];
     char buf5[128];
-    
+
     sprintf(buf, "Attack: %d ",atk);
     engine->drawForegroundString(370, 230, buf, 0xffffff, engine->getFont("Helvetica-Normal.ttf", 15));
     sprintf(buf2, "defence: %d ", def);
@@ -219,7 +218,34 @@ void PlayState::virtDrawStringsOnTop()
     sprintf(buf5, "key: %d ",key);
     engine->drawForegroundString(370+150, 230 +30 +30 +30, buf5, 0xffffff, engine->getFont("Helvetica-Normal.ttf", 15));
     
-    //Also print out dialogs
+    //!Important section:
+    //!Draw narratives
+    char intro1[128];
+    char intro2[128];
+    char intro3[128];
+    char intro4[128];
+    char intro5[128];
+    
+    sprintf(intro1,  "You were dragged into this dungeon by");
+    sprintf(intro2,  "accident.There are many dangerous");
+    sprintf(intro3,  "monsters nesting in the darkness.if");
+    sprintf(intro4,  "not careful you might end up dying in");
+    sprintf(intro5,  "this place...");
+     
+    
+    engine->drawForegroundString(370, 50, intro1, 0xffffff, engine->getFont("Helvetica-Normal.ttf", 15));
+       
+    engine->drawForegroundString(370, 50+15, intro2, 0xffffff, engine->getFont("Helvetica-Normal.ttf", 15));
+       
+    engine->drawForegroundString(370, 50+15*2, intro3, 0xffffff, engine->getFont("Helvetica-Normal.ttf", 15));
+       
+    engine->drawForegroundString(370, 50+15*3, intro4, 0xffffff, engine->getFont("Helvetica-Normal.ttf", 15));
+       
+    engine->drawForegroundString(370, 50+15*4, intro5, 0xffffff, engine->getFont("Helvetica-Normal.ttf", 15));
+    
+        
+    
+
 
     
 }
