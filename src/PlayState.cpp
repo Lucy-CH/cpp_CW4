@@ -15,6 +15,8 @@
 #include "Boss.hpp"
 #include "Sword.hpp"
 #include "Shield.hpp"
+#include "Guardian.hpp"
+#include "chest.hpp"
 
 #include <fstream>
 #include <iostream>
@@ -112,7 +114,7 @@ void PlayState::InitialiseObjects()
     /* Destroy the existing objects*/
     engine->destroyOldObjects(true);
     /* Create an object array*/
-    engine->createObjectArray(20);
+    engine->createObjectArray(17);
     
     
     yellowKey1 = new Key(engine, 160-16, 320-16);
@@ -120,14 +122,18 @@ void PlayState::InitialiseObjects()
     greenslime2 = new GreenSlime(engine,112,32-16,2);
     boss1 = new Boss(engine,45,32-16,3);//exit boss
     boss2 = new Boss(engine,10*32-16,10*32-16,4);//top
-    boss3 = new Boss(engine,9*32-16,11*32-16,5);//botton left
-    boss4 = new Boss(engine,11*32-16,11*32-16,6);//botton right
+    boss3 = new Boss(engine,9*32-16,11*32-16,5);//bottom left
+    guardian1 = new Guardian(engine,11*32-16,11*32-16,6);//bottom right
+    guardian2 = new Guardian(engine,7*32-16,3*32-16,7);
+    guardian3 = new Guardian(engine,9*32-16,3*32-16,8);
+    guardian4 = new Guardian(engine,8*32-16,4*32-16,9);
     
     stair = new Stairs(engine, 16,16);
     character = new Character(engine,192-16, 352-16,p_m_tile);
     fireball = new FireBall(engine, 192-32, 352-16,character);
     sword = new Sword(engine,45, 11*32-16);
     shield = new Shield(engine,8*32-16,3*32-16);
+    chest1 = new chest(engine,10*32-16,11*32-16);
     
     engine->storeObjectInArray(0, stair);
     engine->storeObjectInArray(1, yellowKey1);
@@ -137,11 +143,16 @@ void PlayState::InitialiseObjects()
     engine->storeObjectInArray(5,boss1);
     engine->storeObjectInArray(6,boss2);
     engine->storeObjectInArray(7,boss3);
-    engine->storeObjectInArray(8,boss4);
-    engine->storeObjectInArray(9, sword);
-    engine->storeObjectInArray(10, shield);
-    engine->storeObjectInArray(18, character);
-    engine->storeObjectInArray(19, NULL);
+    engine->storeObjectInArray(8, sword);
+    engine->storeObjectInArray(9, shield);
+    engine->storeObjectInArray(10, guardian1);
+    engine->storeObjectInArray(11, guardian2);
+    engine->storeObjectInArray(12, guardian3);
+    engine->storeObjectInArray(13, guardian4);
+    engine->storeObjectInArray(14, chest1);
+    engine->storeObjectInArray(15, character);
+   
+    engine->storeObjectInArray(16, NULL);
     
     if(engine->is_resumed)
     {
@@ -179,9 +190,22 @@ void PlayState::InitialiseObjects()
                            delete boss3;
                            break;
                        case 6:
-                          engine->removeDisplayableObject(boss4);
-                          delete boss4;
+                           engine->removeDisplayableObject(guardian1);
+                           delete guardian1;
+                           break;
+                      case 7:
+                          engine->removeDisplayableObject(guardian2);
+                          delete guardian2;
+                           break;
+                      case 8:
+                          engine->removeDisplayableObject(guardian3);
+                          delete guardian3;
+                           break;
+                      case 9:
+                          engine->removeDisplayableObject(guardian4);
+                          delete guardian4;
                           break;
+                           
  
                    }
                }
@@ -202,7 +226,10 @@ void PlayState::InitialiseObjects()
             delete sword;
         }
         
-    
+        if(engine->chestremoved){
+            engine->removeDisplayableObject(chest1);
+            delete chest1;
+        }
         
     }
     

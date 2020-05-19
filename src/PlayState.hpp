@@ -21,6 +21,8 @@ class FireBall;
 class Boss;
 class Sword;
 class Shield;
+class Guardian;
+class chest;
 
 class PlayState:
     public State
@@ -54,8 +56,13 @@ protected:
     Boss* boss2;
     Boss* boss3;
     Boss* boss4;
+    Guardian* guardian1;
+    Guardian* guardian2;
+    Guardian* guardian3;
+    Guardian* guardian4;
     Sword* sword;
     Shield* shield;
+    chest* chest1;
     
     SimpleImage image;
     SimpleImage im2;

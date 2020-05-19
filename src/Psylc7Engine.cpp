@@ -42,6 +42,7 @@ Psylc7Engine::Psylc7Engine()
    
     swordremoved = false;
     shieldremoved = false;
+    chestremoved = false;
 }
 
 Psylc7Engine::~Psylc7Engine()

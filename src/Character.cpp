@@ -164,10 +164,10 @@ void Character::virtDoUpdate(int iCurrentTime)
         if (pObject == nullptr) // Object does not exist, skip it
             continue;        // If you need to cast to the sub-class type, you must use dynamic_cast, see lecture 19
         
-        if (CollisionDetection::checkRectangles(pObject->getXCentre() - 16, pObject->getXCentre() + 16,
-                                                pObject->getYCentre() - 16, pObject->getYCentre() + 16,
+        if (CollisionDetection::checkRectangles(pObject->getXCentre() - 8, pObject->getXCentre() + 8,
+                                                pObject->getYCentre() - 8, pObject->getYCentre() + 8,
                                                 m_iCurrentScreenX - 16, m_iCurrentScreenX + 16,
-                                                 m_iCurrentScreenY - 16, m_iCurrentScreenY + 16 ) )
+                                                 m_iCurrentScreenY - 16, m_iCurrentScreenY + 16) )
         {
  
            //IF THE OBJECT HIT IS THE KEY!
@@ -193,17 +193,19 @@ void Character::virtDoUpdate(int iCurrentTime)
                 
                 if(this->getshield()!=1)
                 {
-                    demage =  pObject->attack - this->def;
+                    demage = ( pObject->attack) - (this->def);
                 }
                 
                 if( demage>= this->hp )
                 {
                      pEngineMain->setState(pEngineMain->isDead());
                 }else
-                {
+                {   if(demage >0)
+                    {
                     this->hp -= demage;
+                    }
                     this->setgold(pObject->gold);
-                   
+                    
                     pEngineMain->removeDisplayableObject(pObject);
                     pEngineMain->savegame(pObject->identifier);
                 }
@@ -232,7 +234,19 @@ void Character::virtDoUpdate(int iCurrentTime)
                 pEngineMain->removeDisplayableObject(pObject);
              
             }
-            
+            //IF THE OBJECT IS A CHESR
+            if(pObject->value == 6)
+            {
+                if(this->key >= 1)
+                {
+                    this->key -=1;
+                    this->gold +=300;
+                    pEngineMain->chestremoved= true;
+                    pEngineMain->removeDisplayableObject(pObject);
+                }else{return;}
+              
+             
+            }
         }
     }
     //3.The player cannot go into area that it's not supposed to be

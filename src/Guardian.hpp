@@ -14,3 +14,17 @@
 #include <stdio.h>
 
 #endif /* Guardian_hpp */
+class Guardian
+     :public MyDisplayableObject
+{
+public:
+    Guardian(Psylc7Engine* pEngine,int ix,int iy,int id);
+    ~Guardian();
+    
+    void virtDraw();
+   
+protected:
+    SimpleImage guardian;
+   
+    
+};
