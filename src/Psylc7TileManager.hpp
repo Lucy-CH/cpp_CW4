@@ -37,5 +37,7 @@ class Psylc7TileManager:
  protected:
     SimpleImage floor;
     SimpleImage wall;
-    SimpleImage yellow_door;
+    SimpleImage tile1;
+    SimpleImage tile2;
+    SimpleImage tile3;
 };

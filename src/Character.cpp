@@ -214,7 +214,7 @@ void Character::virtDoUpdate(int iCurrentTime)
             }
            //IF THE OBJECT IS A STAIRCASE
             if(pObject->value == 3)
-            {
+            {   
                 pEngineMain->setState(pEngineMain->isSuccessed());
             }
             

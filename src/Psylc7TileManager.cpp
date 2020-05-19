@@ -15,7 +15,9 @@ Psylc7TileManager::Psylc7TileManager(Psylc7Engine* pEngine)
     
     wall = pEngine->loadImage("./gameres/Brick_Wall/wallside.png",false);
     
-    yellow_door = pEngine->loadImage("./gameres/Brick_Wall/yellow_door.png",false);
+    tile1 = pEngine->loadImage("./gameres/Brick_Wall/tile1.png",false);
+    tile2 = pEngine->loadImage("./gameres/Brick_Wall/tile2.png",false);
+    tile3 = pEngine->loadImage("./gameres/Brick_Wall/tile3.png",false);
 }
 
 
@@ -67,7 +69,16 @@ switch(getMapValue(iMapX, iMapY))
     break;
         
     case 3:
-    yellow_door.renderImageWithMask(pEngine->getBackgroundSurface(), 0, 0, iStartPositionScreenX, iStartPositionScreenY, wall.getWidth(), wall.getHeight());
+    tile1.renderImageWithMask(pEngine->getBackgroundSurface(), 0, 0, iStartPositionScreenX, iStartPositionScreenY, wall.getWidth(), wall.getHeight());
+    break;
+        
+    case 4:
+       tile2.renderImageWithMask(pEngine->getBackgroundSurface(), 0, 0, iStartPositionScreenX, iStartPositionScreenY, wall.getWidth(), wall.getHeight());
+       break;
+        
+    case 5:
+       tile3.renderImageWithMask(pEngine->getBackgroundSurface(), 0, 0, iStartPositionScreenX, iStartPositionScreenY, wall.getWidth(), wall.getHeight());
+       break;
     
  
      
