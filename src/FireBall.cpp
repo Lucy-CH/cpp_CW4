@@ -9,9 +9,9 @@
 
 FireBall::FireBall(Psylc7Engine* pEngine,int ix,int iy,Character* chara)
 :MyDisplayableObject(pEngine,4,0,0,0,0,0)
+,pCharacter(chara)
 ,iconx(0)
 ,icony(0)
-,pCharacter(chara)
 {
     fireball = pEngine->loadImage("./gameres/Stuff/fireball.png",false);
     
@@ -29,7 +29,7 @@ FireBall::~FireBall()
 
 void FireBall::virtDoUpdate(int iCurrentTime)
 {
-    std::cout<<SDL_GetTicks()/1000<<std::endl;
+   
     CurrentTime = (SDL_GetTicks()/1000)%10;
     if(CurrentTime == 9){
         this->setVisible(false);

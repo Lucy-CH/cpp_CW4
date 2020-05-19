@@ -19,7 +19,7 @@ Key::Key(Psylc7Engine* pEngine, int iStartX,int iStartY)
 
 {
     value = 1;
-    std::cout<<value<<std::endl;
+  
     m_iStartDrawPosX = -16;
     m_iStartDrawPosY = -16;
     

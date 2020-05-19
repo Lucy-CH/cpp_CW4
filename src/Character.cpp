@@ -29,19 +29,7 @@ Character::Character(Psylc7Engine* pEngine,int ix,int iy, Psylc7TileManager* pTi
 {
     this->Ptile = pTile;
     std:: cout << "Tile loaded at character"<< std::endl;
-    /*
-    for ( int y = 0 ; y < 11 ; y++ )
-    {
-      for ( int x = 0 ; x < 11 ; x++ )
-      std::cout << Ptile->getMapValue(x,y);
-      std::cout << std::endl;
-    }
-    */
-    /*
-    std::cout << Ptile->getMapValue(1,1);
-    std::cout << std::endl;
-    */
-    
+
     hp = 1000;
     atk = 100;
     def = 100;
@@ -58,18 +46,7 @@ Character::Character(Psylc7Engine* pEngine,int ix,int iy, Psylc7TileManager* pTi
     
     m_iCurrentScreenX = ix;
     m_iCurrentScreenY = iy;
-    
-    int iTileX = Ptile->getMapXForScreenX(m_iCurrentScreenX+m_iStartDrawPosX);
-    std::cout << iTileX;
-    std::cout << std::endl;
-    
-    int iTileY =Ptile->getMapYForScreenY(m_iCurrentScreenY+m_iStartDrawPosY);
-    std::cout << iTileY;
-    std::cout << std::endl;
-    
-    std::cout << Ptile->getMapValue(iTileX,iTileY-2);
-    std::cout << std::endl;
-    
+ 
 
 }
 
@@ -199,13 +176,21 @@ void Character::virtDoUpdate(int iCurrentTime)
 
             }
             //If THE OBJECT IS MONSTER
+            
             if(pObject->value == 2)
             {
-                pEngineMain->removeDisplayableObject(pObject);
-                this->sethp(-(pObject->attack));
-                this->setgold(pObject->gold);
-                pEngineMain->savegame(pObject->identifier);
-                
+                int demage =  pObject->attack - this->def;
+                if( demage>= this->hp )
+                {
+                    exit(0);
+                }else
+                {
+                    this->hp -= demage;
+                    this->setgold(pObject->gold);
+                    pEngineMain->removeDisplayableObject(pObject);
+                    pEngineMain->savegame(pObject->identifier);
+                }
+    
          
             }
            //IF THE OBJECT IS A STAIRCASE

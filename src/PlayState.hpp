@@ -18,6 +18,7 @@ class Key;
 class GreenSlime;
 class Stairs;
 class FireBall;
+class Boss;
 
 class PlayState:
     public State
@@ -47,6 +48,7 @@ protected:
     GreenSlime* greenslime2;
     Stairs* stair;
     FireBall* fireball;
+    Boss* boss;
     
     SimpleImage image;
     SimpleImage im2;

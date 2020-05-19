@@ -12,7 +12,7 @@
 #include "GreenSlime.hpp"
 #include "Stairs.hpp"
 #include "FireBall.hpp"
-
+#include "Boss.hpp"
 #include <fstream>
 #include <iostream>
 
@@ -73,12 +73,13 @@ void PlayState::SetUpBackgroundBuffer()
          }
     }
     //!3.print value on console for checking
-    for ( int y = 0 ; y < 11 ; y++ )
+   /* for ( int y = 0 ; y < 11 ; y++ )
     {
       for ( int x = 0 ; x < 11 ; x++ )
       std::cout << m_tile.getMapValue(x,y);
       std::cout << std::endl;
     }
+    */
     //!4.Rendering tiles
     m_tile.setTopLeftPositionOnScreen( 0, 0 );
     m_tile.drawAllTiles( engine, engine->getBackgroundSurface() );
@@ -116,16 +117,18 @@ void PlayState::InitialiseObjects()
     yellowKey1 = new Key(engine, 160-16, 320-16);
     greenslime1 = new GreenSlime(engine,96-16, 32-16,1);
     greenslime2 = new GreenSlime(engine,112,32-16,2);
+    boss = new Boss(engine,45,32-16);
     
     stair = new Stairs(engine, 16,16);
     character = new Character(engine,192-16, 352-16,p_m_tile);
     fireball = new FireBall(engine, 192-32, 352-16,character);
-    
+   
     engine->storeObjectInArray(0, stair);
     engine->storeObjectInArray(1, yellowKey1);
     engine->storeObjectInArray(2, greenslime1);
     engine->storeObjectInArray(3,fireball);
     engine->storeObjectInArray(4,greenslime2);
+    engine->storeObjectInArray(5, boss);
     engine->storeObjectInArray(8, character);
     engine->storeObjectInArray(9, NULL);
     

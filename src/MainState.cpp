@@ -57,14 +57,14 @@ void MainState::InitialiseObjects()
 {
     printf("Mouse clicked at %d %d\n", iX, iY);
     if(button1->checkMouthClick(iX, iY)){
-        printf("Hello\n");
+  
         engine->setState(engine->isPlaying());
     }
     
 }
 
 void MainState::virtDrawStringsOnTop()
-{   printf("Hmmm\n");
+{   
     char buf[128];
     sprintf(buf, "Tower of the Sorcer");
     engine->drawForegroundString(engine->getWindowWidth()*0.35, 100, buf, 0x000000, NULL);
