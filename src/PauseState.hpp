@@ -29,6 +29,6 @@ public:
     
  
 protected:
-    
+     SimpleImage image;
     
 };
