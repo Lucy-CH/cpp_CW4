@@ -13,7 +13,8 @@
 #include "Stairs.hpp"
 #include "FireBall.hpp"
 #include "Boss.hpp"
-#include "sword.hpp"
+#include "Sword.hpp"
+#include "Shield.hpp"
 
 #include <fstream>
 #include <iostream>
@@ -123,6 +124,7 @@ void PlayState::InitialiseObjects()
     character = new Character(engine,192-16, 352-16,p_m_tile);
     fireball = new FireBall(engine, 192-32, 352-16,character);
     sword = new Sword(engine,45, 11*32-16);
+    shield = new Shield(engine,8*32-16,3*32-16);
     
     engine->storeObjectInArray(0, stair);
     engine->storeObjectInArray(1, yellowKey1);
@@ -131,6 +133,8 @@ void PlayState::InitialiseObjects()
     engine->storeObjectInArray(4,greenslime2);
     engine->storeObjectInArray(5, boss);
     engine->storeObjectInArray(6, sword);
+    engine->storeObjectInArray(7, shield);
+    
     engine->storeObjectInArray(8, character);
     engine->storeObjectInArray(9, NULL);
     
@@ -165,10 +169,18 @@ void PlayState::InitialiseObjects()
             engine->removeDisplayableObject(yellowKey1);
             delete yellowKey1;
         }
-        if(engine->greenslime1removed){
-             engine->removeDisplayableObject(greenslime1);
-            delete greenslime1;
+        
+        if(engine->shieldremoved){
+            engine->removeDisplayableObject(shield);
+            delete shield;
         }
+        
+        if(engine->swordremoved){
+            engine->removeDisplayableObject(sword);
+            delete sword;
+        }
+        
+    
         
     }
     

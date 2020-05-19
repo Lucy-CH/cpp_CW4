@@ -27,8 +27,10 @@ class Psylc7Engine:
 public:
     bool is_resumed;
     bool yellowkey1removed;
-    bool greenslime1removed;
     bool is_play_state;
+    
+    bool swordremoved ;
+    bool shieldremoved ;
     
     Psylc7Engine();
     ~Psylc7Engine();

@@ -74,6 +74,7 @@
 		DBDDA5EB246624C200CF937B /* FireBall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBDDA5E9246624C200CF937B /* FireBall.cpp */; };
 		DBE28C9424735BA600EAD24F /* Boss.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBE28C9224735BA600EAD24F /* Boss.cpp */; };
 		DBE28C97247389E800EAD24F /* Sword.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBE28C95247389E800EAD24F /* Sword.cpp */; };
+		DBE28C9A2473967700EAD24F /* Shield.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBE28C982473967700EAD24F /* Shield.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +156,8 @@
 		DBE28C9324735BA600EAD24F /* Boss.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Boss.hpp; path = src/Boss.hpp; sourceTree = "<group>"; };
 		DBE28C95247389E800EAD24F /* Sword.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Sword.cpp; path = src/Sword.cpp; sourceTree = "<group>"; };
 		DBE28C96247389E800EAD24F /* Sword.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Sword.hpp; path = src/Sword.hpp; sourceTree = "<group>"; };
+		DBE28C982473967700EAD24F /* Shield.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Shield.cpp; path = src/Shield.cpp; sourceTree = "<group>"; };
+		DBE28C992473967700EAD24F /* Shield.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Shield.hpp; path = src/Shield.hpp; sourceTree = "<group>"; };
 		DC20BB4511A54D9A94752B5E /* ZoomingDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ZoomingDemo.cpp; path = src/ZoomingDemo.cpp; sourceTree = SOURCE_ROOT; };
 		DE8A7BF600A943BCA9704241 /* FontManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FontManager.cpp; path = src/FontManager.cpp; sourceTree = SOURCE_ROOT; };
 		E4BC49B3997045C3BBF9C0FE /* BouncingBallMain.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BouncingBallMain.cpp; path = src/BouncingBallMain.cpp; sourceTree = SOURCE_ROOT; };
@@ -261,6 +264,8 @@
 				DBE28C9324735BA600EAD24F /* Boss.hpp */,
 				DBE28C95247389E800EAD24F /* Sword.cpp */,
 				DBE28C96247389E800EAD24F /* Sword.hpp */,
+				DBE28C982473967700EAD24F /* Shield.cpp */,
+				DBE28C992473967700EAD24F /* Shield.hpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
@@ -369,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9679768FE657452AB76677BE /* BaseEngine.cpp in Sources */,
+				DBE28C9A2473967700EAD24F /* Shield.cpp in Sources */,
 				DB77B4C9245C99150033FFAB /* MyDisplayableObject.cpp in Sources */,
 				272F6DA9931245D992CDDA99 /* BouncingBall.cpp in Sources */,
 				5B8652501D4448D4A1AF70DE /* BouncingBallMain.cpp in Sources */,

@@ -219,12 +219,18 @@ void Character::virtDoUpdate(int iCurrentTime)
             //IF THE OBJECT IS A SHIELD
             if(pObject->value == 4)
             {
-                
+                this->shield = 1;
+                pEngineMain->shieldremoved= true;
+                pEngineMain->removeDisplayableObject(pObject);
             }
             //IF THE OBJECT IS A SWORD
             if(pObject->value == 5)
             {
-                
+                this->sword = 1;
+                this->setatk(100);
+                pEngineMain->swordremoved= true;
+                pEngineMain->removeDisplayableObject(pObject);
+             
             }
             
         }

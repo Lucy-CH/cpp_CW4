@@ -20,6 +20,7 @@ class Stairs;
 class FireBall;
 class Boss;
 class Sword;
+class Shield;
 
 class PlayState:
     public State
@@ -51,6 +52,7 @@ protected:
     FireBall* fireball;
     Boss* boss;
     Sword* sword;
+    Shield* shield;
     
     SimpleImage image;
     SimpleImage im2;

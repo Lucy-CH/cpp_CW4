@@ -34,7 +34,9 @@ Psylc7Engine::Psylc7Engine()
     is_play_state = false;
     is_resumed = false;
     yellowkey1removed = false;
-    greenslime1removed = false;
+   
+    swordremoved = false;
+    shieldremoved = false;
 }
 
 Psylc7Engine::~Psylc7Engine()
