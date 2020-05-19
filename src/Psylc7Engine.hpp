@@ -20,6 +20,7 @@ class State;// forward declaring classes instead of using headers
 class MainState;
 class PlayState;
 class PauseState;
+class DeathState;
 
 class Psylc7Engine:
         public BaseEngine
@@ -41,6 +42,7 @@ public:
     void setState(State* state);
     State* isPlaying();
     State* isPaused();
+    State* isDead();
     void virtDrawStringsOnTop();
     void virtMainLoopDoBeforeUpdate();
     void savegame(int id);
@@ -53,5 +55,6 @@ protected:
     MainState* menu;
     PlayState* play;
     PauseState* pausestate;
+    DeathState* death;
 
 };

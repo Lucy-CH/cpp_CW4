@@ -9,6 +9,7 @@
 #include "MainState.hpp"
 #include "PlayState.hpp"
 #include "PauseState.hpp"
+#include "DeathState.hpp"
 #include <fstream>
 #include <iostream>
 
@@ -25,9 +26,13 @@ Psylc7Engine::Psylc7Engine()
     else
       puts( "File successfully deleted" );
     
+    //!All states are initialized here
+    //!but only the state that the currentstate is pointing is showned
+    
     menu = new MainState(this);
     play = new PlayState(this);
     pausestate= new PauseState(this);
+    death = new DeathState(this);
     
     currentState = menu;
     
@@ -86,6 +91,11 @@ State* Psylc7Engine::isPaused()
     return pausestate;
 }
 
+State* Psylc7Engine::isDead()
+{
+    is_play_state = false;
+    return death;
+}
 void Psylc7Engine::virtDrawStringsOnTop()
 {
 

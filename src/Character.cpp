@@ -198,7 +198,7 @@ void Character::virtDoUpdate(int iCurrentTime)
                 
                 if( demage>= this->hp )
                 {
-                    exit(0);
+                     pEngineMain->setState(pEngineMain->isDead());
                 }else
                 {
                     this->hp -= demage;
@@ -213,7 +213,7 @@ void Character::virtDoUpdate(int iCurrentTime)
            //IF THE OBJECT IS A STAIRCASE
             if(pObject->value == 3)
             {
-                
+               
             }
             
             //IF THE OBJECT IS A SHIELD

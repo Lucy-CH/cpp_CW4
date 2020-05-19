@@ -75,6 +75,8 @@
 		DBE28C9424735BA600EAD24F /* Boss.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBE28C9224735BA600EAD24F /* Boss.cpp */; };
 		DBE28C97247389E800EAD24F /* Sword.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBE28C95247389E800EAD24F /* Sword.cpp */; };
 		DBE28C9A2473967700EAD24F /* Shield.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBE28C982473967700EAD24F /* Shield.cpp */; };
+		DBE28C9D24739E3000EAD24F /* Guardian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBE28C9B24739E3000EAD24F /* Guardian.cpp */; };
+		DBE28CA024739FB400EAD24F /* DeathState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBE28C9E24739FB400EAD24F /* DeathState.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,6 +160,10 @@
 		DBE28C96247389E800EAD24F /* Sword.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Sword.hpp; path = src/Sword.hpp; sourceTree = "<group>"; };
 		DBE28C982473967700EAD24F /* Shield.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Shield.cpp; path = src/Shield.cpp; sourceTree = "<group>"; };
 		DBE28C992473967700EAD24F /* Shield.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Shield.hpp; path = src/Shield.hpp; sourceTree = "<group>"; };
+		DBE28C9B24739E3000EAD24F /* Guardian.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Guardian.cpp; path = src/Guardian.cpp; sourceTree = "<group>"; };
+		DBE28C9C24739E3000EAD24F /* Guardian.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Guardian.hpp; path = src/Guardian.hpp; sourceTree = "<group>"; };
+		DBE28C9E24739FB400EAD24F /* DeathState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DeathState.cpp; path = src/DeathState.cpp; sourceTree = "<group>"; };
+		DBE28C9F24739FB400EAD24F /* DeathState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DeathState.hpp; path = src/DeathState.hpp; sourceTree = "<group>"; };
 		DC20BB4511A54D9A94752B5E /* ZoomingDemo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ZoomingDemo.cpp; path = src/ZoomingDemo.cpp; sourceTree = SOURCE_ROOT; };
 		DE8A7BF600A943BCA9704241 /* FontManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FontManager.cpp; path = src/FontManager.cpp; sourceTree = SOURCE_ROOT; };
 		E4BC49B3997045C3BBF9C0FE /* BouncingBallMain.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BouncingBallMain.cpp; path = src/BouncingBallMain.cpp; sourceTree = SOURCE_ROOT; };
@@ -266,6 +272,10 @@
 				DBE28C96247389E800EAD24F /* Sword.hpp */,
 				DBE28C982473967700EAD24F /* Shield.cpp */,
 				DBE28C992473967700EAD24F /* Shield.hpp */,
+				DBE28C9B24739E3000EAD24F /* Guardian.cpp */,
+				DBE28C9C24739E3000EAD24F /* Guardian.hpp */,
+				DBE28C9E24739FB400EAD24F /* DeathState.cpp */,
+				DBE28C9F24739FB400EAD24F /* DeathState.hpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
@@ -383,6 +393,7 @@
 				14E831794C144BE99FB5692A /* DisplayableObject.cpp in Sources */,
 				CDFFBD735E7242A3909300E7 /* DraggingDemo.cpp in Sources */,
 				9B2ED45851EB44BE9C8611D0 /* DrawingSurface.cpp in Sources */,
+				DBE28CA024739FB400EAD24F /* DeathState.cpp in Sources */,
 				DBE28C97247389E800EAD24F /* Sword.cpp in Sources */,
 				BF03221F08554890BF5DA209 /* FlashingDemo.cpp in Sources */,
 				DB3EF5D42464AFAA00AD426C /* PauseState.cpp in Sources */,
@@ -395,6 +406,7 @@
 				D01D68FDEAD04C4E92014D6D /* JigsawDemo.cpp in Sources */,
 				DBE28C9424735BA600EAD24F /* Boss.cpp in Sources */,
 				B205E7C36CF54CA891444D86 /* MainState.cpp in Sources */,
+				DBE28C9D24739E3000EAD24F /* Guardian.cpp in Sources */,
 				6773F5F183AE40549FCE478C /* MazeDemoMain.cpp in Sources */,
 				DBA62CFE2464E640009F7F22 /* Stairs.cpp in Sources */,
 				42D77F3CFBA94672BE5A1568 /* MazeDemoObject.cpp in Sources */,
